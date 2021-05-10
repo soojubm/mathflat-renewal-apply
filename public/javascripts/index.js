@@ -1,4 +1,4 @@
-import { throttle } from './utils/optimizationUtils'
+import { throttle } from './utils/optimizationUtils.js'
 
 document.addEventListener('DOMContentLoaded', () => {
   const tab = document.querySelector('.js-tab')
