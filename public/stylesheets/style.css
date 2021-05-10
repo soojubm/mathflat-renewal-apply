@@ -1,8 +1,8 @@
 @charset 'utf-8';
 
-@import url('/public/stylesheets/abstracts/webfont.css');
-@import url('/public/stylesheets/abstracts/variables.css');
-@import url('/public/stylesheets/abstracts/keyframes.css');
+@import url('abstracts/webfont.css');
+@import url('abstracts/variables.css');
+@import url('abstracts/keyframes.css');
 
 body,dl,dd,figure,blockquote,h1,h2,h3,h4,h5,h6,p,input[type=radio] {margin:0;}
 ul,ol,menu,fieldset,legend {margin:0;padding:0;}
