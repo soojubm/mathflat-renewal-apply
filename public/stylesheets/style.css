@@ -278,7 +278,11 @@ button {
 @media (max-width:1200px) {
   html {font-size:14px;}
   .navbar {padding: 0 var(--grid-margin);}
+
+
+
   .home-tabpanel-section-inner {padding-left:var(--grid-margin);padding-right:var(--grid-margin);}
+  .align-centered .home-tabpanel-section-inner {padding-left:var(--grid-margin);padding-right:var(--grid-margin);}
 
   .hero-inner {padding-top:4rem;padding-bottom:4rem;}
   .hero-object-group {position:static;right:auto;top:auto;}
@@ -299,6 +303,7 @@ button {
 
 @media (max-width:680px) {
   .home-tablist-inner {justify-content:left;overflow:auto;white-space:nowrap;}
+  .home-tablist-inner::-webkit-scrollbar {display:none;}
   .home-tablist-tab {width:auto;margin:0 1rem;font-size:16px;}
   .home-tablist-tab small {display:none;}
   .home-tablist-tab b {}
