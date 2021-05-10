@@ -1,17 +1,17 @@
 @font-face {
   font-family: 'NanumSquare';
   font-weight: 400;
-  src: url(/public/webfonts/NanumSquareR.woff);
+  src: url(../../webfonts/NanumSquareR.woff);
 }
 
 @font-face {
   font-family: 'NanumSquare';
   font-weight: 600;
-  src: url(/public/webfonts/NanumSquareB.woff);
+  src: url(../../webfonts/NanumSquareB.woff);
 }
 
 @font-face {
   font-family: 'NanumSquare';
   font-weight: 800;
-  src: url(/public/webfonts/NanumSquareEB.woff);
+  src: url(../../webfonts/NanumSquareEB.woff);
 }
