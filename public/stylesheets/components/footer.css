@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+.footer {padding:2.75rem var(--grid-margin);background:var(--gray999);color:var(--gray0);}
+.footer-inner {display:flex;justify-content:space-between;max-width:var(--width-large);margin:0 auto;position:relative;}
+.footer-address {}
+.footer-address-logo {width:96px;margin:0 0 1rem 0;}
+.footer-address-logo img {display:block;}
+.footer-address-info {display:flex;align-items:center;color:var(--gray600);}
+.footer-address-info-tel {display:flex;align-items:center;}
+.footer-address-info-tel img {width:10px;height:10px;margin:0 .5rem 0 0;}
+.footer-address-info-divider {width:1px;height:12px;margin:0 1rem;background:var(--gray600);}
+.footer-address-info-email {}
+.footer-address-info-email img {width:12px;margin:0 .25rem 0 0;}
+
+.footer-socials {display:flex;}
+.footer-socials a {width:32px;height:32px;margin:0 1rem;}
