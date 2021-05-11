@@ -18,8 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
         tabPanel.setAttribute('aria-hidden', String(!isTargetPanel))
       })
 
-      // window.scrollTo(0, navbarElement.clientHeight + heroElement.clientHeight)
-      // document.body.classList.remove('is-navbar-up')
+      window.scrollTo(0, navbarElement.clientHeight + heroElement.clientHeight)
+      setTimeout(() => {
+        document.body.classList.add('is-navbar-up')
+      }, 1)
     })
   })
 
