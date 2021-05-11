@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         tabPanel.setAttribute('aria-hidden', String(!isTargetPanel))
       })
 
-      window.scrollTo(0, navbarElement.clientHeight + heroElement.clientHeight)
-      document.body.classList.remove('is-navbar-up')
+      // window.scrollTo(0, navbarElement.clientHeight + heroElement.clientHeight)
+      // document.body.classList.remove('is-navbar-up')
     })
   })
 
@@ -57,12 +57,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const ANIMATED_CLASSNAME = 'is-observed'
   const elements = Array.from(document.querySelectorAll('.js-observer'))
     // console.log([].slice.call(document.querySelectorAll('.js-scroll-animation')), Array.from(document.querySelectorAll('.js-scroll-animation')),  document.querySelectorAll('.js-scroll-animation'))
-    // const options = {
-    //   root: null,
-    //   rootMargin: '0px 0px 0px 0px',
-    //   threshold: 0.1, // [0, 1], [0, 0.5]
-    // }
-  let observer = new IntersectionObserver(callback)
+    const options = {
+      root: null,
+      rootMargin: '0px 0px 0px 0px',
+      threshold: 0.5
+    }
+  let observer = new IntersectionObserver(callback, options)
 
   elements.forEach(element => observer.observe(element))
 
