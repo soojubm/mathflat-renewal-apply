@@ -49,15 +49,17 @@ button {
 .navbar-logo {width:96px;}
 .navbar-logo img {display:block;}
 .navbar-menu {display:flex;align-items:center;margin-right:-1rem;position:relative;}
-.navbar-menu-item {padding:0 1rem;color:var(--gray700);position:relative;z-index:1;}
+.navbar-menu-item {padding:0 1rem;font-size:16px;color:var(--gray700);position:relative;z-index:1;}
 .navbar-menu-item.is-active {color:var(--gray999);font-weight:var(--weight-bold);}
 .navbar.is-fixed {position:fixed;left:0;right:0;top:0;}
 
 .is-navbar-up .navbar {transform:translateY(calc(-1 * var(--navbar-height)));}
-/* .is-navbar-up .navbar {transform:translateY(-1 * var(--navbar-height));} */
-.is-navbar-up.is-fixed-home-tablist .home-tablist {transform:translateY(0);}
 
+.is-fixed-home-tablist .navbar {transform:translateY(0);}
 .is-fixed-home-tablist .home-tablist {position:fixed;top:0;z-index:7;transform:translateY(var(--navbar-height));}
+
+.is-fixed-home-tablist.is-navbar-up .navbar {transform:translateY(calc(-1 * var(--navbar-height)));}
+.is-fixed-home-tablist.is-navbar-up .home-tablist {transform:translateY(0);}
 
 
 .hero {background:var(--blue100);position:relative;}
@@ -306,7 +308,7 @@ button {
   .home-tablist-tab b {}
 
   .home-tablist-backdrop {
-    height: 58px;
+    height: 56px;
   }
 
   .home-tabpanel-section-inner,

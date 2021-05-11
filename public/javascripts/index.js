@@ -48,8 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function setElementOffsetTop() {
     currentScrollTop = getWindowOffsetTop()
-    isStuck = currentScrollTop > previousOffsetTop
     previousOffsetTop = navbarElement.clientHeight + heroElement.clientHeight
+
+    isStuck = currentScrollTop > previousOffsetTop
   }
 
   function handleElementScroll() {
@@ -68,13 +69,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const isScrolledDown = currentScrollTop > lastScrollTop
     const isFixedTab = document.body.classList.contains(TAB_FIXED_CLASSNAME)
 
-    document.body.classList.toggle('is-navbar-up', isFixedTab && isScrolledDown)
+    document.body.classList.toggle('is-navbar-up', isFixedTab && !isScrolledDown)
+    // document.body.classList.toggle('is-navbar-up', !)
 
     lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
   }
-
-
-
 
 
 
