@@ -172,7 +172,7 @@ button {
 
 .before-blur {
   height: 117px;
-  background: linear-gradient(to top, rgba(52,50,50,0),  rgba(52,50,50,.8));
+  background: linear-gradient(to top, rgba(52,50,50,0),  rgba(52,50,50,.9));
   position: absolute;
   left: 0;
   right: 0;
@@ -181,7 +181,7 @@ button {
 }
 .after-blur {
   height: 117px;
-  background: linear-gradient(to bottom, rgba(52,50,50,0), rgba(52,50,50,.8));
+  background: linear-gradient(to bottom, rgba(52,50,50,0), rgba(52,50,50,.9));
   position: absolute;
   left: 0;
   right: 0;
@@ -248,15 +248,15 @@ button {
 
 
 .tabpanel2-2-wrap {position:absolute;}
-.tabpanel2-2-wrap .tag1 {width:100%;max-width:98px;margin-left:auto;margin-right:0;}
+.tabpanel2-2-wrap .tag1 {width:100%;max-width:98px;margin-left:auto;margin-right:-2rem;}
 .tabpanel2-2-wrap .confirm {display:flex;max-width:499px;margin-left: auto;
   margin-right: -4rem;}
-.tabpanel2-2-wrap .tag2 {width:100%;max-width:98px;position:absolute;left:0;bottom:0;}
+.tabpanel2-2-wrap .tag2 {width:100%;max-width:98px;position:absolute;left:65px;bottom:67px;}
 
 
 .tabpanel2-2-wrap .users {width:100%;max-width:580px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;}
 .tabpanel2-2-wrap .users > div {width:185px;margin:0 0 14px 0;position:relative;}
-.tabpanel2-2-wrap .users > div .donut-wrap {position:absolute;z-index:1;}
+.tabpanel2-2-wrap .users > div .donut-wrap {width:76px;position:absolute;top:25%;left:5%;z-index:1;}
 .tabpanel2-2-wrap .users > div img {display:block;}
 .tabpanel2-2-wrap .users > div.user1 {}
 .tabpanel2-2-wrap .users > div.user1 {}
@@ -325,18 +325,61 @@ button {
 
 
 .donut-ring {stroke: #EBEBEB;}
-.donut-segment {transform-origin: center;stroke: #FF6200;}
-.donut-text {fill: #FF6200;}
-.donut-percent {font-size: 0.5em;}
-.donut-data {font-size: 0.12em;text-anchor: middle;fill: #666;}
+.donut-segment {transform-origin: center;stroke: #FF6200;animation-delay:1.2s}
+.donut-text {}
+.donut-data {font-size: 0.25em;text-anchor: middle;fill: var(--gray600);}
+.donut-percent {font-size: 0.5em;fill: var(--gray700);font-weight:600;}
 
-.donut-segment-2 {
-  stroke: aqua;
-  animation: donut1 3s;
+.user1 .donut-segment {
+  stroke: var(--blue400);
+  animation: donut1 3s both;
+}
+.user2 .donut-segment {
+  stroke: var(--red400);
+  animation: donut2 3s both;
+}
+.user2 .donut-percent {
+  fill: var(--red400);
+}
+.user3 .donut-segment {
+  stroke: var(--green100);
+  animation: donut3 3s both;
+}
+.user4 .donut-segment {
+  stroke: var(--yellow);
+  animation: donut4 3s both;
+}
+.user5 .donut-segment {
+  stroke: var(--green100);
+  animation: donut5 3s both;
+}
+.user6 .donut-segment {
+  stroke: var(--blue400);
+  animation: donut6 3s both;
 }
 
 @keyframes donut1 {
   0% {stroke-dasharray: 0, 100;}
   100% {stroke-dasharray: 69, 31;}
+}
+@keyframes donut2 {
+  0% {stroke-dasharray: 0, 100;}
+  100% {stroke-dasharray: 22, 72;}
+}
+@keyframes donut3 {
+  0% {stroke-dasharray: 0, 100;}
+  100% {stroke-dasharray: 78, 22;}
+}
+@keyframes donut4 {
+  0% {stroke-dasharray: 0, 100;}
+  100% {stroke-dasharray: 47, 53;}
+}
+@keyframes donut5 {
+  0% {stroke-dasharray: 0, 100;}
+  100% {stroke-dasharray: 70, 30;}
+}
+@keyframes donut6 {
+  0% {stroke-dasharray: 0, 100;}
+  100% {stroke-dasharray: 85, 15;}
 }
 
