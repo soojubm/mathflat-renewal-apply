@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   tablist.forEach((tab, tabIndex) => {
     tab.addEventListener('click', () => {
 
-      tablist.forEach((tab) => tab.setAttribute('aria-selected', 'false'))
+      tablist.forEach(tab => tab.setAttribute('aria-selected', 'false'))
       tab.setAttribute('aria-selected', 'true')
 
       tabPanels.forEach((tabPanel, tabPanelIndex) => {
@@ -18,10 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
         tabPanel.setAttribute('aria-hidden', String(!isTargetPanel))
       })
 
-      window.scrollTo(0, navbarElement.clientHeight + heroElement.clientHeight)
-      setTimeout(() => {
+      // + 100 임시
+      window.scrollTo(0, navbarElement.clientHeight + heroElement.clientHeight + 100)
         document.body.classList.add('is-navbar-up')
-      }, 1)
+
+      // setTimeout(() => {
+      // }, 1)
     })
   })
 
