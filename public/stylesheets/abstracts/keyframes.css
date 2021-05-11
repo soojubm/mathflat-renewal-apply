@@ -49,3 +49,36 @@
 	  /* transform: translateY(160px) translateX(2560px) translateZ(-500px) rotate3d(1, 1, .25, 720deg); */
 	}
 }
+
+
+
+
+
+
+
+
+@keyframes donut1 {
+	0% {stroke-dasharray: 0, 100;}
+	100% {stroke-dasharray: 69, 31;}
+  }
+  @keyframes donut2 {
+	0% {stroke-dasharray: 0, 100;}
+	100% {stroke-dasharray: 22, 72;}
+  }
+  @keyframes donut3 {
+	0% {stroke-dasharray: 0, 100;}
+	100% {stroke-dasharray: 78, 22;}
+  }
+  @keyframes donut4 {
+	0% {stroke-dasharray: 0, 100;}
+	100% {stroke-dasharray: 47, 53;}
+  }
+  @keyframes donut5 {
+	0% {stroke-dasharray: 0, 100;}
+	100% {stroke-dasharray: 70, 30;}
+  }
+  @keyframes donut6 {
+	0% {stroke-dasharray: 0, 100;}
+	100% {stroke-dasharray: 85, 15;}
+  }
+  

@@ -87,6 +87,7 @@ button {
 .home-tablist-backdrop {height:85px;position:relative;}
 
 .home-tabpanel-section {overflow:hidden;position:relative;}
+.home-tabpanel-section.bg-dotted {background:url(../images/tabpanel3-section2-bg.png) repeat 0 0;}
 .home-tabpanel-section-inner {max-width:var(--width-large);margin:0 auto;padding:18rem var(--grid-margin);position:relative;}
 .home-tabpanel-section-title {margin:0 0 1.5rem 0;font-size:var(--title);opacity:0;}
 .home-tabpanel-section-description {opacity:0;color:var(--gray600);}
@@ -330,29 +331,4 @@ button {
 .is-observed .user6 .donut-segment {
   stroke: var(--blue400);
   animation: donut6 3s both;
-}
-
-@keyframes donut1 {
-  0% {stroke-dasharray: 0, 100;}
-  100% {stroke-dasharray: 69, 31;}
-}
-@keyframes donut2 {
-  0% {stroke-dasharray: 0, 100;}
-  100% {stroke-dasharray: 22, 72;}
-}
-@keyframes donut3 {
-  0% {stroke-dasharray: 0, 100;}
-  100% {stroke-dasharray: 78, 22;}
-}
-@keyframes donut4 {
-  0% {stroke-dasharray: 0, 100;}
-  100% {stroke-dasharray: 47, 53;}
-}
-@keyframes donut5 {
-  0% {stroke-dasharray: 0, 100;}
-  100% {stroke-dasharray: 70, 30;}
-}
-@keyframes donut6 {
-  0% {stroke-dasharray: 0, 100;}
-  100% {stroke-dasharray: 85, 15;}
 }
