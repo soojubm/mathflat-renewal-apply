@@ -28,17 +28,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbarElement = document.querySelector('.js-navbar-backdrop')
   const heroElement = document.querySelector('.js-hero')
   let previousOffsetTop = stickyElement.offsetTop;
+  let isStuck
 
   // resize시 navbarHeight + heroHeight 되어야 함. offsetTop은 sticky 상태에 따라 유동
   window.addEventListener('resize', throttle(setElementOffsetTop), false)
   function setElementOffsetTop() {
+    let currentScrollPostion = window.scrollY || window.pageYOffset
+    isStuck = currentScrollPostion > previousOffsetTop
     previousOffsetTop = navbarElement.clientHeight + heroElement.clientHeight
   }
 
   window.addEventListener('scroll', throttle(handleElementScroll), false)
   function handleElementScroll() {
     let currentScrollPostion = window.scrollY || window.pageYOffset
-    const isStuck = currentScrollPostion > previousOffsetTop
+    isStuck = currentScrollPostion > previousOffsetTop
     
     document.body.classList.toggle('is-fixed-home-tablist', isStuck)
   }
