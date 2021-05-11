@@ -55,6 +55,7 @@ button {
 .is-navbar-up .navbar {transform:translateY(calc(-1 * var(--navbar-height)));}
 /* .is-navbar-up .navbar {transform:translateY(-1 * var(--navbar-height));} */
 .is-navbar-up.is-fixed-home-tablist .home-tablist {transform:translateY(0);}
+
 .is-fixed-home-tablist .home-tablist {position:fixed;top:0;z-index:7;transform:translateY(var(--navbar-height));}
 
 
