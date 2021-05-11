@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(isFixedTab) {
 
     }
-    document.body.classList.toggle('is-navbar-up', isFixedTab && !isScrolledDown)
+    document.body.classList.toggle('is-navbar-up', isFixedTab && isScrolledDown)
 
     lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
   }, false);

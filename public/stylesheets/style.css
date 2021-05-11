@@ -1,18 +1,18 @@
 @charset 'utf-8';
 
-@import url('abstracts/reset.css');
+/* @import url('abstracts/reset.css'); */
 @import url('abstracts/webfonts.css');
 @import url('abstracts/variables.css');
 @import url('abstracts/keyframes.css');
 
-@import url('components/navbar.css');
+/* @import url('components/navbar.css'); */
 @import url('components/footer.css');
 
 body,dl,dd,figure,blockquote,h1,h2,h3,h4,h5,h6,p,input[type=radio] {margin:0;}
 ul,ol,menu,fieldset,legend {margin:0;padding:0;}
 fieldset,iframe,img,hr {border:0 none} dl,ol,ul,menu {list-style:none}
 main,picture {display:block;}
-iframe,img,video {width:100%;} /*img {vertical-align:middle;}*/
+iframe,img,video {display:block;width:100%;} /*img {vertical-align:middle;}*/
 h1,h2,h3,h4,h5,h6 {line-height:1.4;font-weight:bold;color:var(--gray800);word-break:keep-all;}
 strong,b,th,legend {font-weight:bold;color:var(--gray800);}
 em {font-style:normal;color:var(--color-primary);}
@@ -39,7 +39,7 @@ button {
 }
 
 :root {
-  --animation-duration: .5s;
+  --animation-duration: .8s;
   --animation-delay-second: .8s;
   --animation-delay-third: .8s;
 }
@@ -238,14 +238,14 @@ button {
 .tabpanel4-3-1 {}
 
 .tabpanel4-4-wrap {}
-.tabpanel4-4-1 {width:90%;max-width:862px;margin:4rem auto 0;}
+.tabpanel4-4-1 {max-width:862px;margin:4rem auto 0;}
 
 
 .tabpanel2-2-wrap {position:absolute;}
 .tabpanel2-2-wrap .tag1 {width:100%;max-width:98px;margin-left:auto;margin-right:-2rem;}
 .tabpanel2-2-wrap .confirm {display:flex;max-width:499px;margin-left: auto;
   margin-right: -4rem;}
-.tabpanel2-2-wrap .tag2 {width:100%;max-width:98px;position:absolute;left:65px;bottom:67px;}
+.tabpanel2-2-wrap .tag2 {width:100%;max-width:98px;position:absolute;left:65px;bottom:80px;}
 .tabpanel2-2-wrap .users {width:100%;max-width:580px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;}
 .tabpanel2-2-wrap .users > div {width:185px;margin:0 0 14px 0;position:relative;}
 .tabpanel2-2-wrap .users > div .donut-wrap {width:76px;position:absolute;top:25%;left:5%;z-index:1;}
