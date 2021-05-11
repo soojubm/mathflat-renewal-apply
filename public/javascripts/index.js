@@ -17,12 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const isTargetPanel = tabIndex === tabPanelIndex
         tabPanel.setAttribute('aria-hidden', String(!isTargetPanel))
       })
+
+      window.scrollTo(0, navbarElement.clientHeight + heroElement.clientHeight)
+      document.body.classList.remove('is-navbar-up')
     })
   })
 
 
   const stickyElement = document.querySelector('.js-home-tablist')
-  const navbarElement = document.querySelector('.js-navbar')
+  const navbarElement = document.querySelector('.js-navbar-backdrop')
   const heroElement = document.querySelector('.js-hero')
   let previousOffsetTop = stickyElement.offsetTop;
 
