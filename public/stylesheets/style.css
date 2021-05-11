@@ -26,7 +26,7 @@ svg {color:var(--gray800);}
 ::placeholder {color:var(--gray400);}
 
 
-
+picture {display:block;}
 button {
   padding:0;
   border:none;
@@ -244,8 +244,10 @@ button {
 .tabpanel4-2-2 {width:30%;max-width:585px;}
 .is-observed .tabpanel4-2-wrap {transform:translateY(3rem);}
 
-.tabpanel4-3-1 {max-width:612px;position:absolute;}
+.tabpanel4-3-wrap {max-width:612px;position:absolute;}
+.tabpanel4-3-1 {}
 
+.tabpanel4-4-wrap {}
 .tabpanel4-4-1 {width:90%;max-width:862px;margin:4rem auto 0;}
 
 
@@ -304,7 +306,8 @@ button {
   .tabpanel2-1-wrap,
   .tabpanel2-5-wrap,
   .tabpanel3-4-wrap,
-  .tabpanel4-1-wrap {position:relative;}
+  .tabpanel4-1-wrap,
+  .tabpanel4-3-wrap {position:relative;}
 
   .footer {font-size:14px;}
 }
