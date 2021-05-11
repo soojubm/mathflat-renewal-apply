@@ -11,16 +11,14 @@
 body,dl,dd,figure,blockquote,h1,h2,h3,h4,h5,h6,p,input[type=radio] {margin:0;}
 ul,ol,menu,fieldset,legend {margin:0;padding:0;}
 fieldset,iframe,img,hr {border:0 none} dl,ol,ul,menu {list-style:none}
-main, picture {display:block;}
+main,picture {display:block;}
 iframe,img,video {width:100%;} /*img {vertical-align:middle;}*/
 h1,h2,h3,h4,h5,h6 {line-height:1.4;font-weight:bold;color:var(--gray800);word-break:keep-all;}
-strong,b,th,legend {font-weight:bold;color:var(--gray800);} legend {margin:0 0 .5rem 0;}
-cite,i,address,em,dfn {font-style:normal;} em {color:var(--color-primary);}
-small {font-size:var} abbr {text-decoration:none;}
+strong,b,th,legend {font-weight:bold;color:var(--gray800);}
+em {font-style:normal;color:var(--color-primary);}
+small {} 
 a {text-decoration:none;text-decoration-skip-ink:auto;color:var(--color-primary);} a:link,a:visited {} a:hover,a:focus {} a:active {}
 /* // br {content:'';display:block;height:1rem;} */
-hr {height:1px;margin:1rem 0;background:var(--gray200);overflow:visible;position:relative;}
-
 html {min-width:320px;height:100%;font:16px/1.8 var(--fontstack);color:var(--gray800);-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overscroll-behavior:contain;overflow-x:hidden;}
 body {background:var(--gray0);overflow-x:hidden;letter-spacing:-.0125rem;}
 
@@ -105,23 +103,10 @@ button {
 .home-tabpanel-section.background .home-tabpanel-section-title {color:var(--gray0);}
 .home-tabpanel-section.background .home-tabpanel-section-description {color:var(--gray500);}
 
-.home-tabpanel {position: relative;
-  z-index: 1;
-  background: var(--gray0);
-}
+.home-tabpanel {background: var(--gray0);position: relative;z-index: 1;}
 .home-tabpanel[aria-hidden=true] {display:none;}
-.home-tabpanel .card {width:calc(33.3333% - 1rem);margin:0 .5rem 1rem;}
-
-.home-tabpanel[date-index=1] {}
-.home-tabpanel[date-index=1] .home-tabpanel-section {}
-.home-tabpanel[date-index=2] {}
-.home-tabpanel[date-index=3] {}
-.home-tabpanel[date-index=4] {}
-
-
 
 /* ! observer */
-
 .is-observed {}
 .is-observed .home-tabpanel-section-title {animation:fadeup .4s forwards;}
 .is-observed .home-tabpanel-section-description {animation:fadeup .4s .4s forwards;}
@@ -162,13 +147,13 @@ button {
 .tabpanel1-4-wrap .viewer {position: absolute;animation:test 8s linear .4s forwards;}
 
 .tabpanel1-4-wrap .question {position:relative;}
-.tabpanel1-4-wrap .question .bookmark {max-width:68px;position:absolute;right:6.5%;animation:bookmark .2s linear both;}
+.tabpanel1-4-wrap .question .bookmark {max-width:82px;position:absolute;right:5.2%;animation:bookmark .2s linear both;}
 
 .is-observed .tabpanel1-4-wrap .question:nth-of-type(1) .bookmark {display:none;}
-.is-observed .tabpanel1-4-wrap .question:nth-of-type(2) .bookmark {top:23%;animation-delay:2s;}
-.is-observed .tabpanel1-4-wrap .question:nth-of-type(3) .bookmark {top:24%;animation-delay:4s;}
-.is-observed .tabpanel1-4-wrap .question:nth-of-type(4) .bookmark {top:26%;animation-delay:6s;}
-.is-observed .tabpanel1-4-wrap .question:nth-of-type(5) .bookmark {top:22%;animation-delay:8s;}
+.is-observed .tabpanel1-4-wrap .question:nth-of-type(2) .bookmark {top:21.5%;animation-delay:2s;}
+.is-observed .tabpanel1-4-wrap .question:nth-of-type(3) .bookmark {top:22.5%;animation-delay:4s;}
+.is-observed .tabpanel1-4-wrap .question:nth-of-type(4) .bookmark {top:24.5%;animation-delay:6s;}
+.is-observed .tabpanel1-4-wrap .question:nth-of-type(5) .bookmark {top:19.5%;animation-delay:8s;}
 
 .before-blur {
   height: 117px;
@@ -191,11 +176,9 @@ button {
 
 
 /*  todo 왼쪽 정렬 absolute */
-.tabpanel2-1-wrap {position:absolute;}
-.tabpanel2-1-wrap * {transition:all .6s;}
-.tabpanel2-1-1 {max-width:530px;position:absolute;left:10px;top:10px;transform:scale(.5);}
-.tabpanel2-1-2 {max-width:550px;transform:scale(.2);}
-.is-observed .tabpanel2-1-wrap * {animation:0;}
+.tabpanel2-1-wrap {position:absolute;animation:none !important;opacity:1;}
+.tabpanel2-1-1 {max-width:530px;position:absolute;left:10px;top:10px;transition:all .4s;transform:scale(.5);opacity:0;}
+.tabpanel2-1-2 {max-width:550px;transition:all .4s;transform:scale(.2);opacity:0;}
 .is-observed .tabpanel2-1-1 {opacity:1;transform:scale(1);transition-delay:1s;}
 .is-observed .tabpanel2-1-2 {opacity:1;transform:scale(1);transition-delay:1.3s;}
 
@@ -246,14 +229,11 @@ button {
 .tabpanel4-4-1 {width:90%;max-width:862px;margin:4rem auto 0;}
 
 
-
 .tabpanel2-2-wrap {position:absolute;}
 .tabpanel2-2-wrap .tag1 {width:100%;max-width:98px;margin-left:auto;margin-right:-2rem;}
 .tabpanel2-2-wrap .confirm {display:flex;max-width:499px;margin-left: auto;
   margin-right: -4rem;}
 .tabpanel2-2-wrap .tag2 {width:100%;max-width:98px;position:absolute;left:65px;bottom:67px;}
-
-
 .tabpanel2-2-wrap .users {width:100%;max-width:580px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;}
 .tabpanel2-2-wrap .users > div {width:185px;margin:0 0 14px 0;position:relative;}
 .tabpanel2-2-wrap .users > div .donut-wrap {width:76px;position:absolute;top:25%;left:5%;z-index:1;}
@@ -279,11 +259,8 @@ button {
 
   .hero-inner {padding-top:4rem;padding-bottom:4rem;}
   .hero-object-group {position:static;right:auto;top:auto;}
-  .hero-object-group-inner {}
   .hero-object2 {width:120%;margin-left:-12%;}
   .hero-object3 {right:-1rem;bottom:-15rem;}
-
-
 
   /* .align-centered .home-tabpanel-section-inner {padding:7.5rem 0;} */
   .align-half .home-tabpanel-section-inner {justify-content:center;text-align:center;}
@@ -317,7 +294,6 @@ button {
     height: 58px;
   }
 
-  
   .home-tabpanel-section-inner,
   .align-centered .home-tabpanel-section-inner {padding-top:4rem;padding-bottom:4rem;}
 }
@@ -330,30 +306,28 @@ button {
 .donut-data {font-size: 0.25em;text-anchor: middle;fill: var(--gray600);}
 .donut-percent {font-size: 0.5em;fill: var(--gray700);font-weight:600;}
 
-.user1 .donut-segment {
-  stroke: var(--blue400);
-  animation: donut1 3s both;
+.is-observed .user1 .donut-segment {stroke: var(--blue400);animation: donut1 3s both;
 }
-.user2 .donut-segment {
+.is-observed .user2 .donut-segment {
   stroke: var(--red400);
   animation: donut2 3s both;
 }
-.user2 .donut-percent {
+.is-observed .user2 .donut-percent {
   fill: var(--red400);
 }
-.user3 .donut-segment {
+.is-observed .user3 .donut-segment {
   stroke: var(--green100);
   animation: donut3 3s both;
 }
-.user4 .donut-segment {
+.is-observed .user4 .donut-segment {
   stroke: var(--yellow);
   animation: donut4 3s both;
 }
-.user5 .donut-segment {
+.is-observed .user5 .donut-segment {
   stroke: var(--green100);
   animation: donut5 3s both;
 }
-.user6 .donut-segment {
+.is-observed .user6 .donut-segment {
   stroke: var(--blue400);
   animation: donut6 3s both;
 }
@@ -382,4 +356,3 @@ button {
   0% {stroke-dasharray: 0, 100;}
   100% {stroke-dasharray: 85, 15;}
 }
-
