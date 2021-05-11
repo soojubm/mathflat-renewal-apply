@@ -294,6 +294,8 @@ button {
   .hero-inner {padding-top:4rem;padding-bottom:4rem;}
   .hero-object-group {position:static;right:auto;top:auto;}
   .hero-object-group-inner {}
+  .hero-object2 {width:120%;margin-left:-12%;}
+  .hero-object3 {right:-1rem;bottom:-15rem;}
 
   .home-tablist-backdrop {
     height: 58px;
