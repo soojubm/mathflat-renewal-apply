@@ -9,8 +9,8 @@
 .footer-address-info-tel {display:flex;align-items:center;}
 .footer-address-info-tel img {width:10px;height:10px;margin:0 .5rem 0 0;}
 .footer-address-info-divider {width:1px;height:12px;margin:0 1rem;background:var(--gray600);}
-.footer-address-info-email {}
-.footer-address-info-email img {width:12px;margin:0 .25rem 0 0;}
+.footer-address-info-email {display:flex;align-items:center;}
+.footer-address-info-email img {width:12px;margin:0 .5rem 0 0;}
 
 .footer-socials {display:flex;}
 .footer-socials a {width:32px;height:32px;margin:0 1rem;}

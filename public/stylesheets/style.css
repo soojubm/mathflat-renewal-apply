@@ -40,6 +40,7 @@ button {
 
 :root {
   --animation-duration: .8s;
+  --animation-delay-first: 0s;
   --animation-delay-second: .8s;
   --animation-delay-third: .8s;
 }
@@ -79,8 +80,10 @@ button {
 
 
 /* todo safe area */
-.home-cta {display:flex;justify-content:center;padding:0 5%;position:fixed;left:0;right:0;bottom:1rem;z-index:9;transform:translateY(100px);transition:all .6s;opacity:0;}
-.home-cta-button {display:flex;align-items:center;justify-content:center;width:100%;max-width:687px;height:45px;margin:2rem 0 0;border-radius:50px;text-align:center;background:var(--yellow);color:var(--gray0);font-weight:800;}
+.home-cta {display:flex;justify-content:center;padding:0 5%;position:fixed;left:0;right:0;bottom:calc(constant(safe-area-inset-bottom) + 1rem);bottom:calc(env(safe-area-inset-bottom) + 1rem);z-index:9;transform:translateY(100px);transition:all .6s;opacity:0;}
+.home-cta-button {
+  display:flex;align-items:center;justify-content:center;width:100%;max-width:687px;height:45px;margin:2rem 0 0;
+  border-radius:50px;text-align:center;background:var(--yellow);color:var(--gray0);font-weight:800;}
 .home-cta.is-fixed {transform:translateY(0);opacity:1;}
 
 .home-tablist {background:var(--gray0);position:absolute;left:0;right:0;z-index:2;transition:all var(--animation-duration);}
@@ -96,7 +99,7 @@ button {
 .home-tabpanel-section {overflow:hidden;position:relative;}
 .home-tabpanel-section.bg-dotted {background:url(../images/tabpanel3-section2-bg.png) repeat 0 0;}
 .home-tabpanel-section-inner {max-width:var(--width-large);margin:0 auto;padding:18rem var(--grid-margin);position:relative;}
-.home-tabpanel-section-title {margin:0 0 1.5rem 0;font-size:var(--title);opacity:0;}
+.home-tabpanel-section-title {margin:0 0 1rem 0;font-size:var(--title);opacity:0;}
 .home-tabpanel-section-description {opacity:0;color:var(--gray600);}
 .home-tabpanel-section-media {opacity:0;}
 .home-tabpanel-section-media video {margin:3rem 0 0 0;}
@@ -262,12 +265,14 @@ button {
 
 /* @media (--viewport-small) { */
 @media (max-width:1200px) {
+  html {font-size:12px;}
   .navbar {padding: 0 var(--grid-margin);}
 
   .home-tabpanel-section-inner {padding-left:var(--grid-margin);padding-right:var(--grid-margin);}
   .align-centered .home-tabpanel-section-inner {padding-left:var(--grid-margin);padding-right:var(--grid-margin);}
 
   .hero-inner {padding-top:4rem;padding-bottom:4rem;}
+  .hero-title {font-size:2rem;}
   .hero-object-group {position:static;right:auto;top:auto;}
   .hero-object2 {width:120%;margin-left:-12%;}
   .hero-object3 {right:-1rem;bottom:-15rem;}
@@ -308,10 +313,8 @@ button {
   .align-centered .home-tabpanel-section-inner {padding-top:4rem;padding-bottom:4rem;}
 }
 
-
-
 .donut-ring {stroke: #EBEBEB;}
-.donut-segment {transform-origin: center;stroke: #FF6200;animation-delay:1.2s}
+.donut-segment {stroke-linecap:round;transform-origin:center;animation-delay:1.2s}
 .donut-text {}
 .donut-data {font-size: 0.25em;text-anchor: middle;fill: var(--gray600);}
 .donut-percent {font-size: 0.5em;fill: var(--gray700);font-weight:600;}
