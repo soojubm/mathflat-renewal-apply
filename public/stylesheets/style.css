@@ -209,7 +209,7 @@ button {
 .tabpanel3-2-2 {max-width:645px;position:absolute;right:0;top:158px;opacity:0;}
 
 .is-observed .tabpanel3-2-1 {animation:faderight var(--animation-duration) 1s both;}
-.is-observed .tabpanel3-2-2 {animation:fadeleft var(--animation-duration) 1var(--animation-duration) both;}
+.is-observed .tabpanel3-2-2 {animation:fadeleft var(--animation-duration) 1.4s both;}
 
 .tabpanel3-4-wrap {margin:6rem 0 0;position:absolute;animation:none !important;opacity:1;}
 .tabpanel3-4-1 {max-width:582px;opacity:0;}
@@ -218,12 +218,12 @@ button {
 /*  */
 .is-observed .tabpanel3-4-1 {animation:fadeup var(--animation-duration) 1s both;}
 .is-observed .tabpanel3-4-2 {animation:fadeup var(--animation-duration) 1.8s both;}
-.is-observed .tabpanel3-4-3 {animation:fadeup var(--animation-duration) 1var(--animation-duration) both;}
+.is-observed .tabpanel3-4-3 {animation:fadeup var(--animation-duration) 1.4s both;}
 
 /* todo size  % */
 .tabpanel4-1-wrap {width:100%;max-width:612px;height:586px;position:absolute;animation:none;}
 .is-observed .tabpanel4-1-1 {max-width:271px;position:absolute;left:0;top:0;position:2;}
-.is-observed .tabpanel4-1-2 {max-width:311px;position:absolute;right:12%;top:140px;position:3;animation:fadeup var(--animation-duration) 1var(--animation-duration) both;}
+.is-observed .tabpanel4-1-2 {max-width:311px;position:absolute;right:12%;top:140px;position:3;animation:fadeup var(--animation-duration) 1.4s both;}
 .is-observed .tabpanel4-1-3 {max-width:377px;position:absolute;right:20px;bottom:20px;position:1;animation:fadeup var(--animation-duration) 1.8s both;}
 
 
