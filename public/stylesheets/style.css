@@ -59,7 +59,7 @@ button {
 .hero-inner {max-width:var(--width-large);margin:0 auto;padding:14rem var(--grid-margin);position: relative;}
 .hero-title {margin:0 0 2rem 0;font-size:2.5rem;}
 .hero-description {}
-.hero-cta {display:flex;align-items:center;justify-content:center;width:241px;height:45px;margin:2rem 0 0;border-radius:50px;text-align:center;background:var(--yellow);color:var(--gray0);}
+.hero-cta {display:flex;align-items:center;justify-content:center;width:241px;height:45px;margin:2rem 0 0;border-radius:50px;text-align:center;background:var(--yellow);color:var(--gray0);font-weight:800;}
 
 .hero-object-group {height:100%;position:absolute;right:-4rem;top:-8rem;}
 .hero-object-group-inner {position:relative;}
@@ -71,7 +71,7 @@ button {
 
 /* todo safe area */
 .home-cta {display:flex;justify-content:center;padding:0 5%;position:fixed;left:0;right:0;bottom:1rem;z-index:9;transform:translateY(100px);transition:all .6s;opacity:0;}
-.home-cta-button {display:flex;align-items:center;justify-content:center;width:100%;max-width:687px;height:45px;margin:2rem 0 0;border-radius:50px;text-align:center;background:var(--yellow);color:var(--gray0);}
+.home-cta-button {display:flex;align-items:center;justify-content:center;width:100%;max-width:687px;height:45px;margin:2rem 0 0;border-radius:50px;text-align:center;background:var(--yellow);color:var(--gray0);font-weight:800;}
 .home-cta.is-fixed {transform:translateY(0);opacity:1;}
 
 .home-tablist {border-bottom:1px solid #fafafa;background:var(--gray0);position:absolute;left:0;right:0;z-index:2;transition:all .4s;}
@@ -133,6 +133,12 @@ button {
 .tabpanel1-3-wrap img:nth-of-type(4) {left:12rem;top:12rem;}
 .tabpanel1-3-wrap img:nth-of-type(5) {left:18rem;top:6rem;}
 .tabpanel1-3-wrap img:nth-of-type(6) {left:8rem;top:2rem;}
+.tabpanel1-3-wrap img:nth-of-type(7) {left:8rem;top:2rem;}
+.tabpanel1-3-wrap img:nth-of-type(8) {left:8rem;top:2rem;}
+.tabpanel1-3-wrap img:nth-of-type(9) {left:8rem;top:2rem;}
+.tabpanel1-3-wrap img:nth-of-type(10) {left:8rem;top:2rem;}
+.tabpanel1-3-wrap img:nth-of-type(11) {left:8rem;top:2rem;}
+.tabpanel1-3-wrap img:nth-of-type(12) {left:8rem;top:2rem;}
 
 .tabpanel1-3-o {max-width:14px;margin:6rem;opacity:1;}
 .tabpanel1-3-x {max-width:20px;margin:6rem;opacity:1;}
@@ -269,6 +275,11 @@ button {
 .footer-socials a {width:32px;height:32px;margin:0 1rem;}
 
 
+
+.cta-arrow {
+  width: 9px;
+  margin:0 0 0 .75rem;
+}
 
 /* @media (--viewport-small) { */
 @media (max-width:1200px) {
