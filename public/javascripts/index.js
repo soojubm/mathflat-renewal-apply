@@ -1,6 +1,12 @@
 import { throttle } from './utils/optimizationUtils.js'
 
 document.addEventListener('DOMContentLoaded', () => {
+
+  let lastScrollTop = 0;
+
+
+
+
   const tab = document.querySelector('.js-tab')
   if(!tab) return
 
@@ -19,11 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
       })
 
       // + 100 임시
+      // 여기서 이전 스크롤 값을 넣어줘야 한다......><
       window.scrollTo(0, navbarElement.clientHeight + heroElement.clientHeight + 100)
-        document.body.classList.add('is-navbar-up')
+      lastScrollTop = 0;
+      document.body.classList.add('is-navbar-up')
 
-      // setTimeout(() => {
-      // }, 1)
     })
   })
 
@@ -63,7 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  let lastScrollTop = 0;
   window.addEventListener("scroll", throttle(handleNavbar), false);
 
   function handleNavbar() {
@@ -71,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isScrolledDown = currentScrollTop > lastScrollTop
     const isFixedTab = document.body.classList.contains(TAB_FIXED_CLASSNAME)
 
-    document.body.classList.toggle('is-navbar-up', isFixedTab && !isScrolledDown)
+    document.body.classList.toggle('is-navbar-up', isFixedTab && isScrolledDown)
     // document.body.classList.toggle('is-navbar-up', !)
 
     lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling

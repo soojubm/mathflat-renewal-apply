@@ -297,6 +297,9 @@ button {
   .tabpanel4-1-wrap,
   .tabpanel4-3-wrap {position:relative;}
 
+  /* todo */
+  .tabpanel1-4-wrap-inbox {height:auto;}
+
   .footer {font-size:14px;}
 }
 
