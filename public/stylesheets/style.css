@@ -170,8 +170,8 @@ button {
 .is-observed .tabpanel1-4-wrap .question:nth-of-type(5) .bookmark {top:22%;animation-delay:8s;}
 
 .before-blur {
-  height: 4rem;
-  background: linear-gradient(to top, rgba(52,50,50,0), rgba(52,50,50,.75));
+  height: 117px;
+  background: linear-gradient(to top, rgba(52,50,50,0),  rgba(52,50,50,.8));
   position: absolute;
   left: 0;
   right: 0;
@@ -179,8 +179,8 @@ button {
   z-index: 1;
 }
 .after-blur {
-  height: 4rem;
-  background: linear-gradient(to bottom, rgba(52,50,50,0), rgba(52,50,50,.75));
+  height: 117px;
+  background: linear-gradient(to bottom, rgba(52,50,50,0), rgba(52,50,50,.8));
   position: absolute;
   left: 0;
   right: 0;
@@ -246,16 +246,23 @@ button {
 
 
 
+.tabpanel2-2-wrap {position:absolute;}
+.tabpanel2-2-wrap .tag1 {width:100%;max-width:98px;margin-left:auto;margin-right:0;}
+.tabpanel2-2-wrap .confirm {display:flex;max-width:499px;margin-left: auto;
+  margin-right: -4rem;}
+.tabpanel2-2-wrap .tag2 {width:100%;max-width:98px;position:absolute;left:0;bottom:0;}
 
 
-.users {display:flex;flex-wrap:wrap;justify-content:space-between;}
-.users > div {width:195px;position:relative;}
-.users > div.user1 {}
-.users > div.user1 {}
-.users > div.user1 {}
-.users > div.user1 {}
-.users > div.user1 {}
-.users > div.user1 {}
+.tabpanel2-2-wrap .users {width:100%;max-width:580px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;}
+.tabpanel2-2-wrap .users > div {width:185px;margin:0 0 14px 0;position:relative;}
+.tabpanel2-2-wrap .users > div .donut-wrap {position:absolute;z-index:1;}
+.tabpanel2-2-wrap .users > div img {display:block;}
+.tabpanel2-2-wrap .users > div.user1 {}
+.tabpanel2-2-wrap .users > div.user1 {}
+.tabpanel2-2-wrap .users > div.user1 {}
+.tabpanel2-2-wrap .users > div.user1 {}
+.tabpanel2-2-wrap .users > div.user1 {}
+.tabpanel2-2-wrap .users > div.user1 {}
 
 .cta-arrow {
   width: 9px;
