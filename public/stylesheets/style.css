@@ -71,14 +71,14 @@ button {
 
 .hero-object-group {height:100%;position:absolute;right:-4rem;top:-8rem;}
 .hero-object-group-inner {position:relative;}
-.hero-object1 {width:100%;max-width:635px;position:absolute;right:0;top:-8rem;z-index:3;animation:hero-object1 10s ease infinite;}
-.hero-object2 {width:100%;max-width:930px;position:relative;z-index:2;animation:hero-object1 20s ease infinite;}
+.hero-object1 {width:100%;max-width:635px;position:absolute;right:0;top:-8rem;z-index:3;animation:hero-object1 16s ease infinite;}
+.hero-object2 {width:100%;max-width:930px;position:relative;z-index:2;animation:hero-object1 16s ease infinite;}
 .hero-object3 {width:100%;max-width:750px;position:absolute;right:8rem;bottom:-18rem;z-index:1;animation:hero-object1 16s ease infinite;}
 
 
 .is-observed .hero-title {animation:fadeup var(--animation-duration) both;}
 .is-observed .hero-description {animation:fadeup var(--animation-duration) .6s both;}
-.is-observed .hero-cta {animation:fadeup var(--animation-duration) 1s both;}
+.is-observed .hero-cta {animation:fadeup var(--animation-duration) 1s both;position:relative;z-index:5;}
 
 
 /* todo safe area */
@@ -125,7 +125,7 @@ button {
 .is-observed .home-tabpanel-section-description {animation:fadeup var(--animation-duration) .5s forwards;}
 .is-observed .home-tabpanel-section-media {animation:fadeup var(--animation-duration) 1s forwards;}
 
-.tabpanel1-3-wrap {}
+.tabpanel1-3-wrap {max-width:816px;margin:1rem auto 0;}
 .tabpanel1-3-o {max-width:14px;margin:6rem;opacity:1;}
 .tabpanel1-3-x {max-width:20px;margin:6rem;opacity:1;}
 
@@ -191,6 +191,9 @@ button {
 
 
 /*  todo 왼쪽 정렬 absolute */
+
+.tabpanel1-2-wrap {max-width:582px;position:absolute;}
+
 .tabpanel2-1-wrap {position:absolute;animation:none !important;opacity:1;}
 .tabpanel2-1-1 {max-width:530px;position:absolute;left:10px;top:10px;transition:all var(--animation-duration);transform:scale(.5);opacity:0;}
 .tabpanel2-1-2 {max-width:550px;transition:all var(--animation-duration);transform:scale(.2);opacity:0;}
@@ -282,7 +285,7 @@ button {
   /* .align-centered .home-tabpanel-section-inner {padding:7.5rem 0;} */
   .align-half .home-tabpanel-section-inner {justify-content:center;text-align:center;}
   .align-half .home-tabpanel-section-title {width:100%;padding-left:0;}
-  .align-half .home-tabpanel-section-description {width:100%;margin-bottom:4rem;padding-left:0;}
+  .align-half .home-tabpanel-section-description {width:100%;padding-left:0;}
 
 
   .home-tabpanel-section-inner > div {margin-left:auto;margin-right:auto;position:relative !important;}
@@ -290,6 +293,7 @@ button {
   .footer-inner {display:block;}
   .footer-socials {margin:2rem 0 0 -1rem;}
 
+  .tabpanel1-2-wrap,
   .tabpanel1-4-wrap,
   .tabpanel2-1-wrap,
   .tabpanel2-2-wrap,
