@@ -237,7 +237,7 @@ button {
 .is-observed .tabpanel4-1-3 {max-width:377px;position:absolute;right:27px;bottom:20px;z-index:1;animation:fadeup var(--animation-duration) 1.8s both;}
 
 
-.tabpanel4-2-wrap {display:flex;justify-content:center;margin:4rem 0 -24rem;transform:translateY(20rem);transition:transform .8s 1s;}
+.tabpanel4-2-wrap {display:flex;justify-content:center;max-width:743px;margin:4rem auto -24rem;transform:translateY(20rem);transition:transform .8s 1s;}
 /* 그냥 똑같이 올라오면 되는 듯 */
 .tabpanel4-2-wrap * {animation:none;}
 .tabpanel4-2-1 {width:30%;max-width:585px;}
@@ -249,6 +249,8 @@ button {
 
 .tabpanel4-4-wrap {}
 .tabpanel4-4-1 {max-width:862px;margin:4rem auto 0;}
+
+.tabpanel4-5-wrap {max-width:520px;position:absolute;}
 
 
 .tabpanel2-2-wrap {position:absolute;}
