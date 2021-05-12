@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // + 100 임시
       // 여기서 이전 스크롤 값을 넣어줘야 한다......><
       window.scrollTo(0, navbarElement.clientHeight + heroElement.clientHeight + 100)
-      lastScrollTop = 0;
+      // lastScrollTop = 0;
       document.body.classList.add('is-navbar-up')
 
     })
@@ -117,4 +117,78 @@ document.addEventListener('DOMContentLoaded', () => {
     const isStuck = window.pageYOffset > heroElement.clientHeight
     homeCTA.classList.toggle('is-fixed', isStuck)
   }
+
+  let startNr = 0
+
+  const counters = document.querySelectorAll('.js-counter')
+
+  window.addEventListener('scroll', () => {
+    counters.forEach(counter => {
+      const isTemp = counter.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.classList.contains('is-observed')
+      if(isTemp) {
+        counter.innerText = startNr
+        const endNumber = parseInt(counter.textContent)
+        if(startNr < endNumber) {
+          setTimeout(() => startNr + 1, 100)
+        }
+        return 
+      }
+    })
+  })
+
+
+
+
+
+  // const counters = document.querySelectorAll('.js-counter')
+  // counters.forEach(counter => {
+  //   counter.innerText = '0'
+
+  //   const updateCounter = () => {
+  //     const target = +counter.getAttribute('data-target')
+  //     const c = +parseInt(counter.innerText)
+  //     const increment = target / 50000
+  //     console.log(increment)
+  //     if(c < target) {
+  //       counter.innerText = `${Math.ceil(c + increment)}%`
+  //       setTimeout(updateCounter, 1)
+  //     } else {
+  //       counter.innerText= `${target}%`
+  //     }
+  //   }
+
+  //   // if(counter.parentNode)
+  //   window.addEventListener('scroll', () => {
+  //     if(!counter.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.classList.contains('is-observed')) return
+      
+  //     setTimeout(() => {
+  //       updateCounter()
+  //     }, 2000)
+
+  //   })
+  // })
+
+  // 일단 복붙
+  //   // Initial values
+
+  //   const finalValue = parseInt(numberElem.getAttribute('num'), 10);
+  //   const animTime = parseInt(numberElem.getAttribute('time'), 10);
+  //   const initTime = performance.now();
+  
+  //   // Interval
+  //   let interval = setInterval(() => {
+  //     let t = (performance.now() - initTime) / animTime;
+  
+  //     let currentValue = Math.floor(t * finalValue);
+  //     // console.log(currentValue)
+  //     console.log(numberElem)
+  //     numberElem.innerText = currentValue;
+      
+  //     if (t >= 1) {
+  //       clearInterval(interval);
+  //     }
+  //   }, 50);
+
+  // });
+
 })
