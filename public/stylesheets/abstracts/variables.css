@@ -39,6 +39,8 @@
   --container-medium: 640px;
   --container-large: 1440px;
 
+  --shadow400: 0px 0px 24px rgba(0,0,0,.1);
+
   --link-color: #fff;
   --accent-color: #fff;
   --error-color: #fff;
