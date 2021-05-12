@@ -6,6 +6,7 @@
 @import url('abstracts/keyframes.css');
 
 /* @import url('components/navbar.css'); */
+@import url('components/browser.css');
 @import url('components/footer.css');
 
 body,dl,dd,figure,blockquote,h1,h2,h3,h4,h5,h6,p,input[type=radio] {margin:0;}
@@ -45,7 +46,7 @@ button {
   --animation-delay-third: .8s;
 }
 
-.navbar {display:flex;align-items:center;justify-content:space-between;height:var(--navbar-height);padding:0 2rem;border-bottom:1px solid #fafafa;background:var(--gray0);position:fixed;left:0;right:0;top:0;z-index:8;transition:all var(--animation-duration);}
+.navbar {display:flex;align-items:center;justify-content:space-between;height:var(--navbar-height);padding:0 2rem;border-bottom:1px solid #fafafa;background:var(--gray0);position:fixed;left:0;right:0;top:0;z-index:8;transition:all .4s;}
 .navbar-logo {width:96px;}
 .navbar-logo img {display:block;}
 .navbar-menu {display:flex;align-items:center;margin-right:-1rem;position:relative;}
@@ -82,13 +83,13 @@ button {
 
 
 /* todo safe area */
-.home-cta {display:flex;justify-content:center;padding:0 5%;position:fixed;left:0;right:0;bottom:calc(constant(safe-area-inset-bottom) + 1rem);bottom:calc(env(safe-area-inset-bottom) + 1rem);z-index:9;transform:translateY(100px);transition:all .6s;opacity:0;}
+.home-cta {display:flex;justify-content:center;padding:0 5%;position:fixed;left:0;right:0;bottom:calc(constant(safe-area-inset-bottom) + 2rem);bottom:calc(env(safe-area-inset-bottom) + 2rem);z-index:9;transform:translateY(100px);transition:all .6s;opacity:0;}
 .home-cta-button {
-  display:flex;align-items:center;justify-content:center;width:100%;max-width:687px;height:45px;margin:2rem 0 0;
+  display:flex;align-items:center;justify-content:center;width:100%;max-width:687px;height:45px;margin:3rem 0 0;
   border-radius:50px;text-align:center;background:var(--yellow);color:var(--gray0);font-weight:800;}
 .home-cta.is-fixed {transform:translateY(0);opacity:1;}
 
-.home-tablist {background:var(--gray0);position:absolute;left:0;right:0;z-index:2;transition:all var(--animation-duration);}
+.home-tablist {background:var(--gray0);position:absolute;left:0;right:0;z-index:9;transition:all .4s;}
 .home-tablist-inner {display:flex;justify-content:center;max-width:var(--width-large);margin:0 auto;}
 .home-tablist-tab {width:20%;padding:1rem 0;border-bottom:4px solid transparent;}
 .home-tablist-tab small {display:block;color:var(--gray600);}
@@ -201,6 +202,9 @@ button {
 .is-observed .tabpanel2-1-2 {opacity:1;transform:scale(1);transition-delay:1.3s;}
 
 .tabpanel2-2-1 {max-width:560px;position:absolute;}
+
+.tabpanel2-3-wrap {max-width:786px;margin:0 auto;}
+.tabpanel2-4-wrap {max-width:758px;margin:0 auto;}
 
 .tabpanel2-5-wrap {position:absolute;animation:none !important;opacity:1;}
 .tabpanel2-5-1 {margin:2.5rem 0 0 2rem;position:absolute;z-index:1;}

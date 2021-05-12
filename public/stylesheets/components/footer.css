@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-.footer {padding:2.75rem var(--grid-margin);background:var(--gray900);color:var(--gray0);}
+.footer {padding:2.75rem var(--grid-margin) 7.5rem;background:var(--gray900);color:var(--gray0);}
 .footer-inner {display:flex;justify-content:space-between;max-width:var(--width-large);margin:0 auto;position:relative;}
 .footer-address {}
 .footer-address-logo {width:96px;margin:0 0 1rem 0;}

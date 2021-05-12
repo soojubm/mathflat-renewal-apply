@@ -1,7 +1,8 @@
 @charset 'utf-8';
 
-.browser {background:var(--blue100);text-align:center;}
-.browser-inner {max-width:808px;margin:0 auto;padding:4rem var(--grid-margin);position:relative;}
+.browser {display:flex;align-items:center;justify-content:center;height:100vh;text-align:center;background:url('../../images/browser-bg.png') no-repeat center top;background-size:100% auto;}
+.browser-inner {max-width:808px;margin:0 auto;padding:4rem 5%;position:relative;}
+.browser-icon {max-width:72px;margin:0 auto 1.5rem;}
 .browser-title {margin:0 0 1rem 0;color:var(--gray900);}
 /* .browser-description {font-size:10.11px;line-height:13.5px;color:var(--gray700);} */
 .browser-description {color:var(--gray700);}

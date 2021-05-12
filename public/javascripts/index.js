@@ -63,6 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function handleElementScroll() {
     currentScrollTop = getWindowOffsetTop()
+
+    // const temp = document.body.contains('is-navbar-up') ? previousOffsetTop : previousOffsetTop + navbarElement.clientHeight
     isStuck = currentScrollTop > previousOffsetTop
     
     document.body.classList.toggle(TAB_FIXED_CLASSNAME, isStuck)
@@ -134,4 +136,46 @@ document.addEventListener('DOMContentLoaded', () => {
   //     }
   //   })
   // })
+
+
+  function detectBrowser() {
+    const browserElement = document.querySelector('.js-browser')
+    const wrapElement = document.querySelector('.js-wrap')
+    if (!browserElement || !wrapElement) return
+  
+    const userAgent = navigator.userAgent.toLowerCase()
+    const isIEBrowser = userAgent.indexOf('msie') > -1 || userAgent.indexOf('trident') > -1
+    // const isChromeBrowser = userAgent.indexOf('chrome') !== -1
+    // const isMacBrowser = /Mac|iPod|iPhone|iPad/.test(navigator.platform);
+  
+    browserElement.hidden = !isIEBrowser
+    // wrapElement.hidden = isIEBrowser
+  
+    if(isIEBrowser) wrapElement.style.display = 'none'
+  
+    console.log(isIEBrowser)
+  
+    // todo return browser
+  }
+  function detectBrowser() {
+    const browserElement = document.querySelector('.js-browser')
+    const wrapElement = document.querySelector('.js-wrap')
+    if (!browserElement || !wrapElement) return
+  
+    const userAgent = navigator.userAgent.toLowerCase()
+    const isIEBrowser = userAgent.indexOf('msie') > -1 || userAgent.indexOf('trident') > -1
+    // const isChromeBrowser = userAgent.indexOf('chrome') !== -1
+    // const isMacBrowser = /Mac|iPod|iPhone|iPad/.test(navigator.platform);
+  
+    browserElement.hidden = !isIEBrowser
+    // wrapElement.hidden = isIEBrowser
+  
+    if(isIEBrowser) wrapElement.style.display = 'none'
+  
+    console.log(isIEBrowser)
+  
+    // todo return browser
+  }
+
+  detectBrowser()
 })
