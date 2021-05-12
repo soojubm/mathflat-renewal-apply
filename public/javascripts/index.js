@@ -138,6 +138,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // })
 
 
+  const videoElements = document.querySelectorAll('video')
+
+  window.addEventListener('scroll', () => {
+    videoElements.forEach(videoElement => {
+      console.log(videoElement.parentNode.parentNode.parentNode)
+      if(videoElement.parentNode.parentNode.parentNode.classList.contains('is-observed')) {
+        videoElement.play()
+      }
+    })
+  })
+
+
+  window.addEventListener('scroll', throttle(handleElementScroll), false)
+
   function detectBrowser() {
     const browserElement = document.querySelector('.js-browser')
     const wrapElement = document.querySelector('.js-wrap')
