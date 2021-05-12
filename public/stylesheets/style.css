@@ -295,8 +295,9 @@ button {
   .align-half .home-tabpanel-section-inner {justify-content:center;text-align:center;}
   .align-half .home-tabpanel-section-title {width:100%;padding-left:0;}
   .align-half .home-tabpanel-section-description {width:100%;padding-left:0;}
-  .align-half .home-tabpanel-section-media {margin-top:3rem;}
-
+  .align-half .home-tabpanel-section-media {margin-top:3rem;position:relative !important;}
+  .home-tabpanel-section-inner,
+  .align-centered .home-tabpanel-section-inner {padding-top:6rem;padding-bottom:6rem;}
 
   .home-tabpanel-section-inner > div {margin-left:auto;margin-right:auto;position:relative !important;}
 
@@ -353,9 +354,7 @@ button {
     height: 56px;
   }
 
-  .align-half .home-tabpanel-section-media {position:relative !important;}
-  .home-tabpanel-section-inner,
-  .align-centered .home-tabpanel-section-inner {padding-top:4rem;padding-bottom:4rem;}
+  
 }
 
 @media (max-width:680px) {
