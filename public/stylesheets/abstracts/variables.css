@@ -1,7 +1,7 @@
 /* // ! viewport : desktop first
-/* @custom-media --viewport-large (max-width: 1441px);
-// @custom-media --viewport-medium (max-width: 1280px); */
+/* /* @custom-media --viewport-large (max-width: 1441px); */
 @custom-media --viewport-small (max-width: 1200px);
+@custom-media --viewport-tiny (max-width: 1200px);
 
 :root {
   color-scheme: light;
@@ -67,9 +67,6 @@
   --color-button-body: #000;
 
   --grid-margin: 5%;
-
-  @media (--viewport-small) {
-  }
 }
 
 
