@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
   <head>
-    <title>수줍이</title>
+    <title>제목</title>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=1.0, viewport-fit=cover" />
@@ -50,14 +50,14 @@
 
     <!-- <script src=".public/javascripts/polyfill.js"></script>
     <script src="./build/bundle.js" defer></script> -->
+    
     <link rel="stylesheet" type="text/css" href="public/stylesheets/style.css" />
     <script type="module" src="public/javascripts/index.js"></script>
-    <script type="module" src="public/javascripts/countup.js"></script>
   </head>
   <body>
     <noscript>This website requires JavaScript.</noscript>
     
-    <!-- <aside class="browser js-browser" role="complementary" hidden>
+    <aside class="browser js-browser" role="complementary" hidden>
       <div class="browser-inner">
         <figure class="browser-icon">
           <img src="public/images/browser-icon.png" alt="">
@@ -71,17 +71,7 @@
         </p>
         <a class="browser-button" href="https://www.google.co.kr/chrome/?brand=JJTC&gclid=CjwKCAjwm7mEBhBsEiwA_of-THl1NkSBMchm5Yhdq3VhweyuxDgoER3r7rN-s4Pg6u7W6nPCGnyLexoCJJwQAvD_BwE&gclsrc=aw.ds" target="_blank">크롬 설치하기</a>
       </div>
-    </aside> -->
-
-    <!-- <aside class="offline js-offline">
-      <p>인터넷 연결을 다시 확인해주세요.</p>
     </aside>
-
-    <nav class="skip">
-      <a class="skip-link" href="#header">본문 바로가기</a>
-      <a class="skip-link" href="#navigation">대메뉴 바로가기</a>
-      <a class="skip-link" href="#footer">하단정보 바로가기</a>
-    </nav> -->
 
     <div class="wrap js-wrap">
 
@@ -529,7 +519,7 @@
           <article class="home-tabpanel-section align-centered bg-dotted js-observer">
             <div class="home-tabpanel-section-inner">
               <h1 class="home-tabpanel-section-title">
-                학생들의 출결 기록을 <em>월간&주간별</em>로
+                학생들의 출결 기록을 <em>월간,주간별</em>로
                 <span class="linebreak-desktop">한눈에 볼 수 있고, 기록을 다운받을 수 있어요.</span>
               </h1>
               <p class="home-tabpanel-section-description">
@@ -717,20 +707,30 @@
 
     </div>
 
+    <script>
 
-    <!-- <script>
-      window.addEventListener('online',  detectOnline)
-      window.addEventListener('offline',  detectOnline)
-      window.addEventListener('DOMContentLoaded',  detectOnline)
-      
-      function detectOnline() {
-        const isOnline = navigator.onLine
-        if(!isOnline) {
-          const offlineElement = document.querySelector('.js-offline')
-          offlineElement?.style.display = 'block'
-        }
-        // window.alert(isOnline ? 'online' : 'offline')
-      }
-    </script> -->
+function detectBrowser() {
+    const browserElement = document.querySelector('.js-browser')
+    const wrapElement = document.querySelector('.js-wrap')
+    if (!browserElement || !wrapElement) return
+  
+    const userAgent = navigator.userAgent.toLowerCase()
+    const isIEBrowser = userAgent.indexOf('msie') > -1 || userAgent.indexOf('trident') > -1
+    // const isChromeBrowser = userAgent.indexOf('chrome') !== -1
+    // const isMacBrowser = /Mac|iPod|iPhone|iPad/.test(navigator.platform);
+  
+    browserElement.hidden = !isIEBrowser
+    wrapElement.hidden = isIEBrowser
+
+    if(isIEBrowser) wrapElement.style.display = 'none'
+  
+    console.log(isIEBrowser)
+  
+    // todo return browser
+  }
+
+  document.addEventListener('DOMContentLoaded', detectBrowser)
+
+    </script>
   </body>
 </html>

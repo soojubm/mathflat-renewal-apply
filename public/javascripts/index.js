@@ -174,38 +174,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   })
-
-
-  // const videoElements = document.querySelectorAll('video')
-
-  // window.addEventListener('scroll', () => {
-  //   videoElements.forEach(videoElement => {
-  //     console.log(videoElement.parentNode.parentNode.parentNode)
-  //     if(videoElement.parentNode.parentNode.parentNode.classList.contains('is-observed')) {
-  //       videoElement.play()
-  //     }
-  //   })
-  // })
-
-  function detectBrowser() {
-    const browserElement = document.querySelector('.js-browser')
-    const wrapElement = document.querySelector('.js-wrap')
-    if (!browserElement || !wrapElement) return
-  
-    const userAgent = navigator.userAgent.toLowerCase()
-    const isIEBrowser = userAgent.indexOf('msie') > -1 || userAgent.indexOf('trident') > -1
-    // const isChromeBrowser = userAgent.indexOf('chrome') !== -1
-    // const isMacBrowser = /Mac|iPod|iPhone|iPad/.test(navigator.platform);
-  
-    browserElement.hidden = !isIEBrowser
-    // wrapElement.hidden = isIEBrowser
-  
-    if(isIEBrowser) wrapElement.style.display = 'none'
-  
-    console.log(isIEBrowser)
-  
-    // todo return browser
-  }
-
-  detectBrowser()
 })
