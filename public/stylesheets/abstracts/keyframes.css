@@ -63,7 +63,7 @@
   }
   @keyframes donut2 {
 	0% {stroke-dasharray: 0, 100;}
-	100% {stroke-dasharray: 22, 72;}
+	100% {stroke-dasharray: 22, 78;}
   }
   @keyframes donut3 {
 	0% {stroke-dasharray: 0, 100;}
