@@ -139,6 +139,22 @@ button {
   /* padding-top: 50%; */
   max-width: auto;
   width: 146%;}
+  
+
+  .tabpanel2-4-wrap {
+    padding-top: 82%;
+    max-width: 800px;
+    overflow: hidden;
+  }
+  .tabpanel2-4-wrap video {
+    position: absolute;
+    left: -23%;
+    top: -2px;
+    bottom: 0;
+    max-width: auto;
+    width: 146%;
+  }
+
 
 .tabpanel1-3-wrap {max-width:816px;}
 .tabpanel1-3-o {max-width:14px;margin:6rem;opacity:1;}
@@ -212,13 +228,20 @@ button {
   /* padding-top: 57%;
   overflow: hidden; */
 }
-/* .tabpanel1-2-wrap video {
-position: absolute;
-  left: -23%;
-  top: -2px;
+.tabpanel1-2-wrap-inner {
+  position: relative;
+    padding-top: 64%;
+    max-width: 582px;
+    overflow: hidden;
+    width: 582px;
+}
+.tabpanel1-2-wrap video {
+  position: absolute;
+  left: -15%;
+  top: -8%;
   bottom: 0;
-  max-width: auto;
-  width: 146%;} */
+  width: 136%;
+}
 
 .tabpanel2-1-wrap {position:absolute;animation:none !important;opacity:1;}
 .tabpanel2-1-1 {max-width:530px;position:absolute;left:10px;top:10px;transition:all var(--animation-duration);transform:scale(.5);opacity:0;}
