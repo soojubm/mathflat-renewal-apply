@@ -126,6 +126,20 @@ button {
 .is-observed .home-tabpanel-section-description {animation:fadeup var(--animation-duration) .5s forwards;}
 .is-observed .home-tabpanel-section-media {animation:fadeup var(--animation-duration) 1s forwards;}
 
+.tabpanel1-1-wrap {
+  padding-top: 57%;
+  max-width: 800px;
+  overflow: hidden;
+}
+.tabpanel1-1-wrap video {    position: absolute;
+  left: -23%;
+  /* margin: 0 -16%; */
+  top: -2px;
+  bottom: 0;
+  /* padding-top: 50%; */
+  max-width: auto;
+  width: 146%;}
+
 .tabpanel1-3-wrap {max-width:816px;}
 .tabpanel1-3-o {max-width:14px;margin:6rem;opacity:1;}
 .tabpanel1-3-x {max-width:20px;margin:6rem;opacity:1;}
