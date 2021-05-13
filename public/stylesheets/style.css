@@ -91,7 +91,7 @@ button {
 
 .home-tablist {background:var(--gray0);position:absolute;left:0;right:0;z-index:9;transition:all .4s;}
 .home-tablist-inner {display:flex;justify-content:center;max-width:var(--width-large);margin:0 auto;}
-.home-tablist-tab {width:20%;padding:1rem 0;border-bottom:4px solid transparent;}
+.home-tablist-tab {display:block;width:20%;padding:1rem 0;border-bottom:4px solid transparent;text-align:center;}
 .home-tablist-tab small {display:block;color:var(--gray600);}
 .home-tablist-tab b {color:var(--gray600);}
 .home-tablist-tab[aria-selected=true] {border-color:var(--color-primary);}
@@ -228,7 +228,7 @@ button {
 
 .tabpanel3-1-1 {max-width:749px;margin:4rem auto 0;}
 
-.tabpanel3-2-wrap {max-width:990px;margin:4rem auto;position:relative;animation:none !important;opacity:1;}
+.tabpanel3-2-wrap {max-width:990px;margin-bottom:8rem !important;position:relative;animation:none !important;opacity:1;}
 .tabpanel3-2-1 {max-width:645px;opacity:0;}
 .tabpanel3-2-2 {max-width:645px;position:absolute;right:0;top:158px;opacity:0;}
 
@@ -337,9 +337,6 @@ button {
 
 
 
-
-  .tabpanel3-2-2 {position: relative;top:auto;}
-
   /* todo */
   /* .tabpanel1-4-wrap-inbox {height:auto;} */
 
@@ -349,7 +346,7 @@ button {
     margin-bottom: 12rem;
   }
   .tabpanel3-2-1 {margin:-2rem auto 0;}
-  .tabpanel3-2-2 {margin:-2rem auto 0;}
+  .tabpanel3-2-2 {margin:-2rem auto 0;position: relative;top:auto;}
 
 
   .is-observed .tabpanel4-1-1 {max-width:42.66666666667%;box-shadow:var(--shadow400);}
@@ -381,11 +378,11 @@ button {
 .donut-data {font-size: 0.25em;text-anchor: middle;fill: var(--gray600);}
 .donut-percent {font-size: 0.5em;fill: var(--gray700);font-weight:600;}
 
-
+/*  todo */
 .js-counter {
   position: absolute;
-  left: 33%;
-  top: 40%;
+  left: 30%;
+  top: 36%;
 }
 
 .is-observed .user1 .donut-segment {stroke: var(--blue400);animation: donut1 3s both;
