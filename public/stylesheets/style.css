@@ -85,7 +85,7 @@ button {
 .home-tabpanel-section {overflow:hidden;position:relative;}
 .home-tabpanel-section.bg-dotted {background:url(../images/tabpanel3-section2-bg.png) repeat 0 0;}
 .home-tabpanel-section-inner {max-width:var(--width-large);margin:0 auto;padding:18rem var(--grid-margin);position:relative;}
-.home-tabpanel-section-title {margin:0 0 1rem 0;font-size:var(--title);opacity:0;}
+.home-tabpanel-section-title {margin:0 0 1rem 0;font-size:var(--title);font-weight:var(--font-weight-bold);opacity:0;}
 .home-tabpanel-section-description {opacity:0;color:var(--gray600);}
 .home-tabpanel-section-media {opacity:0;}
 .home-tabpanel-section-background {position:absolute;left:0;right:0;top:0;bottom:0;}
@@ -356,7 +356,7 @@ button {
 
 
 @media (max-width:680px) {
-  .home-tablist-inner {justify-content:left;overflow:auto;white-space:nowrap;}
+  .home-tablist-inner {justify-content:left;overflow:auto;white-space:nowrap;margin-right:1.5rem;}
   .home-tablist-inner::-webkit-scrollbar {display:none;}
   .home-tablist-tab {width:auto;margin:0 1.5rem;font-size:16px;}
   .home-tablist-tab small {display:none;}
