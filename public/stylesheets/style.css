@@ -304,7 +304,7 @@ button {
 .view-only-moblie {display:none;}
 
 /* @media (max-width:1200px) { */
-@media (max-width:1200px) {
+@media (max-width:1024px) {
   html {font-size:12px;}
   .navbar {padding: 0 var(--grid-margin);}
 

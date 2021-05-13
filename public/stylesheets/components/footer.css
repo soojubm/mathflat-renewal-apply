@@ -17,7 +17,7 @@
 
 
 
-@media (max-width:1200px) {
+@media (max-width:1024px) {
     .footer-inner {display:block;}
     .footer-socials {margin:2rem 0 0 -1rem;}
 }
