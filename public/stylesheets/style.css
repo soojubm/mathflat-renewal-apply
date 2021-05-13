@@ -6,6 +6,7 @@
 @import url('abstracts/keyframes.css');
 
 /* @import url('components/navbar.css'); */
+@import url('components/hero.css');
 @import url('components/browser.css');
 @import url('components/footer.css');
 
@@ -53,6 +54,7 @@ button {
 .navbar-menu-item {padding:0 1rem;font-size:16px;color:var(--gray700);position:relative;z-index:1;}
 .navbar-menu-item.is-active {color:var(--gray999);font-weight:var(--weight-bold);}
 .navbar.is-fixed {position:fixed;left:0;right:0;top:0;}
+.navbar-backdrop {height:var(--navbar-height);}
 
 .is-navbar-up .navbar {transform:translateY(calc(-1 * var(--navbar-height)));}
 
@@ -61,25 +63,6 @@ button {
 
 .is-fixed-home-tablist.is-navbar-up .navbar {transform:translateY(calc(-1 * var(--navbar-height)));}
 .is-fixed-home-tablist.is-navbar-up .home-tablist {transform:translateY(0);}
-
-
-.hero {background:var(--blue100);position:relative;}
-.hero-inner {max-width:var(--width-large);margin:0 auto;padding:14rem var(--grid-margin);position: relative;}
-
-.hero-title {margin:0 0 1rem 0;font-size:2.5rem;}
-.hero-description {}
-.hero-cta {display:flex;align-items:center;justify-content:center;width:260px;height:56px;margin:3rem 0 0;border-radius:50px;text-align:center;background:var(--yellow);color:var(--gray0);font-weight:800;}
-
-.hero-object-group {height:100%;position:absolute;right:-4rem;top:-8rem;}
-.hero-object-group-inner {position:relative;}
-.hero-object1 {width:100%;max-width:635px;position:absolute;right:0;top:-8rem;z-index:3;animation:hero-object1 16s ease infinite;}
-.hero-object2 {width:100%;max-width:930px;position:relative;z-index:2;animation:hero-object1 16s ease infinite;}
-.hero-object3 {width:100%;max-width:750px;position:absolute;right:8rem;bottom:-18rem;z-index:1;animation:hero-object1 16s ease infinite;}
-
-
-.is-observed .hero-title {animation:fadeup var(--animation-duration) both;}
-.is-observed .hero-description {animation:fadeup var(--animation-duration) .6s both;}
-.is-observed .hero-cta {animation:fadeup var(--animation-duration) 1s both;position:relative;z-index:5;}
 
 
 /* todo safe area */
@@ -330,24 +313,12 @@ button {
   html {font-size:12px;}
   .navbar {padding: 0 var(--grid-margin);}
 
-  .hero-inner {padding-top:4rem;padding-bottom:4rem;}
-  .hero-title {font-size:2rem;}
-  .hero-object-group {position:static;right:auto;top:auto;}
-  .hero-object2 {width:120%;margin-left:-12%;}
-  .hero-object3 {right:-1rem;bottom:-15rem;}
-
-  /* .align-centered .home-tabpanel-section-inner {padding:7.5rem 0;} */
   .align-half .home-tabpanel-section-inner {justify-content:center;text-align:center;}
   .align-half .home-tabpanel-section-title {width:100%;padding-left:0;}
   .align-half .home-tabpanel-section-description {width:100%;padding-left:0;}
   .align-half .home-tabpanel-section-media {margin-top:3rem;position:relative !important;}
   .home-tabpanel-section-inner {padding:6rem var(--grid-margin) !important;}
   .home-tabpanel-section-inner > div {margin-left:auto;margin-right:auto;position:relative !important;}
-
-  .footer-inner {display:block;}
-  .footer-socials {margin:2rem 0 0 -1rem;}
-
-
 
   .tabpanel2-2-wrap .users {max-width:1000px;}
   .tabpanel2-2-wrap .tag1,
@@ -365,28 +336,24 @@ button {
 .tabpanel2-2-wrap .users > div img {display:block;} */
 
 
+  .home-tablist-backdrop {height: 66px;}
+
 
   /* todo */
-  
+  .footer {padding-bottom:10rem;font-size:14px;}
 
-  .footer {font-size:14px;}
-
-  .tabpanel3-2-wrap {
-    margin-bottom: 12rem;
-  }
+  .tabpanel3-2-wrap {margin-bottom: 12rem;}
   .tabpanel3-2-1 {margin:0 auto 0;}
   .tabpanel3-2-2 {margin:2rem auto 0;position: relative;top:auto;}
-
 
   .is-observed .tabpanel4-1-1 {max-width:42.66666666667%;box-shadow:var(--shadow400);}
   .is-observed .tabpanel4-1-2 {max-width:32.26666666667%;right:0;top:17%;}
   .is-observed .tabpanel4-1-3 {max-width:66.66666666667%;right:5px;bottom:-10px;z-index:4;}
-
-
-
-
-  
 }
+
+@media (max-width:1024px) {
+}
+
 
 @media (max-width:680px) {
   .home-tablist-inner {justify-content:left;overflow:auto;white-space:nowrap;}
@@ -399,6 +366,9 @@ button {
 
   .tabpanel1-4-wrap-inbox {height:400px;}
 }
+
+
+
 
 .donut-ring {stroke: #EBEBEB;}
 .donut-segment {stroke-linecap:round;transform-origin:center;animation-delay:1.2s}

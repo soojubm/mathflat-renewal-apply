@@ -14,3 +14,8 @@
 
 .footer-socials {display:flex;}
 .footer-socials a {width:32px;height:32px;margin:0 1rem;}
+
+@media (max-width:1200px) {
+    .footer-inner {display:block;}
+    .footer-socials {margin:2rem 0 0 -1rem;}
+}
