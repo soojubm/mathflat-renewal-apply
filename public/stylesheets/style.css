@@ -23,7 +23,7 @@ small {}
 a {text-decoration:none;text-decoration-skip-ink:auto;color:var(--color-primary);} a:link,a:visited {} a:hover,a:focus {} a:active {}
 /* // br {content:'';display:block;height:1rem;} */
 html {min-width:320px;height:100%;font:16px/1.8 var(--fontstack);color:var(--gray800);-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overscroll-behavior:contain;overflow-x:hidden;}
-body {background:var(--gray0);overflow-x:hidden;}
+body {background:var(--gray0);overflow-x:hidden;letter-spacing:-.025rem;}
 
 svg {color:var(--gray800);}
 
@@ -80,7 +80,7 @@ button {
 .home-tabpanel-section.bg-dotted {background:url(../images/tabpanel3-section2-bg.png) repeat 0 0;}
 .home-tabpanel-section-inner {max-width:var(--width-large);margin:0 auto;padding:18rem var(--grid-margin);position:relative;}
 .home-tabpanel-section-title {margin:0 0 1rem 0;font-size:var(--title);font-weight:var(--font-weight-bold);opacity:0;}
-.home-tabpanel-section-description {opacity:0;color:var(--gray600);}
+.home-tabpanel-section-description {opacity:0;color:var(--gray600);word-break:keep-all;}
 .home-tabpanel-section-media {opacity:0;}
 .home-tabpanel-section-background {position:absolute;left:0;right:0;top:0;bottom:0;}
 .home-tabpanel-section-background.tab3-4 {opacity:.1;}
@@ -339,7 +339,7 @@ button {
 
 
   .home-tablist-backdrop {height: 66px;}
-  .tabpanel2-5-wrap {max-width:85%;}
+  .tabpanel2-5-wrap {max-width:80%;}
 
   /* todo */
   .footer {padding-bottom:10rem;font-size:14px;}

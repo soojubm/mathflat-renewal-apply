@@ -38,7 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
       // 여기서 이전 스크롤 값을 넣어줘야 한다......><
       window.scrollTo(0, navbarElement.clientHeight + heroElement.clientHeight + 20)
       // lastScrollTop = 0;
-      document.body.classList.add('is-navbar-up')
+      setTimeout(() => {
+        document.body.classList.add('is-navbar-up')
+      }, 10)
 
     })
   })
