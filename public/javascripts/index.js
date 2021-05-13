@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const tabPanels = tab.querySelectorAll('[role=tabpanel]')
 
   let { hash } = window.location
-  const lastTab = Number(hash.substring(4, 5)) || 0
+  const lastTab = Number(hash.substring(4, 5)) || 1
 
   // 이전 탭 저장 id hash로..
   tablist.forEach((tab, tabIndex) => tab.setAttribute('aria-selected', lastTab === tabIndex + 1))
