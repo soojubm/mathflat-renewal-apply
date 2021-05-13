@@ -4,7 +4,7 @@
 .hero {background:var(--blue100);position:relative;}
 .hero-inner {max-width:var(--width-large);margin:0 auto;padding:14rem 3.125%;position: relative;}
 
-.hero-title {margin:0 0 1rem 0;font-size:2.5rem;}
+.hero-title {margin:0 0 1rem 0;font-size:2.5rem;font-weight:var(--font-weight-bold);}
 .hero-description {}
 .hero-cta {display:flex;align-items:center;justify-content:center;width:260px;height:56px;margin:3rem 0 0;border-radius:50px;text-align:center;background:var(--yellow);color:var(--gray0);font-size:18px;font-weight:800;}
 
