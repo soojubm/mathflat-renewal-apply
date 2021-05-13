@@ -359,14 +359,14 @@ button {
 
 @media (max-width:680px) {
   .home-tablist {}
-  .home-tablist-inner {justify-content:left;overflow:auto;white-space:nowrap;}
+  .home-tablist-inner {display:block;overflow:auto;white-space:nowrap;padding:0 1rem;}
   .home-tablist-inner::-webkit-scrollbar {display:none;}
-  .home-tablist-tab {width:auto;padding-left:1rem;padding-right:1rem;font-size:16px;}
+  .home-tablist-tab {display:inline-block;width:auto;padding-left:1rem;padding-right:1rem;font-size:16px;}
   .home-tablist-tab small {display:none;}
 
   .home-tablist-backdrop {height: 56px;}
 
-
+  .tabpanel1-2-wrap-inner {width:320px;}
   .tabpanel1-4-wrap-inbox {height:400px;}
 }
 
