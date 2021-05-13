@@ -207,7 +207,18 @@ button {
 
 /*  todo 왼쪽 정렬 absolute */
 
-.tabpanel1-2-wrap {max-width:582px;position:absolute;}
+.tabpanel1-2-wrap {
+  max-width:582px;position:absolute;
+  /* padding-top: 57%;
+  overflow: hidden; */
+}
+/* .tabpanel1-2-wrap video {
+position: absolute;
+  left: -23%;
+  top: -2px;
+  bottom: 0;
+  max-width: auto;
+  width: 146%;} */
 
 .tabpanel2-1-wrap {position:absolute;animation:none !important;opacity:1;}
 .tabpanel2-1-1 {max-width:530px;position:absolute;left:10px;top:10px;transition:all var(--animation-duration);transform:scale(.5);opacity:0;}
@@ -228,9 +239,9 @@ button {
 
 .tabpanel3-1-1 {max-width:749px;margin:4rem auto 0;}
 
-.tabpanel3-2-wrap {max-width:990px;margin-bottom:8rem !important;position:relative;animation:none !important;opacity:1;}
-.tabpanel3-2-1 {max-width:645px;opacity:0;}
-.tabpanel3-2-2 {max-width:645px;position:absolute;right:0;top:158px;opacity:0;}
+.tabpanel3-2-wrap {max-width:990px;margin-bottom:10rem !important;position:relative;animation:none !important;opacity:1;}
+.tabpanel3-2-1 {max-width:645px;box-shadow:var(--shadow400);opacity:0;}
+.tabpanel3-2-2 {max-width:645px;box-shadow:var(--shadow400);position:absolute;right:0;top:158px;opacity:0;}
 
 .is-observed .tabpanel3-2-1 {animation:faderight var(--animation-duration) 1s both;}
 .is-observed .tabpanel3-2-2 {animation:fadeleft var(--animation-duration) 1.4s both;}
@@ -262,7 +273,7 @@ button {
 .is-observed .tabpanel4-2-wrap {transform:translateY(3rem);}
 
 .tabpanel4-3-wrap {max-width:612px;position:absolute;}
-.tabpanel4-3-1 {}
+.tabpanel4-3-1 {box-shadow:var(--shadow400);}
 
 .tabpanel4-4-wrap {}
 .tabpanel4-4-1 {max-width:862px;margin:4rem auto 0;}
@@ -278,7 +289,7 @@ button {
 .tabpanel2-2-wrap .users {width:100%;max-width:580px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;}
 .tabpanel2-2-wrap .users > div {width:185px;margin:0 0 14px 0;position:relative;}
 .tabpanel2-2-wrap .users > div .donut-wrap {width:76px;position:absolute;top:25%;left:5%;z-index:1;}
-.tabpanel2-2-wrap .users > div img {display:block;}
+.tabpanel2-2-wrap .users > div img {display:block;box-shadow:var(--shadow400);}
 .tabpanel2-2-wrap .users > div.user1 {}
 .tabpanel2-2-wrap .users > div.user1 {}
 .tabpanel2-2-wrap .users > div.user1 {}
@@ -296,9 +307,6 @@ button {
   html {font-size:12px;}
   .navbar {padding: 0 var(--grid-margin);}
 
-  .home-tabpanel-section-inner {padding-left:var(--grid-margin);padding-right:var(--grid-margin);}
-  .align-centered .home-tabpanel-section-inner {padding-left:var(--grid-margin);padding-right:var(--grid-margin);}
-
   .hero-inner {padding-top:4rem;padding-bottom:4rem;}
   .hero-title {font-size:2rem;}
   .hero-object-group {position:static;right:auto;top:auto;}
@@ -310,9 +318,7 @@ button {
   .align-half .home-tabpanel-section-title {width:100%;padding-left:0;}
   .align-half .home-tabpanel-section-description {width:100%;padding-left:0;}
   .align-half .home-tabpanel-section-media {margin-top:3rem;position:relative !important;}
-  .home-tabpanel-section-inner,
-  .align-centered .home-tabpanel-section-inner {padding-top:6rem;padding-bottom:6rem;}
-
+  .home-tabpanel-section-inner {padding:6rem var(--grid-margin) !important;}
   .home-tabpanel-section-inner > div {margin-left:auto;margin-right:auto;position:relative !important;}
 
   .footer-inner {display:block;}
@@ -338,15 +344,15 @@ button {
 
 
   /* todo */
-  /* .tabpanel1-4-wrap-inbox {height:auto;} */
+  
 
   .footer {font-size:14px;}
 
   .tabpanel3-2-wrap {
     margin-bottom: 12rem;
   }
-  .tabpanel3-2-1 {margin:-2rem auto 0;}
-  .tabpanel3-2-2 {margin:-2rem auto 0;position: relative;top:auto;}
+  .tabpanel3-2-1 {margin:0 auto 0;}
+  .tabpanel3-2-2 {margin:2rem auto 0;position: relative;top:auto;}
 
 
   .is-observed .tabpanel4-1-1 {max-width:42.66666666667%;box-shadow:var(--shadow400);}
@@ -355,21 +361,20 @@ button {
 
 
 
-  .home-tablist-inner {justify-content:left;overflow:auto;white-space:nowrap;}
-  .home-tablist-inner::-webkit-scrollbar {display:none;}
-  .home-tablist-tab {width:auto;margin:0 1.5rem;font-size:16px;}
-  .home-tablist-tab small {display:none;}
-  .home-tablist-tab b {}
-
-  .home-tablist-backdrop {
-    height: 56px;
-  }
 
   
 }
 
 @media (max-width:680px) {
+  .home-tablist-inner {justify-content:left;overflow:auto;white-space:nowrap;}
+  .home-tablist-inner::-webkit-scrollbar {display:none;}
+  .home-tablist-tab {width:auto;margin:0 1.5rem;font-size:16px;}
+  .home-tablist-tab small {display:none;}
 
+  .home-tablist-backdrop {height: 56px;}
+
+
+  .tabpanel1-4-wrap-inbox {height:400px;}
 }
 
 .donut-ring {stroke: #EBEBEB;}
