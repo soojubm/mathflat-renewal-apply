@@ -63,7 +63,7 @@
   --color-button-border: #000;
   --color-button-body: #000;
 
-  --grid-margin: 5%;
+  --grid-margin: 4%;
 }
 
 
@@ -77,7 +77,7 @@
   } */
 }
 
-@media (max-width:800px) {
+@media (max-width:1024px) {
   .linebreak-desktop {display: inline}
   .linebreak-mobile {display: block}
 }
