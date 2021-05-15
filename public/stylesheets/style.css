@@ -280,8 +280,7 @@ button {
 
 .tabpanel2-2-wrap {width:50.83333333333%;max-width:610px;position:absolute;}
 .tabpanel2-2-wrap .tag1 {width:15.78099838969%;max-width:98px;margin-bottom:2rem;margin-left:auto;filter:drop-shadow(var(--shadow400));}
-.tabpanel2-2-wrap .confirm {display:flex;max-width:499px;margin-left: auto;margin-top:36px;
-  filter:drop-shadow(var(--shadow400))}
+.tabpanel2-2-wrap .confirm {max-width:499px;margin-left: auto;margin-top:36px;filter:drop-shadow(var(--shadow400))}
 .tabpanel2-2-wrap .tag2 {width:100%;max-width:98px;position:absolute;left:-3%;bottom:10.9%;filter:drop-shadow(var(--shadow400));}
 .tabpanel2-2-wrap .users {width:100%;max-width:588px;margin:0 -6px;display:flex;flex-wrap:wrap;}
 .tabpanel2-2-wrap .users > div {width:184px;margin:0 6px 14px;position:relative;}
@@ -326,7 +325,7 @@ button {
   .tabpanel2-2-wrap .users .user5,
   .tabpanel2-2-wrap .users .user6 {display: none}
   .tabpanel2-2-wrap .users > div {width:calc(50% - .5rem);margin:0 0 14px 0;position:relative;}
-  .tabpanel2-2-wrap .confirm {display:flex;max-width:1000px;margin:0;}
+  .tabpanel2-2-wrap .confirm {max-width:1000px;margin:0;}
 /* 
   margin-right: -4rem;}
 .tabpanel2-2-wrap .tag2 {width:100%;max-width:98px;position:absolute;left:65px;bottom:80px;}
