@@ -168,7 +168,7 @@ button {
 .tabpanel1-4-wrap .viewer {position: absolute;}
 
 .tabpanel1-4-wrap .question {position:relative;}
-.tabpanel1-4-wrap .question .bookmark {max-width:82px;position:absolute;right:5.2%;}
+.tabpanel1-4-wrap .question .bookmark {max-width:14%;position:absolute;right:5.2%;}
 
 .is-observed  .tabpanel1-4-wrap .viewer {animation:test 8s linear var(--animation-duration) forwards;}
 .is-observed  .question .bookmark {animation:bookmark .2s linear both;}
@@ -220,9 +220,9 @@ button {
   width: 136%;
 }
 
-.tabpanel2-1-wrap {width:46.58333333333%;position:absolute;animation:none !important;opacity:1;}
-.tabpanel2-1-1 {max-width:530px;position:absolute;left:10px;top:10px;transition:all var(--animation-duration);transform:scale(.5);opacity:0;}
-.tabpanel2-1-2 {max-width:559px;transition:all var(--animation-duration);transform:scale(.2);opacity:0;}
+.tabpanel2-1-wrap {width:46.58333333333%;max-width:559px;margin:0 auto;position:absolute;animation:none !important;opacity:1;}
+.tabpanel2-1-1 {max-width:530px;position:absolute;left:0px;top:0px;transition:all var(--animation-duration);transform:scale(.5);opacity:0;}
+.tabpanel2-1-2 {transition:all var(--animation-duration);transform:scale(.2);opacity:0;}
 .is-observed .tabpanel2-1-1 {opacity:1;transform:scale(1);transition-delay:1s;}
 .is-observed .tabpanel2-1-2 {opacity:1;transform:scale(1);transition-delay:1.3s;}
 
@@ -262,15 +262,12 @@ button {
 /* todo size  % */
 .tabpanel4-1-wrap {width:51%;max-width:612px;position:absolute;animation:none;}
 .is-observed .tabpanel4-1-1 {max-width:271px;box-shadow:var(--shadow400);position:relative;left:0;top:0;z-index:2;}
-.is-observed .tabpanel4-1-2 {max-width:311px;position:absolute;right:12%;top:140px;z-index:3;animation:fadeup var(--animation-duration) 1.4s both;}
+.is-observed .tabpanel4-1-2 {max-width:311px;position:absolute;right:12%;top:23%;z-index:3;animation:fadeup var(--animation-duration) 1.4s both;}
 .is-observed .tabpanel4-1-3 {max-width:377px;box-shadow:var(--shadow400);position:absolute;right:5px;bottom:26px;z-index:1;animation:fadeup var(--animation-duration) 1.8s both;}
 
 
-.tabpanel4-2-wrap {display:flex;justify-content:center;max-width:743px;margin:4rem auto -24rem;transform:translateY(20rem);transition:transform .8s 1s;}
-/* 그냥 똑같이 올라오면 되는 듯 */
-.tabpanel4-2-wrap * {animation:none;}
+.tabpanel4-2-wrap {display:flex;justify-content:center;max-width:743px;margin-bottom:-18.3rem !important;}
 .tabpanel4-2-wrap img {filter:drop-shadow(var(--shadow400));}
-.is-observed .tabpanel4-2-wrap {transform:translateY(3rem);}
 
 .tabpanel4-3-wrap {width:50.91666666667%;max-width:612px;position:absolute;}
 .tabpanel4-3-1 {filter: drop-shadow(var(--shadow400));}
@@ -281,15 +278,15 @@ button {
 .tabpanel4-5-wrap {max-width:520px;position:absolute;}
 
 
-.tabpanel2-2-wrap {position:absolute;}
-.tabpanel2-2-wrap .tag1 {width:100%;max-width:98px;margin-left:auto;margin-right:-2rem;}
-.tabpanel2-2-wrap .confirm {display:flex;max-width:499px;margin-left: auto;
-  margin-right: -4rem;}
-.tabpanel2-2-wrap .tag2 {width:100%;max-width:98px;position:absolute;left:65px;bottom:80px;}
-.tabpanel2-2-wrap .users {width:100%;max-width:580px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;}
-.tabpanel2-2-wrap .users > div {width:185px;margin:0 0 14px 0;position:relative;}
+.tabpanel2-2-wrap {width:50.83333333333%;max-width:610px;position:absolute;}
+.tabpanel2-2-wrap .tag1 {width:15.78099838969%;max-width:98px;margin-bottom:2rem;margin-left:auto;filter:drop-shadow(var(--shadow400));}
+.tabpanel2-2-wrap .confirm {display:flex;max-width:499px;margin-left: auto;margin-top:36px;
+  filter:drop-shadow(var(--shadow400))}
+.tabpanel2-2-wrap .tag2 {width:100%;max-width:98px;position:absolute;left:-3%;bottom:10.9%;filter:drop-shadow(var(--shadow400));}
+.tabpanel2-2-wrap .users {width:100%;max-width:588px;margin:0 -6px;display:flex;flex-wrap:wrap;}
+.tabpanel2-2-wrap .users > div {width:184px;margin:0 6px 14px;position:relative;}
 .tabpanel2-2-wrap .users > div .donut-wrap {width:41.08108108108%;position:absolute;top:25%;left:5%;z-index:1;}
-.tabpanel2-2-wrap .users > div img {display:block;box-shadow:var(--shadow400);}
+.tabpanel2-2-wrap .users > div img {display:block;filter:drop-shadow(var(--shadow400));}
 .tabpanel2-2-wrap .users > div.user1 {}
 .tabpanel2-2-wrap .users > div.user1 {}
 .tabpanel2-2-wrap .users > div.user1 {}
@@ -323,13 +320,13 @@ button {
   .home-tabpanel-section-inner {padding:6rem var(--grid-margin) !important;}
   .home-tabpanel-section-inner > div {margin-left:auto;margin-right:auto;position:relative !important;}
 
-  .tabpanel2-2-wrap .users {max-width:1000px;}
+  .tabpanel2-2-wrap .users {justify-content:space-between;max-width:1000px;margin:0 auto;}
   .tabpanel2-2-wrap .tag1,
   .tabpanel2-2-wrap .tag2,
   .tabpanel2-2-wrap .users .user5,
   .tabpanel2-2-wrap .users .user6 {display: none}
   .tabpanel2-2-wrap .users > div {width:calc(50% - .5rem);margin:0 0 14px 0;position:relative;}
-  .tabpanel2-2-wrap .confirm {display:flex;max-width:1000px;margin:-1.5rem -5% 0;}
+  .tabpanel2-2-wrap .confirm {display:flex;max-width:1000px;margin:0;}
 /* 
   margin-right: -4rem;}
 .tabpanel2-2-wrap .tag2 {width:100%;max-width:98px;position:absolute;left:65px;bottom:80px;}
@@ -345,9 +342,11 @@ button {
   /* todo */
   .footer {padding-bottom:10rem;font-size:14px;}
 
-  .tabpanel3-2-wrap {margin-bottom: 12rem;}
+  .tabpanel3-2-wrap {margin-bottom:0 !important;}
   .tabpanel3-2-1 {margin:0 auto 0;}
   .tabpanel3-2-2 {margin:2rem auto 0;position: relative;top:auto;}
+
+  .tabpanel4-2-wrap {margin-bottom:0 !important;}
 
   .is-observed .tabpanel4-1-1 {max-width:42.66666666667%;box-shadow:var(--shadow400);}
   .is-observed .tabpanel4-1-2 {max-width:32.26666666667%;right:20%;top:17%;}

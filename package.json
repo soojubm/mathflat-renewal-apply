@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "postcss-custom-media": "^8.0.0",
+    "prettier": "^2.3.0",
     "snowpack": "^3.3.5"
   },
   "browserslist": "ie10",
