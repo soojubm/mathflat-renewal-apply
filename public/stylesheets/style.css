@@ -319,7 +319,7 @@ button {
   .home-tabpanel-section-inner {padding:6rem var(--grid-margin) !important;}
   .home-tabpanel-section-inner > div {margin-left:auto;margin-right:auto;position:relative !important;}
 
-  .tabpanel2-2-wrap .users {justify-content:space-between;max-width:1000px;margin:0 auto;}
+  .tabpanel2-2-wrap .users {justify-content:space-between;max-width:1000px;margin:-2rem auto;padding:2rem 0;}
   .tabpanel2-2-wrap .tag1,
   .tabpanel2-2-wrap .tag2,
   .tabpanel2-2-wrap .users .user5,
