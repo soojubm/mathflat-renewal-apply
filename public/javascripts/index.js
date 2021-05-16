@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
       renderNumber()
 
       if (number >= elementValue) clearInterval(interval)
-    }, 10)
+    }, 50)
 
     function renderNumber() {
       ++number
@@ -145,12 +145,36 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // document.addEventListener('scroll', () => {
-  //   setTimeout(() => {
-  //     countUp({ selector: '.js-counter1' })
-  //     countUp({ selector: '.js-counter2' })
-  //   }, 2000)
-  // })
+  // todo...
+  const counter = document.querySelector('.js-counter')
+  let isCounted = false
+  document.addEventListener('DOMContentLoaded', () => {
+    if (!isCounted && counter.classList.contains('is-observed')) {
+      isCounted = true
+      setTimeout(() => {
+        countUp({ selector: '.js-counter .js-counter1' })
+        countUp({ selector: '.js-counter .js-counter2' })
+        countUp({ selector: '.js-counter .js-counter3' })
+        countUp({ selector: '.js-counter .js-counter4' })
+        countUp({ selector: '.js-counter .js-counter5' })
+        countUp({ selector: '.js-counter .js-counter6' })
+      }, 150)
+    }
+  })
+
+  window.addEventListener('scroll', () => {
+    if (!isCounted && counter.classList.contains('is-observed')) {
+      isCounted = true
+      setTimeout(() => {
+        countUp({ selector: '.js-counter .js-counter1' })
+        countUp({ selector: '.js-counter .js-counter2' })
+        countUp({ selector: '.js-counter .js-counter3' })
+        countUp({ selector: '.js-counter .js-counter4' })
+        countUp({ selector: '.js-counter .js-counter5' })
+        countUp({ selector: '.js-counter .js-counter6' })
+      }, 150)
+    }
+  })
 
   const homeCTA = document.querySelector('.js-home-cta')
   if (homeCTA) {
