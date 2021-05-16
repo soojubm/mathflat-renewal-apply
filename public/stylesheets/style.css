@@ -267,10 +267,12 @@ button {
 
 
 .tabpanel4-2-wrap {display:flex;justify-content:center;max-width:743px;margin-bottom:-18.3rem !important;}
-.tabpanel4-2-wrap img {will-change: filter;filter:drop-shadow(var(--shadow400));}
+.tabpanel4-2-wrap img {}
 
 .tabpanel4-3-wrap {width:50.91666666667%;max-width:612px;position:absolute;}
-.tabpanel4-3-1 {will-change: filter;filter: drop-shadow(var(--shadow400));}
+.tabpanel4-3-1 {}
+
+
 
 .tabpanel4-4-wrap {}
 .tabpanel4-4-1 {max-width:862px;margin:4rem auto 0;}
@@ -279,13 +281,13 @@ button {
 
 
 .tabpanel2-2-wrap {width:50.83333333333%;max-width:610px;position:absolute;}
-.tabpanel2-2-wrap .tag1 {width:15.78099838969%;max-width:98px;margin-bottom:2rem;margin-left:auto;will-change: filter;filter:drop-shadow(var(--shadow400));}
-.tabpanel2-2-wrap .confirm {max-width:499px;margin-left: auto;margin-top:36px;will-change: filter;filter:drop-shadow(var(--shadow400))}
-.tabpanel2-2-wrap .tag2 {width:100%;max-width:98px;position:absolute;left:-3%;bottom:10.9%;will-change: filter;filter:drop-shadow(var(--shadow400));}
+.tabpanel2-2-wrap .tag1 {width:15.78099838969%;max-width:98px;margin-bottom:2rem;margin-left:auto;}
+.tabpanel2-2-wrap .confirm {max-width:499px;margin-left: auto;margin-top:36px;}
+.tabpanel2-2-wrap .tag2 {width:100%;max-width:98px;position:absolute;left:-3%;bottom:10.9%;}
 .tabpanel2-2-wrap .users {width:100%;max-width:588px;margin:0 -6px;display:flex;flex-wrap:wrap;}
 .tabpanel2-2-wrap .users > div {width:184px;margin:0 6px 14px;position:relative;}
 .tabpanel2-2-wrap .users > div .donut-wrap {width:41.08108108108%;position:absolute;top:25%;left:5%;z-index:1;}
-.tabpanel2-2-wrap .users > div img {display:block;will-change: filter;filter:drop-shadow(var(--shadow400));}
+.tabpanel2-2-wrap .users > div img {display:block;}
 .tabpanel2-2-wrap .users > div.user1 {}
 .tabpanel2-2-wrap .users > div.user1 {}
 .tabpanel2-2-wrap .users > div.user1 {}
@@ -294,6 +296,20 @@ button {
 .tabpanel2-2-wrap .users > div.user1 {}
 
 
+
+.drop-shadow {will-change: filter;filter:drop-shadow(var(--shadow400));position:relative;}
+.drop-shadow::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-right: .5rem solid transparent;
+  border-left: .5rem solid transparent;
+  border-bottom: .5rem solid #0f0;
+  top: -.5rem;
+  left: .5rem;
+}
 
 
 .view-only-desktop {display:block;}
