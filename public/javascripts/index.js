@@ -3,13 +3,13 @@ import { throttle } from './utils/optimizationUtils.js'
 document.addEventListener('DOMContentLoaded', () => {
   let lastScrollTop = 0
 
-  const tab = document.querySelector('.js-tab')
+  const tabElement = document.querySelector('.js-tab')
 
-  if (tab) {
+  if (tabElement) {
     // tab , parameter tab
-    const tablist = tab.querySelectorAll('[role=tab]')
-    const tabPanels = tab.querySelectorAll('[role=tabpanel]')
-    const tablistInner = tab.querySelector('.js-home-tablist-inner')
+    const tablist = tabElement.querySelectorAll('[role=tab]')
+    const tabPanels = tabElement.querySelectorAll('[role=tabpanel]')
+    const tablistInner = tabElement.querySelector('.js-home-tablist-inner')
 
     let { hash } = window.location
     let lastTab = Number(hash.substring(4, 5)) || 1
@@ -29,8 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     tablist.forEach((tab, tabIndex) => {
-      tab.addEventListener('click', event => {
-        // event.preventDefault()
+      tab.addEventListener('click', () => {
         tablistInner.scrollLeft = tab.offsetLeft
 
         tablist.forEach(tab => tab.setAttribute('aria-selected', 'false'))
@@ -42,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
         })
 
         // + 100 임시
-        // 여기서 이전 스크롤 값을 넣어줘야 한다......><
         window.scrollTo(0, navbarElement.clientHeight + heroElement.clientHeight + 20)
         // lastScrollTop = 0;
         setTimeout(() => {
@@ -97,7 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const isFixedTab = document.body.classList.contains(TAB_FIXED_CLASSNAME)
 
       document.body.classList.toggle('is-navbar-up', isFixedTab && isScrolledDown)
-      // document.body.classList.toggle('is-navbar-up', !)
 
       lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop // For Mobile or negative scrolling
     }
@@ -127,6 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
       window.addEventListener('scroll', () => throttle(startInViewport(videoElement)), false)
     })
     function startInViewport(element) {
+      // todo 구조가 바뀌면 문제생김.
+      // todo 1500 상수
       const isObserved = element.parentNode.parentNode.parentNode.classList.contains('is-observed')
       if (!isObserved) return
       setTimeout(() => {
@@ -154,24 +153,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // todo...
+  // todo... 각각 시간 설정할 수 있도록..
   const counter = document.querySelector('.js-counter')
   let isCounted = false
-  document.addEventListener('DOMContentLoaded', () => {
-    if (!isCounted && counter.classList.contains('is-observed')) {
-      isCounted = true
-      setTimeout(() => {
-        countUp({ selector: '.js-counter .js-counter1' })
-        countUp({ selector: '.js-counter .js-counter2' })
-        countUp({ selector: '.js-counter .js-counter3' })
-        countUp({ selector: '.js-counter .js-counter4' })
-        countUp({ selector: '.js-counter .js-counter5' })
-        countUp({ selector: '.js-counter .js-counter6' })
-      }, 150)
-    }
-  })
+  document.addEventListener('DOMContentLoaded', startCountUp)
+  window.addEventListener('scroll', throttle(startCountUp))
 
-  window.addEventListener('scroll', () => {
+  function startCountUp() {
     if (!isCounted && counter.classList.contains('is-observed')) {
       isCounted = true
       setTimeout(() => {
@@ -183,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
         countUp({ selector: '.js-counter .js-counter6' })
       }, 150)
     }
-  })
+  }
 
   const homeCTA = document.querySelector('.js-home-cta')
   if (homeCTA) {

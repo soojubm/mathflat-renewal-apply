@@ -267,10 +267,10 @@ button {
 
 
 .tabpanel4-2-wrap {display:flex;justify-content:center;max-width:743px;margin-bottom:-18.3rem !important;}
-.tabpanel4-2-wrap img {filter:drop-shadow(var(--shadow400));}
+.tabpanel4-2-wrap img {will-change: filter;filter:drop-shadow(var(--shadow400));}
 
 .tabpanel4-3-wrap {width:50.91666666667%;max-width:612px;position:absolute;}
-.tabpanel4-3-1 {filter: drop-shadow(var(--shadow400));}
+.tabpanel4-3-1 {will-change: filter;filter: drop-shadow(var(--shadow400));}
 
 .tabpanel4-4-wrap {}
 .tabpanel4-4-1 {max-width:862px;margin:4rem auto 0;}
@@ -279,13 +279,13 @@ button {
 
 
 .tabpanel2-2-wrap {width:50.83333333333%;max-width:610px;position:absolute;}
-.tabpanel2-2-wrap .tag1 {width:15.78099838969%;max-width:98px;margin-bottom:2rem;margin-left:auto;filter:drop-shadow(var(--shadow400));}
-.tabpanel2-2-wrap .confirm {max-width:499px;margin-left: auto;margin-top:36px;filter:drop-shadow(var(--shadow400))}
-.tabpanel2-2-wrap .tag2 {width:100%;max-width:98px;position:absolute;left:-3%;bottom:10.9%;filter:drop-shadow(var(--shadow400));}
+.tabpanel2-2-wrap .tag1 {width:15.78099838969%;max-width:98px;margin-bottom:2rem;margin-left:auto;will-change: filter;filter:drop-shadow(var(--shadow400));}
+.tabpanel2-2-wrap .confirm {max-width:499px;margin-left: auto;margin-top:36px;will-change: filter;filter:drop-shadow(var(--shadow400))}
+.tabpanel2-2-wrap .tag2 {width:100%;max-width:98px;position:absolute;left:-3%;bottom:10.9%;will-change: filter;filter:drop-shadow(var(--shadow400));}
 .tabpanel2-2-wrap .users {width:100%;max-width:588px;margin:0 -6px;display:flex;flex-wrap:wrap;}
 .tabpanel2-2-wrap .users > div {width:184px;margin:0 6px 14px;position:relative;}
 .tabpanel2-2-wrap .users > div .donut-wrap {width:41.08108108108%;position:absolute;top:25%;left:5%;z-index:1;}
-.tabpanel2-2-wrap .users > div img {display:block;filter:drop-shadow(var(--shadow400));}
+.tabpanel2-2-wrap .users > div img {display:block;will-change: filter;filter:drop-shadow(var(--shadow400));}
 .tabpanel2-2-wrap .users > div.user1 {}
 .tabpanel2-2-wrap .users > div.user1 {}
 .tabpanel2-2-wrap .users > div.user1 {}
@@ -298,6 +298,42 @@ button {
 
 .view-only-desktop {display:block;}
 .view-only-moblie {display:none;}
+
+
+
+.donut-ring {stroke: #EBEBEB;}
+.donut-segment {stroke-linecap:round;transform-origin:center;animation-delay:1.2s !important;}
+.donut-text {}
+.donut-data {font-size: 0.25em;text-anchor: middle;fill: var(--gray600);}
+.donut-percent {font-size: 0.5em;fill: var(--gray700);font-weight:600;}
+
+.is-observed .user1 .donut-segment {stroke: var(--blue400);animation: donut1 3s both;
+}
+.is-observed .user2 .donut-segment {
+  stroke: var(--red400);
+  animation: donut2 3s both;
+}
+.is-observed .user2 .donut-percent {
+  fill: var(--red400);
+}
+.is-observed .user3 .donut-segment {
+  stroke: var(--green100);
+  animation: donut3 3s both;
+}
+.is-observed .user4 .donut-segment {
+  stroke: var(--yellow);
+  animation: donut4 3s both;
+}
+.is-observed .user5 .donut-segment {
+  stroke: var(--green100);
+  animation: donut5 3s both;
+}
+.is-observed .user6 .donut-segment {
+  stroke: var(--blue400);
+  animation: donut6 3s both;
+}
+
+
 
 @media (max-width:1024px) {
   html {font-size:12px;}
@@ -351,10 +387,7 @@ button {
   .is-observed .tabpanel4-1-2 {max-width:32.26666666667%;right:20%;top:17%;}
   .is-observed .tabpanel4-1-3 {max-width:66.66666666667%;right:5px;bottom:-10px;z-index:4;}
 
-  
-  .counter {
-    font-size: 2.5rem;
-  }
+  .donut-percent-wrap {transform:translateY(-2px)}
 }
 
 
@@ -372,54 +405,7 @@ button {
 
   .tabpanel1-2-wrap-inner {width:320px;}
   .tabpanel1-4-wrap-inbox {height:400px;}
-
-  
-  .counter {
-    font-size: 1em;
-  }
-
-  
 }
 
 
 
-
-.donut-ring {stroke: #EBEBEB;}
-.donut-segment {stroke-linecap:round;transform-origin:center;animation-delay:1.2s !important;}
-.donut-text {}
-.donut-data {font-size: 0.25em;text-anchor: middle;fill: var(--gray600);}
-.donut-percent {font-size: 0.5em;fill: var(--gray700);font-weight:600;}
-
-/*  todo */
-.counter {
-  font-weight: var(--font-weight-bold);
-  position: absolute;
-  left: 30%;
-  top: 36%;
-}
-
-.is-observed .user1 .donut-segment {stroke: var(--blue400);animation: donut1 3s both;
-}
-.is-observed .user2 .donut-segment {
-  stroke: var(--red400);
-  animation: donut2 3s both;
-}
-.is-observed .user2 .donut-percent {
-  fill: var(--red400);
-}
-.is-observed .user3 .donut-segment {
-  stroke: var(--green100);
-  animation: donut3 3s both;
-}
-.is-observed .user4 .donut-segment {
-  stroke: var(--yellow);
-  animation: donut4 3s both;
-}
-.is-observed .user5 .donut-segment {
-  stroke: var(--green100);
-  animation: donut5 3s both;
-}
-.is-observed .user6 .donut-segment {
-  stroke: var(--blue400);
-  animation: donut6 3s both;
-}
