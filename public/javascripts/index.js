@@ -6,23 +6,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const tab = document.querySelector('.js-tab')
 
   if (tab) {
+    // tab , parameter tab
     const tablist = tab.querySelectorAll('[role=tab]')
     const tabPanels = tab.querySelectorAll('[role=tabpanel]')
+    const tablistInner = tab.querySelector('.js-home-tablist-inner')
 
     let { hash } = window.location
-    const lastTab = Number(hash.substring(4, 5)) || 1
+    let lastTab = Number(hash.substring(4, 5)) || 1
 
     // 이전 탭 저장 id hash로..
-    tablist.forEach((tab, tabIndex) => tab.setAttribute('aria-selected', lastTab === tabIndex + 1))
+    tablist.forEach((tab, tabIndex) => {
+      tab.setAttribute('aria-selected', lastTab === tabIndex + 1)
+
+      if (lastTab === tabIndex + 1) {
+        tablistInner.scrollLeft = tab.offsetLeft
+      }
+    })
+
     tabPanels.forEach((tabPanel, tabPanelIndex) => {
       const isTargetPanel = lastTab === tabPanelIndex + 1
-      console.log(lastTab, tabPanelIndex)
       tabPanel.setAttribute('aria-hidden', String(!isTargetPanel))
     })
 
     tablist.forEach((tab, tabIndex) => {
       tab.addEventListener('click', event => {
         // event.preventDefault()
+        tablistInner.scrollLeft = tab.offsetLeft
 
         tablist.forEach(tab => tab.setAttribute('aria-selected', 'false'))
         tab.setAttribute('aria-selected', 'true')
