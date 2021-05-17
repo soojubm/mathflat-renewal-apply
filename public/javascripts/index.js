@@ -127,7 +127,8 @@ document.addEventListener('DOMContentLoaded', () => {
       // todo 구조가 바뀌면 문제생김.
       // todo 1500 상수
       const isObserved = element.parentNode.parentNode.parentNode.classList.contains('is-observed')
-      if (!isObserved) return
+      console.log(isObserved)
+      // if (!isObserved) return
       setTimeout(() => {
         element.play()
       }, 1500)
