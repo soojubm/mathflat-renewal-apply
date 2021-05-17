@@ -110,7 +110,13 @@ button {
   
 .tabpanel2-4-wrap {max-width: 758px;}
 
-.tabpanel1-3-wrap {max-width:816px;}
+.tabpanel1-3-wrap {max-width:816px;position:relative;}
+.tabpanel1-3-frame {opacity:0;}
+.tabpanel1-3-1 {position:absolute;left:0;right:0;top:0;bottom:0;z-index:1;}
+.tabpanel1-3-2 {position:absolute;left:0;right:0;top:0;bottom:0;}
+
+.is-observed .tabpanel1-3-1 {animation:tab1-3-1 4s ease 4s infinite alternate;}
+/* .is-observed .tabpanel1-3-2 {animation:tab1-3-1 2s linear 4s both infinite;} */
 
 
 .tabpanel1-3-background img {position:absolute;}
@@ -151,20 +157,19 @@ button {
 .tabpanel1-4-wrap-inbox {height:594px;position:relative;}
 .tabpanel1-4-wrap .viewer {position: absolute;}
 
-.tabpanel1-4-wrap .question {position:relative;}
-.tabpanel1-4-wrap .question .bookmark {max-width:14%;position:absolute;right:5.2%;}
+.tabpanel1-4-wrap .question {margin:0 0 30px 0;position:relative;}
+.tabpanel1-4-wrap .question:last-child {margin-bottom:0;}
+.tabpanel1-4-wrap .question .bookmark {max-width:14%;position:absolute;right:3.1%;}
 
-.is-observed  .tabpanel1-4-wrap .viewer {animation:test 8s linear var(--animation-duration) forwards infinite;}
+.is-observed  .tabpanel1-4-wrap .viewer {animation:test 8s linear var(--animation-duration);}
 .is-observed  .question .bookmark {animation:bookmark .2s linear both;}
 .is-observed .tabpanel1-4-wrap .question:nth-of-type(1) .bookmark {display:none;}
 .is-observed .tabpanel1-4-wrap .question:nth-of-type(2) .bookmark {top:21.5%;animation-delay:2s;}
-.is-observed .tabpanel1-4-wrap .question:nth-of-type(3) .bookmark {top:22.5%;animation-delay:4s;}
-.is-observed .tabpanel1-4-wrap .question:nth-of-type(4) .bookmark {top:24.5%;animation-delay:6s;}
-.is-observed .tabpanel1-4-wrap .question:nth-of-type(5) .bookmark {top:19.5%;animation-delay:8s;}
+.is-observed .tabpanel1-4-wrap .question:nth-of-type(3) .bookmark {top:25%;animation-delay:4s;}
+.is-observed .tabpanel1-4-wrap .question:nth-of-type(4) .bookmark {top:27%;animation-delay:6s;}
+.is-observed .tabpanel1-4-wrap .question:nth-of-type(5) .bookmark {top:21%;animation-delay:8s;}
 
 .before-blur {
-  height: 117px;
-  background: linear-gradient(to top, rgba(52,50,50,0),  rgba(52,50,50,.9));
   position: absolute;
   left: 0;
   right: 0;
@@ -172,8 +177,6 @@ button {
   z-index: 1;
 }
 .after-blur {
-  height: 117px;
-  background: linear-gradient(to bottom, rgba(52,50,50,0), rgba(52,50,50,.9));
   position: absolute;
   left: 0;
   right: 0;

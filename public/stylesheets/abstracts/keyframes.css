@@ -55,6 +55,23 @@
 	100% {transform:scale(1)}
 }
 
+@keyframes tab1-3-1 {
+	0% {
+		opacity:1;
+	}
+	45% {
+	opacity:1;
+	}
+	55% {
+	opacity:0;
+	}
+	100% {
+	opacity:0;
+	}
+}
+
+
+
 @keyframes ox {
 	0% {}
 	50% {}
