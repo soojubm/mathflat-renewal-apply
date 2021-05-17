@@ -150,9 +150,11 @@
   .apply-intro-inner header {margin-bottom:32px;}
   .apply-intro-inner header span {width:8.74635568513%;}
   .apply-intro-inner header h2 {margin-top:25px;font-size:24px;}
-  .apply-intro-inner div {width:100%;margin:48px 0 0;}
+  .apply-intro-inner div {width:100%;margin:24px 0 0;}
   .apply-intro-inner div h3 {font-size:18px;}
   .apply-intro-inner div p {font-size:16px;}
+  .apply-intro-inner .line {display:block;width:31px;height:1px;margin:24px auto;background:#ececec;}
+
 
 
   .apply-benefit {padding:0 16px 0;}
@@ -192,6 +194,6 @@
   .apply-notice ul li {font-size:12px;}
   .apply-notice ul li:before {width:2px;height:2px;margin:0 8px 0 0;}
 
-  .apply-hero footer {margin:0 -16px;padding:30px 0;background:#ECF8FF;}
+  .apply-hero footer {margin:0 -16px;padding:30px 16px;background:#ECF8FF;}
   .apply-hero-cta {margin-top:0;}
 }

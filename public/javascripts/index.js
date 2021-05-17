@@ -155,21 +155,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // todo... 각각 시간 설정할 수 있도록..
   const counter = document.querySelector('.js-counter')
-  let isCounted = false
-  window.addEventListener('load', startCountUp)
-  window.addEventListener('scroll', throttle(startCountUp))
+  if (counter) {
+    let isCounted = false
+    window.addEventListener('load', startCountUp)
+    window.addEventListener('scroll', throttle(startCountUp))
 
-  function startCountUp() {
-    if (!isCounted && counter.classList.contains('is-observed')) {
-      isCounted = true
-      setTimeout(() => {
-        countUp({ selector: '.js-counter .js-counter1' })
-        countUp({ selector: '.js-counter .js-counter2' })
-        countUp({ selector: '.js-counter .js-counter3' })
-        countUp({ selector: '.js-counter .js-counter4' })
-        countUp({ selector: '.js-counter .js-counter5' })
-        countUp({ selector: '.js-counter .js-counter6' })
-      }, 150)
+    function startCountUp() {
+      if (!isCounted && counter.classList.contains('is-observed')) {
+        isCounted = true
+        setTimeout(() => {
+          countUp({ selector: '.js-counter .js-counter1' })
+          countUp({ selector: '.js-counter .js-counter2' })
+          countUp({ selector: '.js-counter .js-counter3' })
+          countUp({ selector: '.js-counter .js-counter4' })
+          countUp({ selector: '.js-counter .js-counter5' })
+          countUp({ selector: '.js-counter .js-counter6' })
+        }, 200)
+      }
     }
   }
 
