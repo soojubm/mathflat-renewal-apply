@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // + 100 임시
         window.scrollTo(0, navbarElement.clientHeight + heroElement.clientHeight + 20)
         // lastScrollTop = 0;
-        setTimeout(() => {
-          document.body.classList.add('is-navbar-up')
-        }, 10)
+        // setTimeout(() => {
+        //   document.body.classList.add('is-navbar-up')
+        // }, 10)
       })
     })
   }
