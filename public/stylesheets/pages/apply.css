@@ -63,12 +63,15 @@
   .apply-notice header {
     display: flex;
     align-items: center;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #c0c0c0;
   }
-  .apply-notice-inner hr {
+  /* .apply-notice header hr {
       height: 1px;
       margin: 20px 0;
       background: #c0c0c0;
-  }
+  } */
   .apply-notice header img {
       width: 46px;
       margin-right: 8px;
@@ -127,8 +130,8 @@
 .is-observed .apply-how-inner .wrap > div:nth-of-type(3) p {animation-delay:4s;}
 
 .is-observed .apply-notice-inner header {animation:fadeup var(--animation-duration) linear both;}
-.is-observed .apply-notice-inner hr {animation:fadeup var(--animation-duration) linear .4s both;}
-.is-observed .apply-notice-inner ul {animation:fadeup var(--animation-duration) linear .8s both;}
+.is-observed .apply-notice-inner hr {}
+.is-observed .apply-notice-inner ul {animation:fadeup var(--animation-duration) linear .4s both;}
 
 
 
