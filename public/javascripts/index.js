@@ -87,17 +87,17 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.classList.toggle(TAB_FIXED_CLASSNAME, isStuck)
     }
 
-    window.addEventListener('scroll', throttle(handleNavbar), false)
+    // window.addEventListener('scroll', throttle(handleNavbar), false)
 
-    function handleNavbar() {
-      const currentScrollTop = getWindowOffsetTop()
-      const isScrolledDown = currentScrollTop > lastScrollTop
-      const isFixedTab = document.body.classList.contains(TAB_FIXED_CLASSNAME)
+    // function handleNavbar() {
+    //   const currentScrollTop = getWindowOffsetTop()
+    //   const isScrolledDown = currentScrollTop > lastScrollTop
+    //   const isFixedTab = document.body.classList.contains(TAB_FIXED_CLASSNAME)
 
-      document.body.classList.toggle('is-navbar-up', isFixedTab && isScrolledDown)
+    //   document.body.classList.toggle('is-navbar-up', isFixedTab && isScrolledDown)
 
-      lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop // For Mobile or negative scrolling
-    }
+    //   lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop // For Mobile or negative scrolling
+    // }
   }
 
   const ANIMATED_CLASSNAME = 'is-observed'

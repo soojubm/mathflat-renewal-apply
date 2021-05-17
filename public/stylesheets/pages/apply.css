@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-.apply-bgarea {padding-bottom:190px;background:var(--color-primary);position:relative;}
+.apply-bgarea {padding-bottom:190px;background:url('/public/images/apply/apply-hero.png') no-repeat center top;background-size:cover;position:relative;}
 
 .apply-hero {padding:160px 0;text-align:center;}
 .apply-hero h1 {max-width:368px;margin:0 auto;}
