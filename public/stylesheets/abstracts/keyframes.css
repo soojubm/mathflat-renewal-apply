@@ -55,11 +55,11 @@
 	100% {transform:scale(1)}
 }
 
-@keyframes temp {
+@keyframes ox {
 	0% {}
 	50% {}
 	100% {
-	  transform: translateY(160px) translateX(2560px) translateZ(-500px);
+	  transform: translateX(10px) translateY(-2000px);
 	  /* transform: translateY(160px) translateX(2560px) translateZ(-500px) rotate3d(1, 1, .25, 720deg); */
 	}
 }
