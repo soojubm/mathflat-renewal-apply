@@ -2,7 +2,7 @@
 
 
 .hero {min-height:100vh;background:var(--blue100);position:relative;}
-.hero-inner {max-width:var(--width-large);min-height:calc(100vh - var(--navbar-height));margin:0 auto;padding:14rem 3.125%;box-sizing:border-box;position: relative;}
+.hero-inner {max-width:var(--width-large);min-height:calc(100vh - var(--navbar-height));margin:0 auto;padding:14rem var(--grid-margin);box-sizing:border-box;position: relative;}
 
 .hero-title {margin:0 0 1rem 0;font-size:2.5rem;font-weight:var(--font-weight-bold);}
 .hero-description {}

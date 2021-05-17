@@ -120,38 +120,38 @@ button {
 
 
 .tabpanel1-3-background img {position:absolute;}
-.tabpanel1-3-o {max-width:14px;bottom:-20px;}
-.tabpanel1-3-x {max-width:20px;bottom:-20px;}
-.tabpanel1-3-background img:nth-of-type(1) {left:10%;}
-.tabpanel1-3-background img:nth-of-type(2) {left:12.5%;}
-.tabpanel1-3-background img:nth-of-type(3) {left:14.27083333333%}
-.tabpanel1-3-background img:nth-of-type(4) {left:32.65625%;}
-.tabpanel1-3-background img:nth-of-type(5) {right:27.03125%;}
-.tabpanel1-3-background img:nth-of-type(6) {right:13.22916666667%;}
-.tabpanel1-3-background img:nth-of-type(7) {right:7.86458333333%;}
+.tabpanel1-3-o {max-width:14px;bottom:-100px;}
+.tabpanel1-3-x {max-width:20px;bottom:-100px;}
+/* 1 ~ 7까지 -o */
+.tabpanel1-3-background img:nth-of-type(1) {}
+.tabpanel1-3-background img:nth-of-type(2) {}
+.tabpanel1-3-background img:nth-of-type(3) {}
+.tabpanel1-3-background img:nth-of-type(4) {}
+.tabpanel1-3-background img:nth-of-type(5) {}
+.tabpanel1-3-background img:nth-of-type(6) {}
+.tabpanel1-3-background img:nth-of-type(7) {}
 
-.tabpanel1-3-background img:nth-of-type(7) {left:2rem;}
-.tabpanel1-3-background img:nth-of-type(8) {left:20%;}
-.tabpanel1-3-background img:nth-of-type(9) {left:2rem;}
-.tabpanel1-3-background img:nth-of-type(10) {left:10%;}
-.tabpanel1-3-background img:nth-of-type(11) {left:4rem;}
-.tabpanel1-3-background img:nth-of-type(12) {left:2rem;}
+.tabpanel1-3-background img:nth-of-type(8) {}
+.tabpanel1-3-background img:nth-of-type(9) {;}
+.tabpanel1-3-background img:nth-of-type(10) {}
+.tabpanel1-3-background img:nth-of-type(11) {}
+.tabpanel1-3-background img:nth-of-type(12) {}
 
 .is-observed .tabpanel1-3-o {animation:ox 16s infinite forwards;}
 .is-observed .tabpanel1-3-x {animation:ox 16s infinite forwards;}
 
-.is-observed .tabpanel1-3-background img:nth-of-type(1) {animation-duration:16s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(2) {animation-duration:20s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(3) {animation-duration:24s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(4) {animation-duration:28s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(5) {animation-duration:30s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(6) {animation-duration:31s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(7) {animation-duration:34s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(8) {animation-duration:26s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(9) {animation-duration:26s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(10) {animation-duration:26s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(11) {animation-duration:26s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(12) {animation-duration:26s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(1) {left:0%;animation-duration:16s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(2) {left:2.2%;animation-duration:20s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(3) {left:7.8%;animation-duration:26s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(4) {left:26%;animation-duration:14s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(5) {right:23%;animation-duration:24s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(6) {right:6.4%;animation-duration:36s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(7) {right:0%;animation-duration:34s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(8) {left:9.8%;animation-duration:22s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(9) {left:35.4%;animation-duration:18s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(10) {right:17%;animation-duration:28s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(11) {right:17%;animation-duration:32s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(12) {right:7%;animation-duration:30s;}
 
 .tabpanel1-4-wrap {width:100%;max-width:511px;overflow:hidden;position:absolute;}
 .tabpanel1-4-wrap-inbox {height:594px;position:relative;}
@@ -207,7 +207,7 @@ button {
 .tabpanel2-5-1 {max-width:402px;box-shadow:var(--shadow400);position:absolute;left:10.8818011257%;top:14.57489878543%;z-index:1;opacity:0;}
 .tabpanel2-5-2 {max-width:533px;opacity:0;}
 .is-observed .tabpanel2-5-1 {animation:fadeup var(--animation-duration) 1s forwards;}
-.is-observed .tabpanel2-5-2 {transition:all var(--animation-duration) .4s;opacity:1;}
+.is-observed .tabpanel2-5-2 {transition:all var(--animation-duration) 1s;opacity:1;}
 
 .tabpanel3-1-1 {max-width:749px;margin:4rem auto 0;}
 
@@ -375,6 +375,8 @@ button {
   .is-observed .tabpanel4-1-1 {max-width:42.66666666667%;box-shadow:var(--shadow400);}
   .is-observed .tabpanel4-1-2 {max-width:32.26666666667%;right:20%;top:17%;}
   .is-observed .tabpanel4-1-3 {max-width:66.66666666667%;right:5px;bottom:-10px;}
+
+  .tabpanel1-4-wrap .question {margin-bottom:17px;}
 
   .donut-percent-wrap {transform:translateY(-2px)}
 }
