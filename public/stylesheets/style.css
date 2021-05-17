@@ -162,7 +162,7 @@ button {
 .tabpanel1-4-wrap .question .bookmark {max-width:14%;position:absolute;right:3.1%;}
 
 .is-observed  .tabpanel1-4-wrap .viewer {animation:test 8s linear var(--animation-duration);}
-.is-observed  .question .bookmark {animation:bookmark .2s linear;}
+.is-observed  .question .bookmark {animation:bookmark .2s linear both;}
 .is-observed .tabpanel1-4-wrap .question:nth-of-type(1) .bookmark {display:none;}
 .is-observed .tabpanel1-4-wrap .question:nth-of-type(2) .bookmark {top:21.5%;animation-delay:2s;}
 .is-observed .tabpanel1-4-wrap .question:nth-of-type(3) .bookmark {top:25%;animation-delay:4s;}
