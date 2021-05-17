@@ -91,9 +91,6 @@
 
 
 
-
-
-
 .is-observed .apply-how-inner header {animation:fadeup var(--animation-duration) linear both;}
 
 
@@ -103,10 +100,14 @@
 .is-observed .apply-intro-inner header > span {display:block;width:60px;margin:0 auto;}
 .is-observed .apply-intro-inner header h2 {margin:34px 0 0;font-size:40px;}
 .is-observed .apply-intro-inner div {width:20%;margin:0 38px;text-align:center;} */
+
+
+.is-observed .apply-how-inner header span {animation:fadeup var(--animation-duration) linear .4s both;}
+.is-observed .apply-how-inner header h2 {animation:fadeup var(--animation-duration) linear .8s both;}
+.is-observed .apply-how-inner header p {animation:fadeup var(--animation-duration) linear 1.2s both;}
 .is-observed .apply-intro-inner div span {animation:fadeup var(--animation-duration) linear .4s both;}
 .is-observed .apply-intro-inner div h3 {animation:fadeup var(--animation-duration) linear .8s both;}
 .is-observed .apply-intro-inner div p {animation:fadeup var(--animation-duration) linear 1.2s both;}
-
 
 .is-observed .apply-how-inner .wrap > div .bg,
 .is-observed .apply-how-inner .wrap > div span,
@@ -180,14 +181,14 @@
   .apply-how-inner header span {width:8.74635568513%;}
   .apply-how-inner header h2 {margin-top:25px;margin-bottom:16px;font-size:24px;}
   .apply-how-inner header p {font-size:14px;}
-  .apply-how-inner .wrap > div {width:100%;margin:20px 0 0;padding:30px 7.28862973761% 44px;}
+  .apply-how-inner .wrap > div {max-width:100%;margin:20px 0 0;padding:30px 7.28862973761% 44px;}
   .apply-how-inner .wrap > div em {font-size:16px;}
   .apply-how-inner .wrap > div h3 {font-size:18px;}
   .apply-how-inner .wrap > div p {font-size:16px;}
 
 
   .apply-notice {padding:40px 9.6%;}
-  .apply-notice header {margin-bottom:8px;}
+  .apply-notice header {margin-bottom:0;padding-bottom:4px;border-bottom:0;}
   .apply-notice header img {width: 18px;}
   .apply-notice hr {display:none;margin:1rem 0;}
   .apply-notice header h2 {font-size: 14px;}

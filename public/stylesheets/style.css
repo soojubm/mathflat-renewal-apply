@@ -72,8 +72,10 @@ button {
 .home-tablist-tab small {display:block;color:var(--gray600);}
 .home-tablist-tab b {color:var(--gray600);}
 .home-tablist-tab[aria-selected=true] {border-color:var(--color-primary);}
-.home-tablist-tab[aria-selected=true] b {color:var(--gray900);}
-.home-tablist-tab[aria-selected=true] small {color:var(--gray900);}
+.home-tablist-tab:hover b {color:#4c4c4c;}
+.home-tablist-tab:hover small {color:#4c4c4c;}
+.home-tablist-tab[aria-selected=true] b {color:#4c4c4c;}
+.home-tablist-tab[aria-selected=true] small {color:#4c4c4c;}
 .home-tablist-backdrop {height:85px;position:relative;}
 
 .home-tabpanel-section {overflow:hidden;position:relative;}
@@ -151,7 +153,7 @@ button {
 .tabpanel1-4-wrap .question {position:relative;}
 .tabpanel1-4-wrap .question .bookmark {max-width:14%;position:absolute;right:5.2%;}
 
-.is-observed  .tabpanel1-4-wrap .viewer {animation:test 8s linear var(--animation-duration) forwards;}
+.is-observed  .tabpanel1-4-wrap .viewer {animation:test 8s linear var(--animation-duration) forwards infinite;}
 .is-observed  .question .bookmark {animation:bookmark .2s linear both;}
 .is-observed .tabpanel1-4-wrap .question:nth-of-type(1) .bookmark {display:none;}
 .is-observed .tabpanel1-4-wrap .question:nth-of-type(2) .bookmark {top:21.5%;animation-delay:2s;}
