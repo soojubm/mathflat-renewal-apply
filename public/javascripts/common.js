@@ -2,7 +2,6 @@ import { throttle } from './utils/optimizationUtils.js'
 
 document.addEventListener('DOMContentLoaded', () => {
   let lastScrollTop = 0
-  let isCounted = false
 
   const tabElement = document.querySelector('.js-tab')
 
@@ -43,8 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // + 100 임시
         window.scrollTo(0, navbarElement.clientHeight + heroElement.clientHeight + 20)
-
-        isCounted = false
         // lastScrollTop = 0;
         // setTimeout(() => {
         //   document.body.classList.add('is-navbar-up')
@@ -149,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
       renderNumber()
 
       if (number >= elementValue) clearInterval(interval)
-    }, 30)
+    }, 50)
 
     function renderNumber() {
       ++number
@@ -162,6 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const counter = document.querySelector('.js-counter')
   const counterWrap = counter.querySelector('.home-tabpanel-section-media')
   if (counter) {
+    let isCounted = false
     counterWrap.addEventListener('animationend', startCountUp)
     // window.addEventListener('scroll', throttle(startCountUp))
 

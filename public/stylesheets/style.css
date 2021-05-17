@@ -60,6 +60,10 @@ button {
 
 /* .is-fixed-home-tablist .navbar {transform:translateY(0);} */
 /* .is-fixed-home-tablist .home-tablist {position:fixed;top:0;z-index:7;transform:translateY(var(--navbar-height));} */
+
+
+.is-fixed-home-tablist .navbar {z-index:-1;}
+.is-fixed-home-tablist .navbar-backdrop {position:relative;z-index:-1;}
 .is-fixed-home-tablist .home-tablist {position:fixed;top:0;z-index:9;}
 
 .is-fixed-home-tablist.is-navbar-up .navbar {transform:translateY(calc(-1 * var(--navbar-height)));}
@@ -289,19 +293,19 @@ button {
 
 
 .donut-ring {stroke: #EBEBEB;}
-.donut-segment {stroke-linecap:round;transform-origin:center;animation-delay:1.2s !important;}
+/* // todo delay 위치 */
+.donut-segment {stroke-linecap:round;transform-origin:center;animation-delay:1.4s !important;}
 .donut-text {}
 .donut-data {font-size: 0.25em;text-anchor: middle;fill: var(--gray600);}
 .donut-percent {font-size: 0.5em;fill: var(--gray700);font-weight:600;}
 
+
+.is-observed .user2 .donut-percent {fill: var(--red400);}
 .is-observed .user1 .donut-segment {stroke: var(--blue400);animation: donut1 3s both;
 }
 .is-observed .user2 .donut-segment {
   stroke: var(--red400);
   animation: donut2 3s both;
-}
-.is-observed .user2 .donut-percent {
-  fill: var(--red400);
 }
 .is-observed .user3 .donut-segment {
   stroke: var(--green100);

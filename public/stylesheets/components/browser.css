@@ -1,10 +1,10 @@
 @charset 'utf-8';
 
-.browser {height:100vh;text-align:center;background:url('../../images/browser-bg.png') no-repeat center top;background-size:100% auto;}
-.browser-inner {max-width:808px;margin:0 auto;padding:4rem 5%;position:relative;}
-.browser-icon {max-width:72px;margin:0 auto 1.5rem;}
-.browser-title {margin:0 0 1rem 0;font-size:3rem;color:#000;}
+.browser {display:table;width:100vw;height:100vh;font-family:'NanumSquare';text-align:center;background:url('../../images/browser-bg.png') no-repeat center top;background-size:100% auto;}
+.browser-inner {display:table-cell;vertical-align:middle;padding:0 5%;position:relative;}
+.browser-icon {width:100%;max-width:72px;margin:0 auto 1.5rem;}
+.browser-title {margin:0 0 1rem 0;font-size:3rem;line-height:64px;color:#000;}
 .browser-title em {color:#1EBBEE;}
 /* .browser-description {font-size:10.11px;line-height:13.5px;color:var(--gray700);} */
-.browser-description {color:#B2B2B2;}
-.browser-button {display:flex;align-items:center;justify-content:center;width:180px;height:53px;margin:3rem auto;padding:0 1rem;background:#1CB8EB;font-size:18px;font-weight:800;color:#fff;}
+.browser-description {color:#B2B2B2;font-size:18px;line-height:24px;}
+.browser-button {display:flex;align-items:center;justify-content:center;width:180px;height:53px;margin:3rem auto 0;padding:0 1rem;background:#1CB8EB;font-size:18px;font-weight:800;color:#fff;}
