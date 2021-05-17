@@ -12,7 +12,7 @@
 .hero-object-group-inner {position:relative;}
 .hero-object1 {width:100%;max-width:635px;position:absolute;right:0;top:-8rem;z-index:3;animation:hero-object1 16s ease infinite;}
 .hero-object2 {width:100%;max-width:930px;position:relative;z-index:2;animation:hero-object2 16s ease infinite;}
-.hero-object3 {width:100%;max-width:750px;position:absolute;right:8rem;bottom:-18rem;z-index:1;animation:hero-object2 16s ease infinite;}
+.hero-object3 {width:100%;max-width:750px;position:absolute;right:8rem;bottom:-18rem;z-index:1;animation:hero-object2 10s ease infinite;}
 
 .is-observed .hero-title {animation:fadeup var(--animation-duration) both;}
 .is-observed .hero-description {animation:fadeup var(--animation-duration) .6s both;}
