@@ -103,35 +103,9 @@ button {
 .is-observed .home-tabpanel-section-description {animation:fadeup var(--animation-duration) .5s forwards;}
 .is-observed .home-tabpanel-section-media {animation:fadeup var(--animation-duration) 1s forwards;}
 
-.tabpanel1-1-wrap {
-  padding-top: 62%;
-  max-width: 874px;
-  overflow: hidden;
-}
-.tabpanel1-1-wrap video {    position: absolute;
-  left: -23%;
-  /* margin: 0 -16%; */
-  top: -2px;
-  bottom: 0;
-  /* padding-top: 50%; */
-  max-width: auto;
-  width: 146%;}
+.tabpanel1-1-wrap { max-width: 874px;}
   
-
-  .tabpanel2-4-wrap {
-    padding-top: 52%;
-    max-width: 758px;
-    overflow: hidden;
-  }
-  .tabpanel2-4-wrap video {
-    position: absolute;
-    left: -23%;
-    top: -2px;
-    bottom: 0;
-    max-width: auto;
-    width: 146%;
-  }
-
+.tabpanel2-4-wrap {max-width: 758px;}
 
 .tabpanel1-3-wrap {max-width:816px;}
 
@@ -209,22 +183,6 @@ button {
 
 .tabpanel1-2-wrap {
   max-width:582px;position:absolute;
-  /* padding-top: 57%;
-  overflow: hidden; */
-}
-.tabpanel1-2-wrap-inner {
-  position: relative;
-    padding-top: 64%;
-    max-width: 582px;
-    overflow: hidden;
-    width: 582px;
-}
-.tabpanel1-2-wrap video {
-  position: absolute;
-  left: -20%;
-  top: -11%;
-  bottom: 0;
-  width: 136%;
 }
 
 .tabpanel2-1-wrap {width:46.58333333333%;max-width:559px;margin:0 auto;position:absolute;animation:none !important;opacity:1;}
@@ -428,7 +386,6 @@ button {
 
   .home-tablist-backdrop {height: 56px;}
 
-  .tabpanel1-2-wrap-inner {width:320px;}
   .tabpanel1-4-wrap-inbox {height:400px;}
 }
 
