@@ -105,6 +105,7 @@
 .is-observed .apply-how-inner header span {animation:fadeup var(--animation-duration) linear .4s both;}
 .is-observed .apply-how-inner header h2 {animation:fadeup var(--animation-duration) linear .8s both;}
 .is-observed .apply-how-inner header p {animation:fadeup var(--animation-duration) linear 1.2s both;}
+
 .is-observed .apply-intro-inner div span {animation:fadeup var(--animation-duration) linear .4s both;}
 .is-observed .apply-intro-inner div h3 {animation:fadeup var(--animation-duration) linear .8s both;}
 .is-observed .apply-intro-inner div p {animation:fadeup var(--animation-duration) linear 1.2s both;}
@@ -197,4 +198,9 @@
 
   .apply-hero footer {margin:0 -16px;padding:30px 16px;background:#ECF8FF;}
   .apply-hero-cta {margin-top:0;}
+
+  .is-observed .apply-intro-inner div span {animation:fadeup var(--animation-duration) linear .4s both;}
+  .is-observed .apply-intro-inner div h3 {animation:fadeup var(--animation-duration) linear .8s both;}
+  .is-observed .apply-intro-inner div p {animation:fadeup var(--animation-duration) linear 1.2s both;}
+
 }
