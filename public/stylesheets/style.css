@@ -127,36 +127,23 @@ button {
 .tabpanel1-3-background img {position:absolute;}
 .tabpanel1-3-o {max-width:14px;bottom:-100px;}
 .tabpanel1-3-x {max-width:20px;bottom:-100px;}
+
+.is-observed .tabpanel1-3-o {animation:ox 6s linear infinite forwards;}
+.is-observed .tabpanel1-3-x {animation:ox 6s linear infinite forwards;}
+
 /* 1 ~ 7까지 -o */
-.tabpanel1-3-background img:nth-of-type(1) {}
-.tabpanel1-3-background img:nth-of-type(2) {}
-.tabpanel1-3-background img:nth-of-type(3) {}
-.tabpanel1-3-background img:nth-of-type(4) {}
-.tabpanel1-3-background img:nth-of-type(5) {}
-.tabpanel1-3-background img:nth-of-type(6) {}
-.tabpanel1-3-background img:nth-of-type(7) {}
-
-.tabpanel1-3-background img:nth-of-type(8) {}
-.tabpanel1-3-background img:nth-of-type(9) {;}
-.tabpanel1-3-background img:nth-of-type(10) {}
-.tabpanel1-3-background img:nth-of-type(11) {}
-.tabpanel1-3-background img:nth-of-type(12) {}
-
-.is-observed .tabpanel1-3-o {animation:ox 16s infinite forwards;}
-.is-observed .tabpanel1-3-x {animation:ox 16s infinite forwards;}
-
-.is-observed .tabpanel1-3-background img:nth-of-type(1) {left:0%;animation-duration:16s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(2) {left:2.2%;animation-duration:20s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(3) {left:7.8%;animation-duration:26s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(4) {left:26%;animation-duration:14s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(5) {right:23%;animation-duration:24s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(6) {right:6.4%;animation-duration:36s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(7) {right:0%;animation-duration:34s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(8) {left:9.8%;animation-duration:22s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(9) {left:35.4%;animation-duration:18s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(10) {right:17%;animation-duration:28s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(11) {right:17%;animation-duration:32s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(12) {right:7%;animation-duration:30s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(1) {left:0%;animation-duration:8s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(2) {left:2.2%;animation-duration:12s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(3) {left:7.8%;animation-duration:16s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(4) {left:26%;animation-duration:10s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(5) {right:23%;animation-duration:13s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(6) {right:6.4%;animation-duration:19s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(7) {right:0%;animation-duration:20s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(8) {left:9.8%;animation-duration:14s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(9) {left:35.4%;animation-duration:11s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(10) {right:17%;animation-duration:17s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(11) {right:17%;animation-duration:19s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(12) {right:7%;animation-duration:12s;}
 
 .tabpanel1-4-wrap {width:100%;max-width:511px;overflow:hidden;position:absolute;}
 .tabpanel1-4-wrap-inbox {height:594px;position:relative;}

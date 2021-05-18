@@ -73,10 +73,9 @@
 
 
 @keyframes ox {
-	0% {}
-	50% {}
+	0% {transform: translateY(0);}
 	100% {
-	  transform: translateX(10px) translateY(-1200px);
+	  transform: translateY(-1100px);
 	  /* transform: translateY(160px) translateX(2560px) translateZ(-500px) rotate3d(1, 1, .25, 720deg); */
 	}
 }
