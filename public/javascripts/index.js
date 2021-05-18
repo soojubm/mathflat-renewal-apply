@@ -103,23 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // }
   }
 
-  const videoElements = document.querySelectorAll('video')
-  if (videoElements) {
-    videoElements.forEach(videoElement => {
-      window.addEventListener('scroll', () => throttle(startInViewport(videoElement)), false)
-    })
-    function startInViewport(element) {
-      // todo 구조가 바뀌면 문제생김.
-      // todo 1500 상수
-      const isObserved = element.parentNode.parentNode.parentNode.classList.contains('is-observed')
-      console.log(isObserved)
-      // if (!isObserved) return
-      setTimeout(() => {
-        element.play()
-      }, 1500)
-    }
-  }
-
   function countUp({ selector: selector }) {
     if (!selector) return
 
