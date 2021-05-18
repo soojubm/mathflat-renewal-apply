@@ -235,5 +235,22 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        detectBrowser()
+        function detectBrowser() {
+          const browserElement = document.querySelector('.js-browser')
+          const wrapElement = document.querySelector('.js-wrap')
+          if (!browserElement || !wrapElement) return
+
+          const userAgent = navigator.userAgent.toLowerCase()
+          const isIEBrowser = userAgent.indexOf('msie') > -1 || userAgent.indexOf('trident') > -1
+
+          browserElement.hidden = !isIEBrowser
+          wrapElement.hidden = isIEBrowser
+        }
+      })
+    </script>
   </body>
 </html>

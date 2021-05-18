@@ -51,15 +51,15 @@ document.addEventListener('DOMContentLoaded', () => {
   let lazyloadImages
   if ('IntersectionObserver' in window) {
     lazyloadImages = document.querySelectorAll('[data-src]')
-
-    console.log(lazyloadImages[0])
     const imageObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
-        if (!entry.isIntersecting) return
-        const image = entry.target
-        image.src = image.dataset.src
-        // image.classList.remove('lazy')
-        imageObserver.unobserve(image)
+        // todo hero 영역 이미지들 안 됨.. 왜
+        if (entry.isIntersecting) {
+          const image = entry.target
+          image.src = image.dataset.src
+          // image.classList.remove('lazy')
+          imageObserver.unobserve(image)
+        }
       })
     })
 
