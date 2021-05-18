@@ -119,8 +119,8 @@
   .apply-notice header {
     display: flex;
     align-items: center;
-    margin: 0 0 10px 0;
-    padding: 0 0 10px 0;
+    margin: 0 0 24px 0;
+    padding: 0 0 24px 0;
     border-bottom: 1px solid #c0c0c0;
   }
   /* .apply-notice header hr {
