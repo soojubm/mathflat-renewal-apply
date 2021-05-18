@@ -53,8 +53,8 @@
     <script src="./build/bundle.js" defer></script> -->
 
     <link rel="stylesheet" type="text/css" href="public/stylesheets/style.css" />
-    <script type="module" src="public/javascripts/index.js"></script>
     <script type="module" src="public/javascripts/common.js"></script>
+    <script type="module" src="public/javascripts/home.js"></script>
   </head>
   <body>
     <noscript>This website requires JavaScript.</noscript>
@@ -151,7 +151,7 @@
               </p>
               <figure class="home-tabpanel-section-media tabpanel1-1-wrap">
                 <video loop muted poster="public/videoes/tabpanel1-section1.png" preload="auto" playsinline>
-                  <source src="public/videoes/tabpanel1-section1.mp4" type="video/mp4" />
+                  <source data-src="public/videoes/tabpanel1-section1.mp4" type="video/mp4" />
                 </video>
               </figure>
             </div>
@@ -183,7 +183,7 @@
             <div class="home-tabpanel-section-background tabpanel1-3-background">
               <img data-src="public/images/tabpanel1-section3-bg.png" alt="" />
 
-              <div style="width: 80%; max-width: 1624px; height: 100%; margin: 0 10%; box-sizing: border-box; position: relative; z-index: 0">
+              <div class="tabpanel1-3-ox-wrap">
                 <img class="tabpanel1-3-o" data-src="public/images/tabpanel1-section3-o.png" alt="" />
                 <img class="tabpanel1-3-o" data-src="public/images/tabpanel1-section3-o.png" alt="" />
                 <img class="tabpanel1-3-o" data-src="public/images/tabpanel1-section3-o.png" alt="" />
@@ -720,32 +720,12 @@
     </div>
 
     <script>
-      function detectBrowser() {
-        const browserElement = document.querySelector('.js-browser')
-        const wrapElement = document.querySelector('.js-wrap')
-        if (!browserElement || !wrapElement) return
+      document.addEventListener('DOMContentLoaded', function () {
+        detectBrowser()
 
-        const userAgent = navigator.userAgent.toLowerCase()
-        const isIEBrowser = userAgent.indexOf('msie') > -1 || userAgent.indexOf('trident') > -1
-        // const isChromeBrowser = userAgent.indexOf('chrome') !== -1
-        // const isMacBrowser = /Mac|iPod|iPhone|iPad/.test(navigator.platform);
-
-        browserElement.hidden = !isIEBrowser
-        wrapElement.hidden = isIEBrowser
-
-        if (isIEBrowser) wrapElement.style.display = 'none'
-
-        console.log(isIEBrowser)
-
-        // todo return browser
-      }
-
-      document.addEventListener('DOMContentLoaded', detectBrowser)
-
-      document.addEventListener('DOMContentLoaded', () => {
         const videoElements = document.querySelectorAll('video')
         if (videoElements) {
-          videoElements.forEach(videoElement => {
+          videoElements.forEach(function (videoElement) {
             videoElement.parentNode.addEventListener('animationend', startInViewport(videoElement))
           })
           function startInViewport(element) {
@@ -754,10 +734,23 @@
             const isObserved = element.parentNode.parentNode.parentNode.classList.contains('is-observed')
             console.log(isObserved)
             // if (!isObserved) return
-            setTimeout(() => {
+            setTimeout(function () {
               element.play()
             }, 1500)
           }
+        }
+
+        function detectBrowser() {
+          const browserElement = document.querySelector('.js-browser')
+          const wrapElement = document.querySelector('.js-wrap')
+          if (!browserElement || !wrapElement) return
+
+          const userAgent = navigator.userAgent.toLowerCase()
+          const isIEBrowser = userAgent.indexOf('msie') > -1 || userAgent.indexOf('trident') > -1
+
+          console.log('isIEBrowser', isIEBrowser)
+          browserElement.hidden = !isIEBrowser
+          wrapElement.hidden = isIEBrowser
         }
       })
     </script>

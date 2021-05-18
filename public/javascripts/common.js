@@ -48,47 +48,24 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  var lazyloadImages
-
+  let lazyloadImages
   if ('IntersectionObserver' in window) {
     lazyloadImages = document.querySelectorAll('[data-src]')
-    console.log(lazyloadImages)
-    var imageObserver = new IntersectionObserver(function (entries, observer) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          var image = entry.target
-          image.src = image.dataset.src
-          image.classList.remove('lazy')
-          imageObserver.unobserve(image)
-        }
+
+    console.log(lazyloadImages[0])
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return
+        const image = entry.target
+        image.src = image.dataset.src
+        // image.classList.remove('lazy')
+        imageObserver.unobserve(image)
       })
     })
 
-    lazyloadImages.forEach(function (image) {
-      imageObserver.observe(image)
-    })
+    lazyloadImages.forEach(image => imageObserver.observe(image))
   }
 })
-
-// var lazyloadImages;
-
-// if ("IntersectionObserver" in window) {
-//   lazyloadImages = document.querySelectorAll(".lazy");
-//   var imageObserver = new IntersectionObserver(function(entries, observer) {
-//     entries.forEach(function(entry) {
-//       if (entry.isIntersecting) {
-//         var image = entry.target;
-//         image.src = image.dataset.src;
-//         image.classList.remove("lazy");
-//         imageObserver.unobserve(image);
-//       }
-//     });
-//   });
-
-//   lazyloadImages.forEach(function(image) {
-//     imageObserver.observe(image);
-//   });
-// }
 
 // else {
 //   var lazyloadThrottleTimeout;

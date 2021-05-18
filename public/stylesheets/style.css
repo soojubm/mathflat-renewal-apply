@@ -125,6 +125,8 @@ button {
 
 
 .tabpanel1-3-background img {position:absolute;}
+
+.tabpanel1-3-ox-wrap {width: 80%; max-width: 1624px; height: 100%;margin:0 auto;position: relative; z-index: 0}
 .tabpanel1-3-o {max-width:14px;bottom:-100px;}
 .tabpanel1-3-x {max-width:20px;bottom:-100px;}
 
@@ -135,14 +137,14 @@ button {
 .is-observed .tabpanel1-3-background img:nth-of-type(1) {left:0%;animation-duration:8s;}
 .is-observed .tabpanel1-3-background img:nth-of-type(2) {left:2.2%;animation-duration:12s;}
 .is-observed .tabpanel1-3-background img:nth-of-type(3) {left:7.8%;animation-duration:16s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(4) {left:26%;animation-duration:10s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(5) {right:23%;animation-duration:13s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(6) {right:6.4%;animation-duration:19s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(7) {right:0%;animation-duration:20s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(4) {left:26%;animation-duration:11s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(5) {right:23%;animation-duration:9s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(6) {right:6.4%;animation-duration:15s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(7) {right:0%;animation-duration:18s;}
 .is-observed .tabpanel1-3-background img:nth-of-type(8) {left:9.8%;animation-duration:14s;}
 .is-observed .tabpanel1-3-background img:nth-of-type(9) {left:35.4%;animation-duration:11s;}
 .is-observed .tabpanel1-3-background img:nth-of-type(10) {right:17%;animation-duration:17s;}
-.is-observed .tabpanel1-3-background img:nth-of-type(11) {right:17%;animation-duration:19s;}
+.is-observed .tabpanel1-3-background img:nth-of-type(11) {right:17%;animation-duration:7s;}
 .is-observed .tabpanel1-3-background img:nth-of-type(12) {right:7%;animation-duration:12s;}
 
 .tabpanel1-4-wrap {width:100%;max-width:511px;overflow:hidden;position:absolute;}
@@ -334,6 +336,8 @@ button {
   .align-half .home-tabpanel-section-media {margin-top:3rem;position:relative !important;}
   .home-tabpanel-section-inner {padding:6rem var(--grid-margin) !important;}
   .home-tabpanel-section-inner > div {margin-left:auto;margin-right:auto;position:relative !important;}
+  
+  .tabpanel1-3-ox-wrap {width:90%;}
 
   .tabpanel2-2-wrap .users {justify-content:space-between;max-width:1000px;margin:-2rem auto;padding:2rem 0;}
   .tabpanel2-2-wrap .tag1,
@@ -372,10 +376,6 @@ button {
   .tabpanel1-4-wrap .question {margin-bottom:17px;}
 
   .donut-percent-wrap {transform:translateY(-2px)}
-}
-
-
-@media (max-width:720px) {
 }
 
 @media (max-width:680px) {

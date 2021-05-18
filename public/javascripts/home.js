@@ -2,6 +2,7 @@ import { throttle } from './utils/optimizationUtils.js'
 
 document.addEventListener('DOMContentLoaded', () => {
   let lastScrollTop = 0
+  let isCounted = false
 
   const tabElement = document.querySelector('.js-tab')
 
@@ -42,6 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // + 100 임시
         window.scrollTo(0, navbarElement.clientHeight + heroElement.clientHeight + 20)
+
+        isCounted = false
         // lastScrollTop = 0;
         // setTimeout(() => {
         //   document.body.classList.add('is-navbar-up')
@@ -100,66 +103,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // }
   }
 
-  const ANIMATED_CLASSNAME = 'is-observed'
-  const elements = Array.from(document.querySelectorAll('.js-observer'))
-  const options = {
-    root: null,
-    rootMargin: '0px 0px 0px 0px',
-    threshold: 0.25,
-  }
-  let observer = new IntersectionObserver(callback, options)
-
-  elements.forEach(element => observer.observe(element))
-
-  function callback(entries, observer) {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return
-      entry.target.classList.toggle(ANIMATED_CLASSNAME, entry.isIntersecting)
-    })
-  }
-
-  const videoElements = document.querySelectorAll('video')
-  if (videoElements) {
-    videoElements.forEach(videoElement => {
-      window.addEventListener('scroll', () => throttle(startInViewport(videoElement)), false)
-    })
-    function startInViewport(element) {
-      // todo 구조가 바뀌면 문제생김.
-      // todo 1500 상수
-      const isObserved = element.parentNode.parentNode.parentNode.classList.contains('is-observed')
-      console.log(isObserved)
-      // if (!isObserved) return
-      setTimeout(() => {
-        element.play()
-      }, 1500)
-    }
-  }
-
-  function countUp({ selector: selector }) {
-    if (!selector) return
-
-    let number = 0
-    let element = document.querySelector(selector)
-    let elementValue = element.getAttribute('data-number')
-
-    let interval = setInterval(() => {
-      renderNumber()
-
-      if (number >= elementValue) clearInterval(interval)
-    }, 50)
-
-    function renderNumber() {
-      ++number
-      element.innerHTML = `${number}%`
-    }
-  }
-
   // todo... 각각 시간 설정할 수 있도록..
   // animationend
   const counter = document.querySelector('.js-counter')
   const counterWrap = counter.querySelector('.home-tabpanel-section-media')
   if (counter) {
-    let isCounted = false
     counterWrap.addEventListener('animationend', startCountUp)
     // window.addEventListener('scroll', throttle(startCountUp))
 
@@ -186,15 +134,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  const homeCTA = document.querySelector('.js-home-cta')
-  if (homeCTA) {
-    window.addEventListener('scroll', throttle(test12))
-  }
-  function test12() {
-    const heroElement = document.querySelector('.js-hero-cta')
-    if (!heroElement) return
+  function countUp({ selector: selector }) {
+    if (!selector) return
 
-    const isStuck = window.pageYOffset > heroElement.offsetTop
-    homeCTA.classList.toggle('is-fixed', isStuck)
+    let number = 0
+    let element = document.querySelector(selector)
+    let elementValue = element.getAttribute('data-number')
+
+    let interval = setInterval(() => {
+      renderNumber()
+
+      if (number >= elementValue) clearInterval(interval)
+    }, 20)
+
+    function renderNumber() {
+      ++number
+      element.innerHTML = `${number}%`
+    }
   }
 })
