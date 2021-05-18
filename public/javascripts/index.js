@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
       renderNumber()
 
       if (number >= elementValue) clearInterval(interval)
-    }, 30)
+    }, 20)
 
     function renderNumber() {
       ++number
