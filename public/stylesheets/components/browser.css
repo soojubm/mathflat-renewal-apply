@@ -1,7 +1,7 @@
 @charset 'utf-8';
 .browser-wrap {}
 .browser {display:table;width:100vw;height:100vh;font-family:'NanumSquare';text-align:center;background:url('../../images/browser-bg.png') no-repeat center top;background-size:100% auto;}
-.browser-inner {display:table-cell;vertical-align:middle;padding:0 5%;position:relative;}
+.browser-inner {display:table-cell;vertical-align:middle;padding:0 4%;position:relative;}
 .browser-icon {width:100%;max-width:72px;margin:0 auto 1.5rem;}
 .browser-title {margin:0 0 1rem 0;font-size:3rem;line-height:64px;color:#000;}
 .browser-title em {color:#1EBBEE;}

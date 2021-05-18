@@ -26,7 +26,7 @@
   
   
 /* todo safe area */
-.home-cta {display:flex;justify-content:center;padding:0 5%;position:fixed;left:0;right:0;bottom:calc(constant(safe-area-inset-bottom) + 2rem);bottom:calc(env(safe-area-inset-bottom) + 2rem);z-index:9;transform:translateY(100px);transition:all .6s;opacity:0;}
+.home-cta {display:flex;justify-content:center;padding:0 var(--grid-margin);position:fixed;left:0;right:0;bottom:calc(constant(safe-area-inset-bottom) + 2rem);bottom:calc(env(safe-area-inset-bottom) + 2rem);z-index:9;transform:translateY(100px);transition:all .6s;opacity:0;}
 .home-cta-button {
 display:flex;align-items:center;justify-content:center;width:100%;max-width:450px;height:56px;margin:3rem 0 0;
 border-radius:50px;text-align:center;background:var(--yellow);box-shadow:var(--shadow400);font-size:18px;color:var(--gray0);font-weight:800;}

@@ -80,7 +80,7 @@
 
 
 .apply-notice {
-    padding: 140px 5%;
+    padding: 140px var(--grid-margin);
     background: #ececec;
   }
   .apply-notice-inner {
@@ -182,10 +182,10 @@
   .apply-bgarea {padding-bottom: 45px;background:#ECF8FF;}
 
   .apply-hero {
-    padding: 82px 16px 0;
+    padding: 82px var(--grid-margin) 0;
     background: url('../../images/apply/apply-hero-mobile.png') no-repeat center top #48A2F6;
   }
-  .apply-intro {padding:0 16px;background:#ECF8FF;}
+  .apply-intro {padding:0 var(--grid-margin);background:#ECF8FF;}
   .apply-intro-inner {display:block;padding-top:32px;padding-bottom:59px;}
   .apply-intro-inner header {margin-bottom:32px;}
   .apply-intro-inner header span {width:8.74635568513%;}
@@ -197,7 +197,7 @@
 
 
 
-  .apply-benefit {padding:20px 16px 0;background:#ECF8FF;}
+  .apply-benefit {padding:20px var(--grid-margin) 0;background:#ECF8FF;}
   /* .apply-benefit-inner {margin:0 auto 0;padding:32px 0 70px;} */
   .apply-benefit-inner {margin:0 auto 20px;padding:32px 0 70px;}
   .apply-benefit-inner header {margin:0 0 40px 0;}
@@ -212,7 +212,7 @@
   
   
 
-  .apply-how {padding:32px 16px 50px;}
+  .apply-how {padding:32px var(--grid-margin) 50px;}
   .apply-how-inner {display:block;position:relative;}
   .apply-how-inner header {margin-bottom:30px;}
   .apply-how-inner header span {width:8.74635568513%;}
@@ -232,7 +232,7 @@
   .apply-notice ul li {font-size:12px;}
   .apply-notice ul li:before {width:2px;height:2px;margin:0 8px 0 0;}
 
-  .apply-hero footer {margin:0 -16px;padding:30px 16px;background:#ECF8FF;}
+  .apply-hero footer {margin:0 -var(--grid-margin);padding:30px var(--grid-margin);background:#ECF8FF;}
   .apply-hero-cta {margin-top:0;}
 
   .is-observed .apply-intro-inner div span {animation:fadeup var(--animation-duration) linear .4s both;}
