@@ -74,7 +74,7 @@ button {
 
 .home-tablist {border-bottom:1px solid #f1f1f1;background:var(--gray0);position:absolute;left:0;right:0;z-index:9;transition:all .4s;}
 .home-tablist-inner {display:flex;justify-content:center;max-width:var(--width-large);margin:0 auto;}
-.home-tablist-tab {display:block;width:20%;padding:1rem 0;border-bottom:4px solid transparent;text-align:center;}
+.home-tablist-tab {display:block;width:25%;padding:1rem 0;border-bottom:4px solid transparent;text-align:center;}
 .home-tablist-tab small {display:block;color:var(--gray600);}
 .home-tablist-tab b {color:var(--gray600);}
 .home-tablist-tab[aria-selected=true] {border-color:var(--color-primary);}
@@ -193,7 +193,7 @@ button {
 /*  todo 왼쪽 정렬 absolute */
 
 .tabpanel1-2-wrap {
-  max-width:582px;position:absolute;
+  max-width:630px;position:absolute;
 }
 
 .tabpanel2-1-wrap {width:46.58333333333%;max-width:559px;margin:0 auto;position:absolute;animation:none !important;opacity:1;}
