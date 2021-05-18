@@ -4,9 +4,9 @@
 
 .apply-hero {padding:160px 0;text-align:center;}
 .apply-hero-inner {max-width:1200px;margin:0 auto;position:relative;}
-.apply-hero h1 {max-width:368px;margin:0 auto;}
-.apply-hero p {max-width:378px;margin:19px auto 0;}
-.apply-hero figure {max-width:626px;margin:20px auto 52px;}
+.apply-hero h1 {max-width:368px;margin:0 auto;opacity:0;}
+.apply-hero p {max-width:378px;margin:19px auto 0;opacity:0;}
+.apply-hero figure {max-width:626px;margin:20px auto 52px;opacity:0;}
 .apply-hero footer {}
 .apply-hero-cta {display:flex;align-items:center;justify-content:center;max-width:450px;height:56px;margin:3rem auto 0;border-radius:50px;text-align:center;background:var(--yellow);box-shadow:var(--shadow400);color:var(--gray0);font-size:18px;font-weight:800;}
 .apply-hero-objects {}
@@ -30,26 +30,51 @@
 }
 
 /* // first second third mixin */
-.is-observed.apply-hero h1 {animation:fadeup var(--animation-duration) linear .4s both;}
-.is-observed.apply-hero p {animation:fadeup var(--animation-duration) linear .8s both;}
-.is-observed.apply-hero figure {animation:fadeup var(--animation-duration) linear 1.2s both;}
+.is-observed.apply-hero h1 {animation:fadeup var(--animation-duration) linear 0s both;}
+.is-observed.apply-hero p {animation:fadeup var(--animation-duration) linear .4s both;}
+.is-observed.apply-hero figure {animation:fadeup var(--animation-duration) linear .8s both;}
 
 .apply-intro {}
 .apply-intro-inner {display:flex;flex-wrap:wrap;justify-content:space-evenly;max-width:1200px;margin:0 auto;padding:100px 0 124px;background:#fff;border-radius:20px;box-shadow:var(--shadow400);position:relative;}
-.apply-intro-inner header {width:100%;margin:0 0 61px 0;text-align:center;}
-.apply-intro-inner header > span {display:block;width:60px;margin:0 auto;}
-.apply-intro-inner header h2 {margin:34px 0 0;font-size:40px;}
+.apply-intro-inner header {width:100%;margin:0 0 61px 0;text-align:center;opacity:0;}
+.apply-intro-inner header > span {display:block;width:60px;margin:0 auto;opacity:0;}
+.apply-intro-inner header h2 {margin:34px 0 0;font-size:40px;opacity:0;}
 .apply-intro-inner div {width:20%;margin:0 38px;text-align:center;}
 .apply-intro-inner div span {display:block;width:48px;height:48px;margin:0 auto 16px;}
 .apply-intro-inner div h3 {margin:2px 0 6px;font-size:24px;}
 .apply-intro-inner div p {font-size:18px;line-height:24px;}
 
+
+
+.is-observed .apply-intro-inner header span {animation:fadeup var(--animation-duration) linear .4s both;}
+.is-observed .apply-intro-inner header h2 {animation:fadeup var(--animation-duration) linear .8s both;}
+.is-observed .apply-intro-inner header p {animation:fadeup var(--animation-duration) linear 1.2s both;}
+.is-observed .apply-intro-inner div:nth-of-type(1) {animation:fadeup var(--animation-duration) linear 1.4s both;}
+.is-observed .apply-intro-inner .line1 {animation:fadeup var(--animation-duration) linear 1.5s both;}
+.is-observed .apply-intro-inner div:nth-of-type(2) {animation:fadeup var(--animation-duration) linear 1.6s both;}
+.is-observed .apply-intro-inner .line2 {animation:fadeup var(--animation-duration) linear 1.7s both;}
+.is-observed .apply-intro-inner div:nth-of-type(3) {animation:fadeup var(--animation-duration) linear 1.8s both;}
+/* // 각각 뜨는 것에서 전체 뜨느 ㄴ것으로 변경됨... */
+/* .is-observed .apply-intro-inner div:nth-of-type(1) span {animation:fadeup var(--animation-duration) linear 1.4s both;}
+.is-observed .apply-intro-inner div:nth-of-type(1) h3 {animation:fadeup var(--animation-duration) linear 1.6s both;}
+.is-observed .apply-intro-inner div:nth-of-type(1) p {animation:fadeup var(--animation-duration) linear 1.8s both;}
+.is-observed .apply-intro-inner .line1 {animation:fadeup var(--animation-duration) linear 1.9s both;}
+.is-observed .apply-intro-inner div:nth-of-type(2) span {animation:fadeup var(--animation-duration) linear 2s both;}
+.is-observed .apply-intro-inner div:nth-of-type(2) h3 {animation:fadeup var(--animation-duration) linear 2.2s both;}
+.is-observed .apply-intro-inner div:nth-of-type(2) p {animation:fadeup var(--animation-duration) linear 2.4s both;}
+.is-observed .apply-intro-inner .line2 {animation:fadeup var(--animation-duration) linear 2.5s both;}
+.is-observed .apply-intro-inner div:nth-of-type(3) span {animation:fadeup var(--animation-duration) linear 2.6s both;}
+.is-observed .apply-intro-inner div:nth-of-type(3) h3 {animation:fadeup var(--animation-duration) linear 2.8s both;}
+.is-observed .apply-intro-inner div:nth-of-type(3) p {animation:fadeup var(--animation-duration) linear 3s both;} */
+
+
+
 .apply-benefit {}
 .apply-benefit-inner {max-width:1200px;margin:80px auto 0;padding:100px 0 94px;background:#fff;border-radius:20px;box-shadow:var(--shadow400);position:relative;}
 .apply-benefit-inner header {margin:0 0 40px 0;text-align:center;}
-.apply-benefit-inner header > span {display:block;width:60px;margin:0 auto;}
-.apply-benefit-inner header h2 {margin:34px 0 24px;font-size:40px;}
-.apply-benefit-inner figure {max-width:456px;margin:0 auto;}
+.apply-benefit-inner header > span {display:block;width:60px;margin:0 auto;opacity:0;}
+.apply-benefit-inner header h2 {margin:34px 0 24px;font-size:40px;opacity:0;}
+.apply-benefit-inner figure {max-width:456px;margin:0 auto;opacity:0;}
 .apply-benefit-inner .coins {}
 .apply-benefit-inner .coins img {position:absolute;animation:apply-coin 4s ease infinite both;}
 .apply-benefit-inner .coins img:nth-of-type(1) {width:244px;left:-142px;top:60px;animation-duration:6s;}
@@ -58,17 +83,16 @@
 .apply-benefit-inner .coins img:nth-of-type(4) {width:336px;right:-209px;top:333px;animation-duration:5s;}
 .apply-benefit-inner .coins img:nth-of-type(5) {width:311px;right:calc(-311px - 100px);bottom:-340px;animation-duration:2s;}
 
-
-.is-observed .apply-benefit-inner header > span {animation:fadeup var(--animation-duration) linear .4s both;}
-.is-observed .apply-benefit-inner header h2 {animation:fadeup var(--animation-duration) linear .8s both;}
-.is-observed .apply-benefit-inner figure {animation:fadeup var(--animation-duration) linear 1.2s both;}
+.is-observed .apply-benefit-inner header > span {animation:fadeup var(--animation-duration) linear 0s both;}
+.is-observed .apply-benefit-inner header h2 {animation:fadeup var(--animation-duration) linear .4s both;}
+.is-observed .apply-benefit-inner figure {animation:fadeup var(--animation-duration) linear .8s both;}
 
 .apply-how {padding:124px 0;background:#f9f9f9;}
 .apply-how-inner {max-width:1200px;margin:0 auto;position:relative;}
 .apply-how-inner header {width:100%;margin:0 0 60px 0;text-align:center;}
-.apply-how-inner header span {display:block;width:60px;margin:0 auto;}
-.apply-how-inner header h2 {margin:34px 0 24px;font-size:40px;}
-.apply-how-inner header p {font-size:24px;font-weight:bold;}
+.apply-how-inner header span {display:block;width:60px;margin:0 auto;opacity:0;}
+.apply-how-inner header h2 {margin:34px 0 24px;font-size:40px;opacity:0;}
+.apply-how-inner header p {font-size:24px;font-weight:bold;opacity:0;}
 .apply-how-inner header p em {font-weight:bold;}
 .apply-how-inner .wrap {display:flex;flex-wrap:wrap;justify-content:space-between;}
 .apply-how-inner .wrap > div {width:100%;max-width:382px;padding:64px 0 48px;text-align:center;position:relative;}
@@ -77,6 +101,10 @@
 .apply-how-inner .wrap > div em {font-size:21px;font-weight:bold;position:relative;z-index:1;}
 .apply-how-inner .wrap > div h3 {margin:2px 0 6px;font-size:24px;color:var(--black);position:relative;z-index:1;}
 .apply-how-inner .wrap > div p {font-size:18px;line-height:24px;position:relative;z-index:1;}
+
+.is-observed .apply-how-inner header span {animation:fadeup var(--animation-duration) linear .0s both;}
+.is-observed .apply-how-inner header h2 {animation:fadeup var(--animation-duration) linear .4s both;}
+.is-observed .apply-how-inner header p {animation:fadeup var(--animation-duration) linear .8s both;}
 
 
 .apply-notice {
@@ -127,32 +155,6 @@
 .is-observed .apply-intro-inner div {width:20%;margin:0 38px;text-align:center;} */
 
 
-.is-observed .apply-how-inner header span {animation:fadeup var(--animation-duration) linear .4s both;}
-.is-observed .apply-how-inner header h2 {animation:fadeup var(--animation-duration) linear .8s both;}
-.is-observed .apply-how-inner header p {animation:fadeup var(--animation-duration) linear 1.2s both;}
-
-
-.is-observed .apply-intro-inner header span {animation:fadeup var(--animation-duration) linear .4s both;}
-.is-observed .apply-intro-inner header h2 {animation:fadeup var(--animation-duration) linear .8s both;}
-.is-observed .apply-intro-inner header p {animation:fadeup var(--animation-duration) linear 1.2s both;}
-.is-observed .apply-intro-inner div:nth-of-type(1) {animation:fadeup var(--animation-duration) linear 1.4s both;}
-.is-observed .apply-intro-inner .line1 {animation:fadeup var(--animation-duration) linear 1.5s both;}
-.is-observed .apply-intro-inner div:nth-of-type(2) {animation:fadeup var(--animation-duration) linear 1.6s both;}
-.is-observed .apply-intro-inner .line2 {animation:fadeup var(--animation-duration) linear 1.7s both;}
-.is-observed .apply-intro-inner div:nth-of-type(3) {animation:fadeup var(--animation-duration) linear 1.8s both;}
-/* // 각각 뜨는 것에서 전체 뜨느 ㄴ것으로 변경됨... */
-/* .is-observed .apply-intro-inner div:nth-of-type(1) span {animation:fadeup var(--animation-duration) linear 1.4s both;}
-.is-observed .apply-intro-inner div:nth-of-type(1) h3 {animation:fadeup var(--animation-duration) linear 1.6s both;}
-.is-observed .apply-intro-inner div:nth-of-type(1) p {animation:fadeup var(--animation-duration) linear 1.8s both;}
-.is-observed .apply-intro-inner .line1 {animation:fadeup var(--animation-duration) linear 1.9s both;}
-.is-observed .apply-intro-inner div:nth-of-type(2) span {animation:fadeup var(--animation-duration) linear 2s both;}
-.is-observed .apply-intro-inner div:nth-of-type(2) h3 {animation:fadeup var(--animation-duration) linear 2.2s both;}
-.is-observed .apply-intro-inner div:nth-of-type(2) p {animation:fadeup var(--animation-duration) linear 2.4s both;}
-.is-observed .apply-intro-inner .line2 {animation:fadeup var(--animation-duration) linear 2.5s both;}
-.is-observed .apply-intro-inner div:nth-of-type(3) span {animation:fadeup var(--animation-duration) linear 2.6s both;}
-.is-observed .apply-intro-inner div:nth-of-type(3) h3 {animation:fadeup var(--animation-duration) linear 2.8s both;}
-.is-observed .apply-intro-inner div:nth-of-type(3) p {animation:fadeup var(--animation-duration) linear 3s both;} */
-
 
 .is-observed .apply-how-inner .wrap > div .bg,
 .is-observed .apply-how-inner .wrap > div span,
@@ -188,9 +190,14 @@
   .apply-bgarea {padding-bottom: 45px;background:#ECF8FF;}
 
   .apply-hero {
-    padding: 82px var(--grid-margin) 0;
+    padding: 82px 0 0;
     background: url('../../images/apply/apply-hero-mobile.png') no-repeat center top #48A2F6;
   }
+
+  
+  .apply-hero footer {padding:30px var(--grid-margin);background:#ECF8FF;}
+  .apply-hero-cta {margin-top:0;}
+
   .apply-intro {padding:0 var(--grid-margin);background:#ECF8FF;}
   .apply-intro-inner {display:block;padding-top:32px;padding-bottom:59px;}
   .apply-intro-inner header {margin-bottom:32px;}
@@ -237,9 +244,6 @@
   .apply-notice header h2 {font-size: 14px;}
   .apply-notice ul li {font-size:12px;}
   .apply-notice ul li:before {width:2px;height:2px;margin:0 8px 0 0;}
-
-  .apply-hero footer {margin:0 -var(--grid-margin);padding:30px var(--grid-margin);background:#ECF8FF;}
-  .apply-hero-cta {margin-top:0;}
 
   .is-observed .apply-intro-inner div span {animation:fadeup var(--animation-duration) linear .4s both;}
   .is-observed .apply-intro-inner div h3 {animation:fadeup var(--animation-duration) linear .8s both;}
