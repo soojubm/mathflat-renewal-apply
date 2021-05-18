@@ -47,7 +47,8 @@ button {
   --animation-delay-third: .8s;
 }
 
-.navbar {display:flex;align-items:center;justify-content:space-between;height:var(--navbar-height);padding:0 2rem;border-bottom:1px solid #fafafa;background:var(--gray0);position:fixed;left:0;right:0;top:0;z-index:8;transition:all .4s;}
+.navbar {padding:0 var(--grid-margin);border-bottom:1px solid #fafafa;background:var(--gray0);position:fixed;left:0;right:0;top:0;z-index:8;transition:all .4s;}
+.navbar-inner {display:flex;align-items:center;justify-content:space-between;max-width:1200px;height:var(--navbar-height);margin:0 auto;}
 .navbar-logo {width:96px;}
 .navbar-logo img {display:block;}
 .navbar-menu {display:flex;align-items:center;margin-right:-1rem;position:relative;}
