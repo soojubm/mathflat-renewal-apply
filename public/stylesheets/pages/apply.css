@@ -4,10 +4,15 @@
 
 .apply-hero {padding:160px 0;text-align:center;}
 .apply-hero h1 {max-width:368px;margin:0 auto;}
-.apply-hero figure {max-width:663px;margin:20px auto 52px;}
+.apply-hero p {max-width:378px;margin:19px auto 0;}
+.apply-hero figure {max-width:626px;margin:20px auto 52px;}
 .apply-hero footer {}
 .apply-hero-cta {display:flex;align-items:center;justify-content:center;max-width:450px;height:56px;margin:3rem auto 0;border-radius:50px;text-align:center;background:var(--yellow);color:var(--gray0);font-size:18px;font-weight:800;}
 
+/* // first second third mixin */
+.is-observed.apply-hero h1 {animation:fadeup var(--animation-duration) linear .4s both;}
+.is-observed.apply-hero p {animation:fadeup var(--animation-duration) linear .8s both;}
+.is-observed.apply-hero figure {animation:fadeup var(--animation-duration) linear 1.2s both;}
 
 .apply-intro {}
 .apply-intro-inner {display:flex;flex-wrap:wrap;justify-content:space-evenly;max-width:1200px;margin:0 auto;padding:100px 0 124px;background:#fff;border-radius:20px;box-shadow:var(--shadow400);}
@@ -34,6 +39,9 @@
 .apply-benefit-inner .coins img:nth-of-type(5) {width:311px;right:calc(-311px - 100px);bottom:-340px;animation-duration:2s;}
 
 
+.is-observed .apply-benefit-inner header > span {animation:fadeup var(--animation-duration) linear .4s both;}
+.is-observed .apply-benefit-inner header h2 {animation:fadeup var(--animation-duration) linear .8s both;}
+.is-observed .apply-benefit-inner figure {animation:fadeup var(--animation-duration) linear 1.2s both;}
 
 .apply-how {padding:124px 0;background:#f9f9f9;}
 .apply-how-inner {max-width:1200px;margin:0 auto;}
@@ -165,8 +173,6 @@
   .apply-benefit-inner header {margin:0 0 40px 0;}
   .apply-benefit-inner header > span {display:block;width:8.74635568513%;margin:0 auto;}
   .apply-benefit-inner header h2 {margin:24px 0 41px;font-size:24px;line-height:32px;}
-
-
   .apply-benefit-inner figure {width:66.7638483965%}
   .apply-benefit-inner .coins img:nth-of-type(1) {width:26.13333333333%;left:-8%;top:11.82170542636%;}
   .apply-benefit-inner .coins img:nth-of-type(2) {width:34.13333333333%;left:-15%;top:46%;}

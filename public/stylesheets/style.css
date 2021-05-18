@@ -119,7 +119,7 @@ button {
 .tabpanel1-3-1 {position:absolute;left:0;right:0;top:0;bottom:0;z-index:1;}
 .tabpanel1-3-2 {position:absolute;left:0;right:0;top:0;bottom:0;}
 
-.is-observed .tabpanel1-3-1 {animation:tab1-3-1 4s ease 4s infinite alternate;}
+.is-observed .tabpanel1-3-1 {animation:tab1-3-1 2s ease 1.6s infinite alternate;}
 /* .is-observed .tabpanel1-3-2 {animation:tab1-3-1 2s linear 4s both infinite;} */
 
 
@@ -293,13 +293,12 @@ button {
 
 
 .donut-ring {stroke: #EBEBEB;}
-/* // todo delay 위치 */
-.donut-segment {stroke-linecap:round;transform-origin:center;animation-delay:1.4s !important;}
+.donut-segment {stroke-linecap:round;transform-origin:center;}
 .donut-text {}
 .donut-data {font-size: 0.25em;text-anchor: middle;fill: var(--gray600);}
 .donut-percent {font-size: 0.5em;fill: var(--gray700);font-weight:600;}
 
-
+.is-observed .users .donut-segment {animation-delay:1.4s;}
 .is-observed .user2 .donut-percent {fill: var(--red400);}
 .is-observed .user1 .donut-segment {stroke: var(--blue400);animation: donut1 3s both;
 }
