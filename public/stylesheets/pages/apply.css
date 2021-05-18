@@ -97,10 +97,7 @@
 
 .apply-notice ul li:before {content:'';display:inline-block;width:4px;height:4px;margin:0 10px 0 0;border-radius:50%;background:#818181;vertical-align:middle;}
 
-
-
 .is-observed .apply-how-inner header {animation:fadeup var(--animation-duration) linear both;}
-
 
 .is-observed .apply-intro {}
 /* .is-observed .apply-intro-inner {display:flex;flex-wrap:wrap;justify-content:space-evenly;max-width:1200px;margin:0 auto;padding:100px 0 124px;background:#fff;border-radius:20px;box-shadow:var(--shadow400);}
@@ -114,9 +111,22 @@
 .is-observed .apply-how-inner header h2 {animation:fadeup var(--animation-duration) linear .8s both;}
 .is-observed .apply-how-inner header p {animation:fadeup var(--animation-duration) linear 1.2s both;}
 
-.is-observed .apply-intro-inner div span {animation:fadeup var(--animation-duration) linear .4s both;}
-.is-observed .apply-intro-inner div h3 {animation:fadeup var(--animation-duration) linear .8s both;}
-.is-observed .apply-intro-inner div p {animation:fadeup var(--animation-duration) linear 1.2s both;}
+
+.is-observed .apply-intro-inner header span {animation:fadeup var(--animation-duration) linear .4s both;}
+.is-observed .apply-intro-inner header h2 {animation:fadeup var(--animation-duration) linear .8s both;}
+.is-observed .apply-intro-inner header p {animation:fadeup var(--animation-duration) linear 1.2s both;}
+.is-observed .apply-intro-inner div:nth-of-type(1) span {animation:fadeup var(--animation-duration) linear 1.4s both;}
+.is-observed .apply-intro-inner div:nth-of-type(1) h3 {animation:fadeup var(--animation-duration) linear 1.6s both;}
+.is-observed .apply-intro-inner div:nth-of-type(1) p {animation:fadeup var(--animation-duration) linear 1.8s both;}
+.is-observed .apply-intro-inner .line1 {animation:fadeup var(--animation-duration) linear 1.9s both;}
+.is-observed .apply-intro-inner div:nth-of-type(2) span {animation:fadeup var(--animation-duration) linear 2s both;}
+.is-observed .apply-intro-inner div:nth-of-type(2) h3 {animation:fadeup var(--animation-duration) linear 2.2s both;}
+.is-observed .apply-intro-inner div:nth-of-type(2) p {animation:fadeup var(--animation-duration) linear 2.4s both;}
+.is-observed .apply-intro-inner .line2 {animation:fadeup var(--animation-duration) linear 2.5s both;}
+.is-observed .apply-intro-inner div:nth-of-type(3) span {animation:fadeup var(--animation-duration) linear 2.6s both;}
+.is-observed .apply-intro-inner div:nth-of-type(3) h3 {animation:fadeup var(--animation-duration) linear 2.8s both;}
+.is-observed .apply-intro-inner div:nth-of-type(3) p {animation:fadeup var(--animation-duration) linear 3s both;}
+
 
 .is-observed .apply-how-inner .wrap > div .bg,
 .is-observed .apply-how-inner .wrap > div span,
