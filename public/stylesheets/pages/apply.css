@@ -193,6 +193,9 @@
     padding: 82px 0 0;
     background: url('../../images/apply/apply-hero-mobile.png') no-repeat center top #48A2F6;
   }
+  .apply-hero h1 {max-width:68%;}
+  .apply-hero p {max-width:84.8%;}
+  .apply-hero figure {max-width:90.6%;}
 
   
   .apply-hero footer {padding:30px var(--grid-margin);background:#ECF8FF;}
