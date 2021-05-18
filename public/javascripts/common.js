@@ -1,5 +1,13 @@
 import { throttle } from './utils/optimizationUtils.js'
 
+export function getElementOffsetTop(element) {
+  let offsetTop = element.offsetTop
+  const hasParentElement = element.offsetParent
+  if (hasParentElement) offsetTop += element.offsetParent.offsetTop
+
+  return offsetTop
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const homeCTA = document.querySelector('.js-home-cta')
   if (homeCTA) {
@@ -9,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroElement = document.querySelector('.js-hero-cta')
     if (!heroElement) return
 
-    const isStuck = window.pageYOffset > heroElement.offsetTop
+    const isStuck = window.pageYOffset >= getElementOffsetTop(heroElement) + heroElement.clientHeight
     homeCTA.classList.toggle('is-fixed', isStuck)
   }
 

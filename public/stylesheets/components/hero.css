@@ -35,7 +35,7 @@ border-radius:50px;text-align:center;background:var(--yellow);box-shadow:var(--s
 @media (max-width:1024px) {
 
     .hero-inner {padding-top:4rem;padding-bottom:4rem;}
-    .hero-title {font-size:2rem;}
+    .hero-title {font-size:24px;line-height:36px;}
     .hero-object-group {position:static;right:auto;top:auto;}
     .hero-object1 {top:-8%;}
     .hero-object2 {width:120%;margin-left:-3%;margin-top:-9%;}

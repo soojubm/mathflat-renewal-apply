@@ -36,7 +36,7 @@
 
 .apply-intro {}
 .apply-intro-inner {display:flex;flex-wrap:wrap;justify-content:space-evenly;max-width:1200px;margin:0 auto;padding:100px 0 124px;background:#fff;border-radius:20px;box-shadow:var(--shadow400);position:relative;}
-.apply-intro-inner header {width:100%;margin:0 0 61px 0;text-align:center;opacity:0;}
+.apply-intro-inner header {width:100%;margin:0 0 61px 0;text-align:center;}
 .apply-intro-inner header > span {display:block;width:60px;margin:0 auto;opacity:0;}
 .apply-intro-inner header h2 {margin:34px 0 0;font-size:40px;opacity:0;}
 .apply-intro-inner div {width:20%;margin:0 38px;text-align:center;}
