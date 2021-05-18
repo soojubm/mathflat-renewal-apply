@@ -103,25 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // }
   }
 
-  function countUp({ selector: selector }) {
-    if (!selector) return
-
-    let number = 0
-    let element = document.querySelector(selector)
-    let elementValue = element.getAttribute('data-number')
-
-    let interval = setInterval(() => {
-      renderNumber()
-
-      if (number >= elementValue) clearInterval(interval)
-    }, 20)
-
-    function renderNumber() {
-      ++number
-      element.innerHTML = `${number}%`
-    }
-  }
-
   // todo... 각각 시간 설정할 수 있도록..
   // animationend
   const counter = document.querySelector('.js-counter')
@@ -150,6 +131,25 @@ document.addEventListener('DOMContentLoaded', () => {
         //   clearTimeout(timeout)
         // }, 200)
       }
+    }
+  }
+
+  function countUp({ selector: selector }) {
+    if (!selector) return
+
+    let number = 0
+    let element = document.querySelector(selector)
+    let elementValue = element.getAttribute('data-number')
+
+    let interval = setInterval(() => {
+      renderNumber()
+
+      if (number >= elementValue) clearInterval(interval)
+    }, 20)
+
+    function renderNumber() {
+      ++number
+      element.innerHTML = `${number}%`
     }
   }
 })

@@ -286,7 +286,7 @@ button {
 .donut-data {font-size: 0.25em;text-anchor: middle;fill: var(--gray600);}
 .donut-percent {font-size: 0.5em;fill: var(--gray700);font-weight:600;}
 
-.is-observed .users .donut-segment {animation-delay:1.4s;}
+.is-observed .users .donut-segment {animation-delay:1.2s !important;}
 .is-observed .user2 .donut-percent {fill: var(--red400);}
 .is-observed .user1 .donut-segment {stroke: var(--blue400);animation: donut1 3s both;
 }
