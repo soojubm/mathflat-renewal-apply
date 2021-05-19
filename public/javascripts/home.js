@@ -1,7 +1,7 @@
 import { throttle } from './utils/optimizationUtils.js'
 
 document.addEventListener('DOMContentLoaded', () => {
-  let lastScrollTop = 0
+  // let lastScrollTop = 0
   let isCounted = false
 
   const tabElement = document.querySelector('.js-tab')
@@ -13,19 +13,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const tablistInner = tabElement.querySelector('.js-home-tablist-inner')
 
     let { hash } = window.location
-    let lastTab = Number(hash.substring(4, 5)) || 1
+    let recentTab = Number(hash.substring(4, 5)) || 1
 
     // 이전 탭 저장 id hash로..
     tablist.forEach((tab, tabIndex) => {
-      tab.setAttribute('aria-selected', lastTab === tabIndex + 1)
+      tab.setAttribute('aria-selected', recentTab === tabIndex + 1)
 
-      if (lastTab === tabIndex + 1) {
+      if (recentTab === tabIndex + 1) {
         tablistInner.scrollLeft = tab.offsetLeft
       }
     })
 
     tabPanels.forEach((tabPanel, tabPanelIndex) => {
-      const isTargetPanel = lastTab === tabPanelIndex + 1
+      const isTargetPanel = recentTab === tabPanelIndex + 1
       tabPanel.setAttribute('aria-hidden', String(!isTargetPanel))
     })
 
@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
           tabPanel.setAttribute('aria-hidden', String(!isTargetPanel))
         })
 
-        // + 100 임시
         window.scrollTo(0, navbarElement.clientHeight + heroElement.clientHeight + 20)
 
         isCounted = false
@@ -90,6 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.classList.toggle(TAB_FIXED_CLASSNAME, isStuck)
     }
 
+    // ! 스크롤업 시, 네비바 노출하는 기능 제거됨.
     // window.addEventListener('scroll', throttle(handleNavbar), false)
 
     // function handleNavbar() {
@@ -104,7 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // todo... 각각 시간 설정할 수 있도록..
-  // animationend
   const counter = document.querySelector('.js-counter')
   const counterWrap = counter.querySelector('.home-tabpanel-section-media')
   if (counter) {
@@ -120,16 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
         countUp({ selector: '.js-counter .js-counter4' })
         countUp({ selector: '.js-counter .js-counter5' })
         countUp({ selector: '.js-counter .js-counter6' })
-
-        // let timeout = setTimeout(() => {
-        //   countUp({ selector: '.js-counter .js-counter1' })
-        //   countUp({ selector: '.js-counter .js-counter2' })
-        //   countUp({ selector: '.js-counter .js-counter3' })
-        //   countUp({ selector: '.js-counter .js-counter4' })
-        //   countUp({ selector: '.js-counter .js-counter5' })
-        //   countUp({ selector: '.js-counter .js-counter6' })
-        //   clearTimeout(timeout)
-        // }, 200)
       }
     }
   }

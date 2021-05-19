@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', throttle(test12))
   }
   function test12() {
-    const heroElement = document.querySelector('.js-hero-cta')
-    if (!heroElement) return
+    const heroCTA = document.querySelector('.js-hero-cta')
+    if (!heroCTA) return
 
-    const isStuck = window.pageYOffset >= getElementOffsetTop(heroElement) + heroElement.clientHeight
+    const isStuck = window.pageYOffset >= getElementOffsetTop(heroCTA) + heroCTA.clientHeight
     homeCTA.classList.toggle('is-fixed', isStuck)
   }
 
@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
+  // 레이지로딩
   let lazyloadImages
   if ('IntersectionObserver' in window) {
     lazyloadImages = document.querySelectorAll('[data-src]')
@@ -66,33 +67,3 @@ document.addEventListener('DOMContentLoaded', () => {
     lazyloadImages.forEach(image => imageObserver.observe(image))
   }
 })
-
-// else {
-//   var lazyloadThrottleTimeout;
-//   lazyloadImages = document.querySelectorAll(".lazy");
-
-//   function lazyload () {
-//     if(lazyloadThrottleTimeout) {
-//       clearTimeout(lazyloadThrottleTimeout);
-//     }
-
-//     lazyloadThrottleTimeout = setTimeout(function() {
-//       var scrollTop = window.pageYOffset;
-//       lazyloadImages.forEach(function(img) {
-//           if(img.offsetTop < (window.innerHeight + scrollTop)) {
-//             img.src = img.dataset.src;
-//             img.classList.remove('lazy');
-//           }
-//       });
-//       if(lazyloadImages.length == 0) {
-//         document.removeEventListener("scroll", lazyload);
-//         window.removeEventListener("resize", lazyload);
-//         window.removeEventListener("orientationChange", lazyload);
-//       }
-//     }, 20);
-//   }
-
-//   document.addEventListener("scroll", lazyload);
-//   window.addEventListener("resize", lazyload);
-//   window.addEventListener("orientationChange", lazyload);
-// }

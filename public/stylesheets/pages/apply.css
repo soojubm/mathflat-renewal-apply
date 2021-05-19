@@ -34,7 +34,7 @@
 .is-observed.apply-hero p {animation:fadeup var(--animation-duration) linear .4s both;}
 .is-observed.apply-hero figure {animation:fadeup var(--animation-duration) linear .8s both;}
 
-.apply-intro {}
+.apply-intro {padding:0 var(--grid-margin);}
 .apply-intro-inner {display:flex;flex-wrap:wrap;justify-content:space-evenly;max-width:1200px;margin:0 auto;padding:100px 0 124px;background:#fff;border-radius:20px;box-shadow:var(--shadow400);position:relative;}
 .apply-intro-inner header {width:100%;margin:0 0 61px 0;text-align:center;}
 .apply-intro-inner header > span {display:block;width:60px;margin:0 auto;opacity:0;}
@@ -69,7 +69,7 @@
 
 
 
-.apply-benefit {}
+.apply-benefit {padding:0 var(--grid-margin);}
 .apply-benefit-inner {max-width:1200px;margin:80px auto 0;padding:100px 0 94px;background:#fff;border-radius:20px;box-shadow:var(--shadow400);position:relative;}
 .apply-benefit-inner header {margin:0 0 40px 0;text-align:center;}
 .apply-benefit-inner header > span {display:block;width:60px;margin:0 auto;opacity:0;}
@@ -94,8 +94,8 @@
 .apply-how-inner header h2 {margin:34px 0 24px;font-size:40px;opacity:0;}
 .apply-how-inner header p {font-size:24px;font-weight:bold;opacity:0;}
 .apply-how-inner header p em {font-weight:bold;}
-.apply-how-inner .wrap {display:flex;flex-wrap:wrap;justify-content:space-between;}
-.apply-how-inner .wrap > div {width:100%;max-width:382px;padding:64px 0 48px;text-align:center;position:relative;}
+.apply-how-inner .wrap {display:flex;justify-content:space-between;}
+.apply-how-inner .wrap > div {width:100%;max-width:382px;padding:64px 0 48px;box-sizing:border-box;text-align:center;position:relative;}
 .apply-how-inner .wrap > div .bg {border-radius:16px;box-shadow:var(--shadow400);position:absolute;left:0;right:0;top:0;bottom:0;}
 .apply-how-inner .wrap > div span {display:block;width:186px;height:186px;margin:0 auto 30px;position:relative;z-index:1;}
 .apply-how-inner .wrap > div em {font-size:21px;font-weight:bold;position:relative;z-index:1;}
@@ -132,11 +132,8 @@
       width: 46px;
       margin-right: 8px;
   }
-  .apply-notice header h2 {
-    font-size: 30px;
-  }
-  .apply-notice ul {
-  }
+  .apply-notice header h2 {font-size: 30px;}
+  .apply-notice ul {}
   .apply-notice ul li {
     margin: 6px 0;
     font-size: 18px;
@@ -182,8 +179,14 @@
 .is-observed .apply-notice-inner ul {animation:fadeup var(--animation-duration) linear .4s both;}
 
 
-
-
+/* // 18일 추가된 가이드 */
+@media (max-width:1201px) {
+  .apply-how {padding-left:var(--grid-margin);padding-right:var(--grid-margin);}
+  .apply-how-inner .wrap > div {max-width:32%;}
+  .apply-how-inner .wrap > div em {font-size:18px;line-height:21.39px;}
+  .apply-how-inner .wrap > div h3 {font-size:21px;line-height:28.52px;}
+  .apply-how-inner .wrap > div p {font-size:16px;line-height:21.39px;}
+}
 
 
 @media (max-width:1024px) {
@@ -201,7 +204,7 @@
   .apply-hero footer {padding:30px var(--grid-margin);background:#ECF8FF;}
   .apply-hero-cta {margin-top:0;}
 
-  .apply-intro {padding:0 var(--grid-margin);background:#ECF8FF;}
+  .apply-intro {background:#ECF8FF;}
   .apply-intro-inner {display:block;padding-top:32px;padding-bottom:59px;}
   .apply-intro-inner header {margin-bottom:32px;}
   .apply-intro-inner header span {width:8.74635568513%;}
@@ -213,7 +216,7 @@
 
 
 
-  .apply-benefit {padding:20px var(--grid-margin) 0;background:#ECF8FF;}
+  .apply-benefit {padding-top:20px;background:#ECF8FF;}
   /* .apply-benefit-inner {margin:0 auto 0;padding:32px 0 70px;} */
   .apply-benefit-inner {margin:0 auto 20px;padding:32px 0 70px;}
   .apply-benefit-inner header {margin:0 0 40px 0;}
@@ -228,12 +231,13 @@
   
   
 
-  .apply-how {padding:32px var(--grid-margin) 50px;}
-  .apply-how-inner {display:block;position:relative;}
+  .apply-how {padding-top:32px;padding-bottom:0px;}
+  .apply-how-inner {}
   .apply-how-inner header {margin-bottom:30px;}
   .apply-how-inner header span {width:8.74635568513%;}
   .apply-how-inner header h2 {margin-top:25px;margin-bottom:16px;font-size:24px;}
   .apply-how-inner header p {font-size:14px;}
+  .apply-how-inner .wrap  {display:block;}
   .apply-how-inner .wrap > div {max-width:100%;margin:20px 0 0;padding:30px 7.28862973761% 44px;}
   .apply-how-inner .wrap > div em {font-size:16px;}
   .apply-how-inner .wrap > div h3 {font-size:18px;}

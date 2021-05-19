@@ -1,11 +1,8 @@
+const cssnano = require('cssnano')
+const postcssPresetEnv = require('postcss-preset-env')
+const postcssCustomMedia = require('postcss-custom-media')
+const postcssImport = require('postcss-import')
+
 module.exports = {
-	plugins: [
-		require('autoprefixer'),
-		require('postcss-flexbugs-fixes'),
-		require('postcss-custom-media'),
-		require('cssnano')({
-			preset: 'default',
-		}),
-		// require('postcss-custom-properties'),
-	]
-};
+  // plugins: [cssnano(), postcssPresetEnv(), postcssImport()],
+}

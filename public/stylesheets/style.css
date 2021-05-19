@@ -319,7 +319,6 @@ button {
   html {font-size:12px;}
   .navbar {padding: 0 var(--grid-margin);}
 
-
   .navbar-menu {margin-right:-.5rem;}
   .navbar-menu-item {padding:0 .5rem;}
 
@@ -378,7 +377,7 @@ button {
   .donut-percent-wrap {transform:translateY(-2px)}
 }
 
-@media (max-width:680px) {
+@media (max-width: 680px) {
   .home-tablist {}
   .home-tablist-inner {display:block;overflow:auto;white-space:nowrap;padding:0 1rem;}
   .home-tablist-inner::-webkit-scrollbar {display:none;}
@@ -389,6 +388,3 @@ button {
 
   .tabpanel1-4-wrap-inbox {height:400px;}
 }
-
-
-

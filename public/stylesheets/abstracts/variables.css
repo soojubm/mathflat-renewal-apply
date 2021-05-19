@@ -1,5 +1,6 @@
-/* @custom-media --viewport-small (max-width: 1200px);
-@custom-media --viewport-tiny (max-width: 1200px); */
+/* @custom-media --viewport-medium (max-width: 1201px);
+@custom-media --viewport-small (max-width: 1024px);
+@custom-media --viewport-tiny (max-width: 680px); */
 
 :root {
   --fontstack: 'NanumSquare', sans-serif;
@@ -73,9 +74,6 @@
 }
 .linebreak-mobile {
   display: inline;
-  /* @media (max-width:1200px;) {
-    display: block;
-  } */
 }
 
 @media (max-width:1024px) {

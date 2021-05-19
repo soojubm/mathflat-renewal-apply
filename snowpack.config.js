@@ -1,10 +1,3 @@
 module.exports = {
-	plugins: [
-	  [
-		'@snowpack/plugin-sass',
-		{
-		  /* see options below */
-		},
-	  ],
-	],
-  };
+  plugins: [['@snowpack/plugin-postcss']],
+}
