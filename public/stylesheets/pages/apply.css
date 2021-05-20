@@ -88,7 +88,7 @@
 .is-observed .apply-benefit-inner header h2 {animation:fadeup var(--animation-duration) linear .4s both;}
 .is-observed .apply-benefit-inner figure {animation:fadeup var(--animation-duration) linear .8s both;}
 
-.apply-how {padding:124px 0;background:#f9f9f9;}
+.apply-how {padding:100px 0 124px 0;background:#f9f9f9;}
 .apply-how-inner {max-width:1200px;margin:0 auto;position:relative;}
 .apply-how-inner header {width:100%;margin:0 0 60px 0;text-align:center;}
 .apply-how-inner header span {display:block;width:60px;margin:0 auto;opacity:0;}
