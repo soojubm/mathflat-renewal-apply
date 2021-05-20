@@ -183,7 +183,7 @@
 /* // 18일 추가된 가이드 */
 @media (max-width:1201px) {
   .apply-how {padding-left:var(--grid-margin);padding-right:var(--grid-margin);}
-  .apply-how-inner .wrap > div {max-width:32%;}
+  .apply-how-inner .wrap > div {max-width:32%;padding-left:1.5rem;padding-right:1.5rem;}
   .apply-how-inner .wrap > div em {font-size:18px;line-height:21.39px;}
   .apply-how-inner .wrap > div h3 {font-size:21px;line-height:28.52px;}
   .apply-how-inner .wrap > div p {font-size:16px;line-height:21.39px;}
