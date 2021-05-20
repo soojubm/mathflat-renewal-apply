@@ -1,6 +1,7 @@
 @charset 'utf-8';
 
-.apply-bgarea {padding-bottom:190px;background:url('../../images/apply/apply-hero.png') no-repeat center top;background-size:cover;position:relative;}
+/* // 0520 bg 문제 있음.. */
+.apply-bgarea {padding-bottom:190px;background:url('../../images/apply/apply-hero.png') no-repeat center -150px #ECF8FF;background-size:cover;position:relative;}
 
 .apply-hero {padding:160px 0;text-align:center;}
 .apply-hero-inner {max-width:1200px;margin:0 auto;position:relative;}
