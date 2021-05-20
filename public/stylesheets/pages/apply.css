@@ -1,5 +1,4 @@
 @charset 'utf-8';
-
 /* // 0520 bg 문제 있음.. */
 .apply-bgarea {padding-bottom:190px;background:url('../../images/apply/apply-hero.png') no-repeat center -150px #ECF8FF;background-size:cover;position:relative;}
 
@@ -21,15 +20,6 @@
 .apply-hero-objects img:nth-of-type(7) {width:46px;right:-78px;top:-26px}
 .apply-hero-objects img:nth-of-type(8) {width:21px;right:-179px;top:488px;}
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.5);
-  }
-}
-
 /* // first second third mixin */
 .is-observed.apply-hero h1 {animation:fadeup var(--animation-duration) linear 0s both;}
 .is-observed.apply-hero p {animation:fadeup var(--animation-duration) linear .4s both;}
@@ -44,8 +34,6 @@
 .apply-intro-inner div span {display:block;width:48px;height:48px;margin:0 auto 16px;}
 .apply-intro-inner div h3 {margin:2px 0 6px;font-size:24px;}
 .apply-intro-inner div p {font-size:18px;line-height:24px;}
-
-
 
 .is-observed .apply-intro-inner header span {animation:fadeup var(--animation-duration) linear .4s both;}
 .is-observed .apply-intro-inner header h2 {animation:fadeup var(--animation-duration) linear .8s both;}
@@ -67,8 +55,6 @@
 .is-observed .apply-intro-inner div:nth-of-type(3) span {animation:fadeup var(--animation-duration) linear 2.6s both;}
 .is-observed .apply-intro-inner div:nth-of-type(3) h3 {animation:fadeup var(--animation-duration) linear 2.8s both;}
 .is-observed .apply-intro-inner div:nth-of-type(3) p {animation:fadeup var(--animation-duration) linear 3s both;} */
-
-
 
 .apply-benefit {padding:0 var(--grid-margin);}
 .apply-benefit-inner {max-width:1200px;margin:80px auto 0;padding:100px 0 94px;background:#fff;border-radius:20px;box-shadow:var(--shadow400);position:relative;}
@@ -107,53 +93,27 @@
 .is-observed .apply-how-inner header h2 {animation:fadeup var(--animation-duration) linear .4s both;}
 .is-observed .apply-how-inner header p {animation:fadeup var(--animation-duration) linear .8s both;}
 
-
-.apply-notice {
-    padding: 140px var(--grid-margin);
-    background: #ececec;
-  }
-  .apply-notice-inner {
-    max-width: 744px;
-    margin: 0 auto;
-    position: relative;
-  }
-  .apply-notice header {
-    display: flex;
-    align-items: center;
-    margin: 0 0 24px 0;
-    padding: 0 0 24px 0;
-    border-bottom: 1px solid #c0c0c0;
-  }
-  /* .apply-notice header hr {
-      height: 1px;
-      margin: 20px 0;
-      background: #c0c0c0;
-  } */
-  .apply-notice header img {
-      width: 46px;
-      margin-right: 8px;
-  }
-  .apply-notice header h2 {font-size: 30px;}
-  .apply-notice ul {}
-  .apply-notice ul li {
-    margin: 6px 0;
-    font-size: 18px;
-    color: var(--gray700);
-  }
-
+.apply-notice {padding: 140px var(--grid-margin);background: #ececec;}
+.apply-notice-inner {max-width: 744px;margin: 0 auto;position: relative;}
+.apply-notice header {display: flex;align-items: center;margin: 0 0 24px 0;padding: 0 0 24px 0;border-bottom: 1px solid #c0c0c0;}
+/* // 선만 따로 모션 있던 것 제거 됨. */
+/* .apply-notice header hr {
+    height: 1px;
+    margin: 20px 0;
+    background: #c0c0c0;
+} */
+.apply-notice header img {width: 46px;margin-right: 8px;}
+.apply-notice header h2 {font-size: 30px;}
+.apply-notice ul {}
+.apply-notice ul li {margin: 6px 0;font-size: 18px;color: var(--gray700);}
 .apply-notice ul li:before {content:'';display:inline-block;width:4px;height:4px;margin:0 10px 0 0;border-radius:50%;background:#818181;vertical-align:middle;}
 
-.is-observed .apply-how-inner header {animation:fadeup var(--animation-duration) linear both;}
-
-.is-observed .apply-intro {}
 /* .is-observed .apply-intro-inner {display:flex;flex-wrap:wrap;justify-content:space-evenly;max-width:1200px;margin:0 auto;padding:100px 0 124px;background:#fff;border-radius:20px;box-shadow:var(--shadow400);}
 .is-observed .apply-intro-inner header {width:100%;margin:0 0 61px 0;text-align:center;}
 .is-observed .apply-intro-inner header > span {display:block;width:60px;margin:0 auto;}
 .is-observed .apply-intro-inner header h2 {margin:34px 0 0;font-size:40px;}
 .is-observed .apply-intro-inner div {width:20%;margin:0 38px;text-align:center;} */
-
-
-
+.is-observed .apply-how-inner header {animation:fadeup var(--animation-duration) linear both;}
 .is-observed .apply-how-inner .wrap > div .bg,
 .is-observed .apply-how-inner .wrap > div span,
 .is-observed .apply-how-inner .wrap > div em,
@@ -179,7 +139,6 @@
 .is-observed .apply-notice-inner hr {}
 .is-observed .apply-notice-inner ul {animation:fadeup var(--animation-duration) linear .4s both;}
 
-
 /* // 18일 추가된 가이드 */
 @media (max-width:1201px) {
   .apply-how {padding-left:var(--grid-margin);padding-right:var(--grid-margin);}
@@ -200,8 +159,6 @@
   .apply-hero h1 {max-width:68%;}
   .apply-hero p {max-width:84.8%;}
   .apply-hero figure {max-width:90.6%;}
-
-  
   .apply-hero footer {padding:30px var(--grid-margin);background:#ECF8FF;}
   .apply-hero-cta {margin-top:0;}
 
@@ -214,8 +171,6 @@
   .apply-intro-inner div h3 {font-size:18px;}
   .apply-intro-inner div p {font-size:16px;}
   .apply-intro-inner .line {display:block;width:31px;height:1px;margin:24px auto;background:#ececec;}
-
-
 
   .apply-benefit {padding-top:20px;background:#ECF8FF;}
   /* .apply-benefit-inner {margin:0 auto 0;padding:32px 0 70px;} */
@@ -230,8 +185,6 @@
   .apply-benefit-inner .coins img:nth-of-type(4) {width:35.73333333333%;right:-18%;top:35%;}
   .apply-benefit-inner .coins img:nth-of-type(5) {width:33.06666666667%;right:-14%;bottom:-15%;}
   
-  
-
   .apply-how {padding-top:32px;padding-bottom:0px;}
   .apply-how-inner {}
   .apply-how-inner header {margin-bottom:30px;}
@@ -244,7 +197,6 @@
   .apply-how-inner .wrap > div h3 {font-size:18px;}
   .apply-how-inner .wrap > div p {font-size:16px;}
 
-
   .apply-notice {padding:40px 9.6%;}
   .apply-notice header {margin-bottom:0;padding-bottom:4px;border-bottom:0;}
   .apply-notice header img {width: 18px;}
@@ -256,5 +208,4 @@
   .is-observed .apply-intro-inner div span {animation:fadeup var(--animation-duration) linear .4s both;}
   .is-observed .apply-intro-inner div h3 {animation:fadeup var(--animation-duration) linear .8s both;}
   .is-observed .apply-intro-inner div p {animation:fadeup var(--animation-duration) linear 1.2s both;}
-
 }
